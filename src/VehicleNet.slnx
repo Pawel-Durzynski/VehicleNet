@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Build/">
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Project Path="VehicleNet.Catalog/VehicleNet.Catalog.csproj" />
+  <Project Path="VehicleNet.Common/VehicleNet.Common.csproj" />
+  <Project Path="VehicleNet.ConsoleTest/VehicleNet.ConsoleTest.csproj" />
+  <Project Path="VehicleNet.Vin/VehicleNet.Vin.csproj" />
+</Solution>

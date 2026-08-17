@@ -1,0 +1,77 @@
+namespace VehicleNet.Common.Enums;
+
+public enum Manufacturer
+{
+    // European (100-199)
+    AlfaRomeo = 100,
+    AstonMartin = 101,
+    Audi = 102,
+    Bentley = 103,
+    Bmw = 104,
+    Bugatti = 105,
+    Citroen = 106,
+    Dacia = 107,
+    Ferrari = 108,
+    Fiat = 109,
+    Ford = 110,
+    Jaguar = 111,
+    Lamborghini = 112,
+    LandRover = 113,
+    Lancia = 114,
+    Lotus = 115,
+    Maserati = 116,
+    Mclaren = 117,
+    MercedesBenz = 118,
+    Mini = 119,
+    Opel = 120,
+    Pagani = 121,
+    Peugeot = 122,
+    Porsche = 123,
+    Renault = 124,
+    RollsRoyce = 125,
+    Seat = 126,
+    Skoda = 127,
+    Smart = 128,
+    Vauxhall = 129,
+    Volkswagen = 130,
+    Volvo = 131,
+
+    // American (200-299)
+    Buick = 200,
+    Cadillac = 201,
+    Chevrolet = 202,
+    Chrysler = 203,
+    Dodge = 204,
+    Gmc = 205,
+    Jeep = 206,
+    Lincoln = 207,
+    Ram = 208,
+    Tesla = 209,
+
+    // Japanese (300-399)
+    Acura = 300,
+    Daihatsu = 301,
+    Honda = 302,
+    Infiniti = 303,
+    Isuzu = 304,
+    Lexus = 305,
+    Mazda = 306,
+    Mitsubishi = 307,
+    Nissan = 308,
+    Subaru = 309,
+    Suzuki = 310,
+    Toyota = 311,
+
+    // Korean (400-499)
+    Genesis = 400,
+    Hyundai = 401,
+    Kia = 402,
+
+    // Chinese (500-599)
+    Byd = 500,
+    Geely = 501,
+    GreatWall = 502,
+    Mg = 503,
+    Nio = 504,
+    Xpeng = 505,
+}
