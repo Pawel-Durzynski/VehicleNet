@@ -21,6 +21,7 @@ internal sealed class EngineService : IEngineService
         IEnumerable<ManufacturerDto> manufacturers)
     {
         _engines = engines.ToList();
+
         _generationsById = generations.ToDictionary(generation => generation.Id);
         _versionsById = versions.ToDictionary(version => version.Id);
         _modelsById = models.ToDictionary(model => model.Id);
