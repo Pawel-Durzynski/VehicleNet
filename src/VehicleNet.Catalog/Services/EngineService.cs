@@ -34,6 +34,8 @@ internal sealed class EngineService : IEngineService
 
         var query = _engines.AsEnumerable();
 
+
+
         if (search.GenerationId.HasValue)
         {
             query = query.Where(engine => engine.GenerationId == search.GenerationId.Value);
