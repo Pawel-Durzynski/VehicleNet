@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "2.0 TSI",
+    "generationId": 1,
+    "versionId": 1
+  },
+  {
+    "id": 2,
+    "name": "2.0 TDI",
+    "generationId": 1,
+    "versionId": 1
+  }
+]

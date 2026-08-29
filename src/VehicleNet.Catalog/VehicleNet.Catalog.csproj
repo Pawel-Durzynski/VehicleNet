@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+        <Description>A comprehensive vehicle database containing manufacturers, models, generations, and basic specifications.</Description>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	    <PackageId>VehicleNet.Catalog</PackageId>
+	    <Version>1.0.0</Version>
+	    <Product>VehicleNet.Catalog</Product>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	
+    <ItemGroup>
+         <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\VehicleNet.Common\VehicleNet.Common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Data\6-engine-variants.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\1-manufacturers.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\2-models.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\3-generations.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\4-versions.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\5-engines.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\7-vehicle-bodies.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\8-vehicle-body-engines.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Data\9-vehicle-body-engine-variants.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

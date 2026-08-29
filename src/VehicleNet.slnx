@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/Build/">
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Folder Name="/Build/GitHub/">
+    <File Path="../.github/workflows/unit-tests-main.yml" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../LICENSE" />
+    <File Path="../README.md" />
+  </Folder>
+  <Project Path="VehicleNet.Catalog.Test/VehicleNet.Catalog.Test.csproj" Id="f7173ce6-6c85-4b41-bba2-4e17f1163e9a" />
+  <Project Path="VehicleNet.Catalog/VehicleNet.Catalog.csproj" />
+  <Project Path="VehicleNet.Common/VehicleNet.Common.csproj" />
+  <Project Path="VehicleNet.ConsoleTest/VehicleNet.ConsoleTest.csproj" />
+  <Project Path="VehicleNet.Vin.Test/VehicleNet.Vin.Test.csproj" Id="1af32ff6-feca-4768-9cf1-956f98be2b2e" />
+  <Project Path="VehicleNet.Vin/VehicleNet.Vin.csproj" />
+</Solution>

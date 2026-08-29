@@ -1,0 +1,22 @@
+[
+  {
+    "engineVariantId": 1,
+    "engineId": 1,
+    "name": "2.0 TSI Manual"
+  },
+  {
+    "engineVariantId": 2,
+    "engineId": 1,
+    "name": "2.0 TSI Automatic"
+  },
+  {
+    "engineVariantId": 3,
+    "engineId": 2,
+    "name": "2.0 TDI Manual"
+  },
+  {
+    "engineVariantId": 4,
+    "engineId": 2,
+    "name": "2.0 TDI Automatic"
+  }
+]

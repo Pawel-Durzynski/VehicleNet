@@ -1,0 +1,26 @@
+[
+  {
+    "vehicleBodyId": 1,
+    "generationId": 1,
+    "versionId": 1,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": { "value": 5, "unit": "Count" },
+        "numberOfSeats": { "value": 5, "unit": "Count" },
+        "turningDiameter": { "value": 10.9, "unit": "Meter" },
+        "turningRadius": { "value": 5.45, "unit": "Meter" }
+      },
+      "externalDimensions": {
+        "length": { "value": 4689, "unit": "Millimeter" },
+        "width": { "value": 1829, "unit": "Millimeter" },
+        "height": { "value": 1468, "unit": "Millimeter" },
+        "wheelbase": { "value": 2686, "unit": "Millimeter" },
+        "groundClearance": { "value": 145, "unit": "Millimeter" }
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": { "value": 1555, "unit": "Liter" },
+        "minimumTrunkCapacitySeatsUp": { "value": 600, "unit": "Liter" }
+      }
+    }
+  }
+]
