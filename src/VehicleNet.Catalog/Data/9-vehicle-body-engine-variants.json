@@ -6,15 +6,15 @@
     "engineVariantSpecs": {
       "drivetrainSpecs": {
         "transmissionType": "Manual",
-        "drivetrain": "AWD"
+        "drivetrain": "FWD"
       },
       "performanceSpecs": {
         "acceleration0To100": {
-          "value": 6.3,
+          "value": 15.5,
           "unit": "Second"
         },
         "topSpeed": {
-          "value": 250,
+          "value": 171,
           "unit": "KilometerPerHour"
         }
       }
@@ -22,62 +22,19 @@
   },
   {
     "vehicleBodyEngineVariantId": 2,
-    "vehicleBodyEngineId": 1,
+    "vehicleBodyEngineId": 2,
     "engineVariantId": 2,
     "engineVariantSpecs": {
       "drivetrainSpecs": {
-        "transmissionType": "Automatic",
-        "drivetrain": "AWD"
+        "transmissionType": "Manual"
       },
       "performanceSpecs": {
         "acceleration0To100": {
-          "value": 6.3,
+          "value": 14.4,
           "unit": "Second"
         },
         "topSpeed": {
-          "value": 250,
-          "unit": "KilometerPerHour"
-        }
-      }
-    }
-  },
-  {
-    "vehicleBodyEngineVariantId": 3,
-    "vehicleBodyEngineId": 2,
-    "engineVariantId": 3,
-    "engineVariantSpecs": {
-      "drivetrainSpecs": {
-        "transmissionType": "Manual",
-        "drivetrain": "FWD"
-      },
-      "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 218,
-          "unit": "KilometerPerHour"
-        }
-      }
-    }
-  },
-  {
-    "vehicleBodyEngineVariantId": 4,
-    "vehicleBodyEngineId": 2,
-    "engineVariantId": 4,
-    "engineVariantSpecs": {
-      "drivetrainSpecs": {
-        "transmissionType": "Automatic",
-        "drivetrain": "FWD"
-      },
-      "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 218,
+          "value": 172,
           "unit": "KilometerPerHour"
         }
       }

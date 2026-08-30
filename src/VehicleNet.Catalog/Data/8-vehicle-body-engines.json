@@ -5,20 +5,44 @@
     "engineId": 1,
     "engineSpecs": {
       "fuelType": "Petrol",
-      "capacity": { "value": 1984, "unit": "CubicCentimeter" },
+      "capacity": {
+        "value": 1390,
+        "unit": "CubicCentimeter"
+      },
       "architecture": {
-        "cylinderCount": { "value": 4, "unit": "Count" },
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
         "cylinderArrangement": "Inline",
-        "valveCount": { "value": 16, "unit": "Count" }
+        "valveCount": {
+          "value": 16,
+          "unit": "Count"
+        }
       },
       "power": {
-        "horsepower": { "value": 245, "unit": "Horsepower" },
-        "atRpm": { "value": 5000, "unit": "Rpm" }
+        "horsepower": {
+          "value": 75,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5000,
+          "unit": "Rpm"
+        }
       },
       "torque": {
-        "maxTorque": { "value": 370, "unit": "NewtonMeter" },
-        "atRpmFrom": { "value": 1500, "unit": "Rpm" },
-        "atRpmTo": { "value": 4500, "unit": "Rpm" }
+        "maxTorque": {
+          "value": 126,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 3300,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 3300,
+          "unit": "Rpm"
+        }
       }
     }
   },
@@ -27,21 +51,27 @@
     "vehicleBodyId": 1,
     "engineId": 2,
     "engineSpecs": {
-      "fuelType": "Diesel",
-      "capacity": { "value": 1968, "unit": "CubicCentimeter" },
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1397,
+        "unit": "CubicCentimeter"
+      },
       "architecture": {
-        "cylinderCount": { "value": 4, "unit": "Count" },
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
         "cylinderArrangement": "Inline",
-        "valveCount": { "value": 16, "unit": "Count" }
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
       },
       "power": {
-        "horsepower": { "value": 150, "unit": "Horsepower" },
-        "atRpm": { "value": 3500, "unit": "Rpm" }
-      },
-      "torque": {
-        "maxTorque": { "value": 360, "unit": "NewtonMeter" },
-        "atRpmFrom": { "value": 1750, "unit": "Rpm" },
-        "atRpmTo": { "value": 3000, "unit": "Rpm" }
+        "horsepower": {
+          "value": 80,
+          "unit": "Horsepower"
+        }
       }
     }
   }
