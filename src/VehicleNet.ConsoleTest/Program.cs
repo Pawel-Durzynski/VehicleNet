@@ -23,6 +23,8 @@ catalogPlayground.Playground();
 var vinPlayground = serviceProvider.GetRequiredService<VehicleNetVin>();
 vinPlayground.Playground();
 
+Console.Clear();
+
 var manufacturerService = serviceProvider.GetRequiredService<IManufacturerService>();
 var modelService = serviceProvider.GetRequiredService<IModelService>();
 var generationService = serviceProvider.GetRequiredService<IGenerationService>();
@@ -161,17 +163,17 @@ static void RenderBodySpecTable(IReadOnlyList<VehicleBody> items)
     foreach (var item in items)
     {
         table.AddRow("Vehicle", item.DisplayName);
-        table.AddRow("Doors", Format(item.BodySpecs.BasicParameters.NumberOfDoors));
-        table.AddRow("Seats", Format(item.BodySpecs.BasicParameters.NumberOfSeats));
-        table.AddRow("Turning diameter", Format(item.BodySpecs.BasicParameters.TurningDiameter));
-        table.AddRow("Turning radius", Format(item.BodySpecs.BasicParameters.TurningRadius));
-        table.AddRow("Length", Format(item.BodySpecs.ExternalDimensions.Length));
-        table.AddRow("Width", Format(item.BodySpecs.ExternalDimensions.Width));
-        table.AddRow("Height", Format(item.BodySpecs.ExternalDimensions.Height));
-        table.AddRow("Wheelbase", Format(item.BodySpecs.ExternalDimensions.Wheelbase));
-        table.AddRow("Ground clearance", Format(item.BodySpecs.ExternalDimensions.GroundClearance));
-        table.AddRow("Trunk min", Format(item.BodySpecs.TrunkDimensions.MinimumTrunkCapacitySeatsUp));
-        table.AddRow("Trunk max", Format(item.BodySpecs.TrunkDimensions.MaximumTrunkCapacitySeatsFolded));
+        table.AddRow("Doors", item.BodySpecs.BasicParameters is null ? "N/A" : Format(item.BodySpecs.BasicParameters.NumberOfDoors));
+        table.AddRow("Seats", item.BodySpecs.BasicParameters is null ? "N/A" : Format(item.BodySpecs.BasicParameters.NumberOfSeats));
+        table.AddRow("Turning diameter", item.BodySpecs.BasicParameters is null ? "N/A" : Format(item.BodySpecs.BasicParameters.TurningDiameter));
+        table.AddRow("Turning radius", item.BodySpecs.BasicParameters is null ? "N/A" : Format(item.BodySpecs.BasicParameters.TurningRadius));
+        table.AddRow("Length", item.BodySpecs.ExternalDimensions is null ? "N/A" : Format(item.BodySpecs.ExternalDimensions.Length));
+        table.AddRow("Width", item.BodySpecs.ExternalDimensions is null ? "N/A" : Format(item.BodySpecs.ExternalDimensions.Width));
+        table.AddRow("Height", item.BodySpecs.ExternalDimensions is null ? "N/A" : Format(item.BodySpecs.ExternalDimensions.Height));
+        table.AddRow("Wheelbase", item.BodySpecs.ExternalDimensions is null ? "N/A" : Format(item.BodySpecs.ExternalDimensions.Wheelbase));
+        table.AddRow("Ground clearance", item.BodySpecs.ExternalDimensions is null ? "N/A" : Format(item.BodySpecs.ExternalDimensions.GroundClearance));
+        table.AddRow("Trunk min", item.BodySpecs.TrunkDimensions is null ? "N/A" : Format(item.BodySpecs.TrunkDimensions.MinimumTrunkCapacitySeatsUp));
+        table.AddRow("Trunk max", item.BodySpecs.TrunkDimensions is null ? "N/A" : Format(item.BodySpecs.TrunkDimensions.MaximumTrunkCapacitySeatsFolded));
         table.AddRow("", "");
     }
 
@@ -196,13 +198,13 @@ static void RenderEngineSpecTable(IReadOnlyList<VehicleBodyEngine> items)
         table.AddRow("Engine", item.Engine.Name);
         table.AddRow("Capacity", Format(item.EngineSpecs.Capacity));
         table.AddRow("Fuel", item.EngineSpecs.FuelType.ToString());
-        table.AddRow("Cylinders", Format(item.EngineSpecs.Architecture.CylinderCount));
-        table.AddRow("Arrangement", string.IsNullOrWhiteSpace(item.EngineSpecs.Architecture.CylinderArrangement) ? "N/A" : item.EngineSpecs.Architecture.CylinderArrangement);
-        table.AddRow("Valves", Format(item.EngineSpecs.Architecture.ValveCount));
-        table.AddRow("Horsepower", Format(item.EngineSpecs.Power.Horsepower));
-        table.AddRow("Power rpm", Format(item.EngineSpecs.Power.AtRpm));
-        table.AddRow("Torque", Format(item.EngineSpecs.Torque.MaxTorque));
-        table.AddRow("Torque rpm", $"{Format(item.EngineSpecs.Torque.AtRpmFrom)} - {Format(item.EngineSpecs.Torque.AtRpmTo)}");
+        table.AddRow("Cylinders", item.EngineSpecs.Architecture is null ? "N/A" : Format(item.EngineSpecs.Architecture.CylinderCount));
+        table.AddRow("Arrangement", item.EngineSpecs.Architecture is null || string.IsNullOrWhiteSpace(item.EngineSpecs.Architecture.CylinderArrangement) ? "N/A" : item.EngineSpecs.Architecture.CylinderArrangement);
+        table.AddRow("Valves", item.EngineSpecs.Architecture is null ? "N/A" : Format(item.EngineSpecs.Architecture.ValveCount));
+        table.AddRow("Horsepower", item.EngineSpecs.Power is null ? "N/A" : Format(item.EngineSpecs.Power.Horsepower));
+        table.AddRow("Power rpm", item.EngineSpecs.Power is null ? "N/A" : Format(item.EngineSpecs.Power.AtRpm));
+        table.AddRow("Torque", item.EngineSpecs.Torque is null ? "N/A" : Format(item.EngineSpecs.Torque.MaxTorque));
+        table.AddRow("Torque rpm", item.EngineSpecs.Torque is null ? "N/A" : $"{Format(item.EngineSpecs.Torque.AtRpmFrom)} - {Format(item.EngineSpecs.Torque.AtRpmTo)}");
         table.AddRow("", "");
     }
 
@@ -225,10 +227,10 @@ static void RenderEngineVersionSpecTable(IReadOnlyList<VehicleBodyEngineVariant>
     {
         table.AddRow("Vehicle", item.DisplayName);
         table.AddRow("Engine version", item.EngineVariant.Name);
-        table.AddRow("Transmission", item.EngineVariantSpecs.DrivetrainSpecs.TransmissionType.ToString());
-        table.AddRow("Drivetrain", item.EngineVariantSpecs.DrivetrainSpecs.Drivetrain.ToString());
-        table.AddRow("0-100", Format(item.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100));
-        table.AddRow("Top speed", Format(item.EngineVariantSpecs.PerformanceSpecs.TopSpeed));
+        table.AddRow("Transmission", item.EngineVariantSpecs.DrivetrainSpecs is null ? "N/A" : item.EngineVariantSpecs.DrivetrainSpecs.TransmissionType.ToString());
+        table.AddRow("Drivetrain", item.EngineVariantSpecs.DrivetrainSpecs is null ? "N/A" : item.EngineVariantSpecs.DrivetrainSpecs.Drivetrain.ToString());
+        table.AddRow("0-100", item.EngineVariantSpecs.PerformanceSpecs is null ? "N/A" : Format(item.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100));
+        table.AddRow("Top speed", item.EngineVariantSpecs.PerformanceSpecs is null ? "N/A" : Format(item.EngineVariantSpecs.PerformanceSpecs.TopSpeed));
         table.AddRow("", "");
     }
 

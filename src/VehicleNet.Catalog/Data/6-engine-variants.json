@@ -8,5 +8,85 @@
     "engineVariantId": 2,
     "engineId": 2,
     "name": "1.4 MPI 80KM Manual"
+  },
+  {
+    "engineVariantId": 3,
+    "engineId": 3,
+    "name": "1.6 101KM Manual"
+  },
+  {
+    "engineVariantId": 4,
+    "engineId": 4,
+    "name": "1.6 75KM Manual"
+  },
+  {
+    "engineVariantId": 5,
+    "engineId": 5,
+    "name": "1.6 MPI 102KM Manual"
+  },
+  {
+    "engineVariantId": 6,
+    "engineId": 6,
+    "name": "1.8 20V 125KM Manual"
+  },
+  {
+    "engineVariantId": 7,
+    "engineId": 7,
+    "name": "1.8 20V Turbo 150KM Manual"
+  },
+  {
+    "engineVariantId": 8,
+    "engineId": 8,
+    "name": "1.8 T 180KM Manual"
+  },
+  {
+    "engineVariantId": 9,
+    "engineId": 9,
+    "name": "1.8 T 4x4 150KM Manual"
+  },
+  {
+    "engineVariantId": 10,
+    "engineId": 10,
+    "name": "2.0 115KM Manual"
+  },
+  {
+    "engineVariantId": 11,
+    "engineId": 11,
+    "name": "2.0 4x4 115KM Manual"
+  },
+  {
+    "engineVariantId": 12,
+    "engineId": 12,
+    "name": "1.9 SDI 68KM Manual"
+  },
+  {
+    "engineVariantId": 13,
+    "engineId": 13,
+    "name": "1.9 TDI 110KM Manual"
+  },
+  {
+    "engineVariantId": 14,
+    "engineId": 14,
+    "name": "1.9 TDI 130KM Manual"
+  },
+  {
+    "engineVariantId": 15,
+    "engineId": 15,
+    "name": "1.9 TDI 90KM Manual"
+  },
+  {
+    "engineVariantId": 16,
+    "engineId": 16,
+    "name": "1.9 TDI 101KM Manual"
+  },
+  {
+    "engineVariantId": 17,
+    "engineId": 17,
+    "name": "1.9 TDI 4x4 100KM Manual"
+  },
+  {
+    "engineVariantId": 18,
+    "engineId": 18,
+    "name": "1.9 TDI 4x4 90KM Manual"
   }
 ]

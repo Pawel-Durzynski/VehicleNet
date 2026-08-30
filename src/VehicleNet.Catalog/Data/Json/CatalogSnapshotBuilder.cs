@@ -121,26 +121,32 @@ internal sealed class CatalogSnapshotBuilder
 
         return new BodySpecs
         {
-            BasicParameters = new BasicParameters
-            {
-                NumberOfDoors = ToParameterValue(dto.BasicParameters.NumberOfDoors, MeasurementUnit.Count),
-                NumberOfSeats = ToParameterValue(dto.BasicParameters.NumberOfSeats, MeasurementUnit.Count),
-                TurningDiameter = ToParameterValue(dto.BasicParameters.TurningDiameter, MeasurementUnit.Meter),
-                TurningRadius = ToParameterValue(dto.BasicParameters.TurningRadius, MeasurementUnit.Meter),
-            },
-            ExternalDimensions = new ExternalDimensions
-            {
-                Length = ToParameterValue(dto.ExternalDimensions.Length, MeasurementUnit.Millimeter),
-                Width = ToParameterValue(dto.ExternalDimensions.Width, MeasurementUnit.Millimeter),
-                Height = ToParameterValue(dto.ExternalDimensions.Height, MeasurementUnit.Millimeter),
-                Wheelbase = ToParameterValue(dto.ExternalDimensions.Wheelbase, MeasurementUnit.Millimeter),
-                GroundClearance = ToParameterValue(dto.ExternalDimensions.GroundClearance, MeasurementUnit.Millimeter),
-            },
-            TrunkDimensions = new TrunkDimensions
-            {
-                MaximumTrunkCapacitySeatsFolded = ToParameterValue(dto.TrunkDimensions.MaximumTrunkCapacitySeatsFolded, MeasurementUnit.Liter),
-                MinimumTrunkCapacitySeatsUp = ToParameterValue(dto.TrunkDimensions.MinimumTrunkCapacitySeatsUp, MeasurementUnit.Liter),
-            }
+            BasicParameters = dto.BasicParameters is null
+                ? null
+                : new BasicParameters
+                {
+                    NumberOfDoors = ToParameterValue(dto.BasicParameters.NumberOfDoors, MeasurementUnit.Count),
+                    NumberOfSeats = ToParameterValue(dto.BasicParameters.NumberOfSeats, MeasurementUnit.Count),
+                    TurningDiameter = ToParameterValue(dto.BasicParameters.TurningDiameter, MeasurementUnit.Meter),
+                    TurningRadius = ToParameterValue(dto.BasicParameters.TurningRadius, MeasurementUnit.Meter),
+                },
+            ExternalDimensions = dto.ExternalDimensions is null
+                ? null
+                : new ExternalDimensions
+                {
+                    Length = ToParameterValue(dto.ExternalDimensions.Length, MeasurementUnit.Millimeter),
+                    Width = ToParameterValue(dto.ExternalDimensions.Width, MeasurementUnit.Millimeter),
+                    Height = ToParameterValue(dto.ExternalDimensions.Height, MeasurementUnit.Millimeter),
+                    Wheelbase = ToParameterValue(dto.ExternalDimensions.Wheelbase, MeasurementUnit.Millimeter),
+                    GroundClearance = ToParameterValue(dto.ExternalDimensions.GroundClearance, MeasurementUnit.Millimeter),
+                },
+            TrunkDimensions = dto.TrunkDimensions is null
+                ? null
+                : new TrunkDimensions
+                {
+                    MaximumTrunkCapacitySeatsFolded = ToParameterValue(dto.TrunkDimensions.MaximumTrunkCapacitySeatsFolded, MeasurementUnit.Liter),
+                    MinimumTrunkCapacitySeatsUp = ToParameterValue(dto.TrunkDimensions.MinimumTrunkCapacitySeatsUp, MeasurementUnit.Liter),
+                }
         };
     }
 
@@ -152,45 +158,29 @@ internal sealed class CatalogSnapshotBuilder
         {
             Capacity = ToParameterValue(dto.Capacity, MeasurementUnit.CubicCentimeter),
             FuelType = dto.FuelType,
-            Architecture = new EngineArchitecture
-            {
-                CylinderCount = ToParameterValue(dto.Architecture.CylinderCount, MeasurementUnit.Count),
-                CylinderArrangement = dto.Architecture.CylinderArrangement,
-                ValveCount = ToParameterValue(dto.Architecture.ValveCount, MeasurementUnit.Count)
-            },
-            Power = new EnginePowerSpecs
-            {
-                Horsepower = ToParameterValue(dto.Power.Horsepower, MeasurementUnit.Horsepower),
-                AtRpm = ToParameterValue(dto.Power.AtRpm, MeasurementUnit.Rpm)
-            },
-            Torque = new EngineTorqueSpecs
-            {
-                MaxTorque = ToParameterValue(dto.Torque.MaxTorque, MeasurementUnit.NewtonMeter),
-                AtRpmFrom = ToParameterValue(dto.Torque.AtRpmFrom, MeasurementUnit.Rpm),
-                AtRpmTo = ToParameterValue(dto.Torque.AtRpmTo, MeasurementUnit.Rpm)
-            }
-        };
-    }
-
-    private static DrivetrainSpecs BuildDrivetrainSpecs(DrivetrainSpecsDto dto)
-    {
-        dto ??= new DrivetrainSpecsDto();
-
-        return new DrivetrainSpecs
-        {
-            TransmissionType = dto.TransmissionType,
-            Drivetrain = dto.Drivetrain
-        };
-    }
-
-    private static PerformanceSpecs BuildPerformanceSpecs(PerformanceSpecsDto dto)
-    {
-        dto ??= new PerformanceSpecsDto();
-
-        return new PerformanceSpecs
-        {
-            Acceleration0To100 = ToParameterValue(dto.Acceleration0To100, MeasurementUnit.Second),
-            TopSpeed = ToParameterValue(dto.TopSpeed, MeasurementUnit.KilometerPerHour)
+            Architecture = dto.Architecture is null
+                ? null
+                : new EngineArchitecture
+                {
+                    CylinderCount = ToParameterValue(dto.Architecture.CylinderCount, MeasurementUnit.Count),
+                    CylinderArrangement = dto.Architecture.CylinderArrangement,
+                    ValveCount = ToParameterValue(dto.Architecture.ValveCount, MeasurementUnit.Count)
+                },
+            Power = dto.Power is null
+                ? null
+                : new EnginePowerSpecs
+                {
+                    Horsepower = ToParameterValue(dto.Power.Horsepower, MeasurementUnit.Horsepower),
+                    AtRpm = ToParameterValue(dto.Power.AtRpm, MeasurementUnit.Rpm)
+                },
+            Torque = dto.Torque is null
+                ? null
+                : new EngineTorqueSpecs
+                {
+                    MaxTorque = ToParameterValue(dto.Torque.MaxTorque, MeasurementUnit.NewtonMeter),
+                    AtRpmFrom = ToParameterValue(dto.Torque.AtRpmFrom, MeasurementUnit.Rpm),
+                    AtRpmTo = ToParameterValue(dto.Torque.AtRpmTo, MeasurementUnit.Rpm)
+                }
         };
     }
 

@@ -74,5 +74,757 @@
         }
       }
     }
+  },
+  {
+    "vehicleBodyEngineId": 3,
+    "vehicleBodyId": 1,
+    "engineId": 3,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1595,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 101,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5600,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 145,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 3800,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 3800,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 4,
+    "vehicleBodyId": 1,
+    "engineId": 4,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1598,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 75,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4500,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 135,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 3200,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 3200,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 5,
+    "vehicleBodyId": 1,
+    "engineId": 5,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1595,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 102,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5600,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 148,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 3800,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 3800,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 6,
+    "vehicleBodyId": 1,
+    "engineId": 6,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1781,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 20,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 125,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 6000,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 170,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 4200,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 4200,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 7,
+    "vehicleBodyId": 1,
+    "engineId": 7,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1781,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 20,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 150,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5700,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 210,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1750,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1750,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 8,
+    "vehicleBodyId": 1,
+    "engineId": 8,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1781,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 20,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 180,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5500,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 235,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1950,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1950,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 9,
+    "vehicleBodyId": 1,
+    "engineId": 9,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1781,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 20,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 150,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5700,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 210,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1750,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1750,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 10,
+    "vehicleBodyId": 1,
+    "engineId": 10,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1984,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 115,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5200,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 170,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 2400,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 2400,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 11,
+    "vehicleBodyId": 1,
+    "engineId": 11,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": {
+        "value": 1984,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 115,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 5400,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 170,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 2400,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 2400,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 12,
+    "vehicleBodyId": 1,
+    "engineId": 12,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 68,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4200,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 133,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1800,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1800,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 13,
+    "vehicleBodyId": 1,
+    "engineId": 13,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 110,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4150,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 235,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1900,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1900,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 14,
+    "vehicleBodyId": 1,
+    "engineId": 14,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 130,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4000,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 310,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1900,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1900,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 15,
+    "vehicleBodyId": 1,
+    "engineId": 15,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 90,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4000,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 210,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1900,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1900,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 16,
+    "vehicleBodyId": 1,
+    "engineId": 16,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 101,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4000,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 240,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1900,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1900,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 17,
+    "vehicleBodyId": 1,
+    "engineId": 17,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 100,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4000,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 240,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1900,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1900,
+          "unit": "Rpm"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyEngineId": 18,
+    "vehicleBodyId": 1,
+    "engineId": 18,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": {
+        "value": 1896,
+        "unit": "CubicCentimeter"
+      },
+      "architecture": {
+        "cylinderCount": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "cylinderArrangement": "Inline",
+        "valveCount": {
+          "value": 8,
+          "unit": "Count"
+        }
+      },
+      "power": {
+        "horsepower": {
+          "value": 90,
+          "unit": "Horsepower"
+        },
+        "atRpm": {
+          "value": 4000,
+          "unit": "Rpm"
+        }
+      },
+      "torque": {
+        "maxTorque": {
+          "value": 210,
+          "unit": "NewtonMeter"
+        },
+        "atRpmFrom": {
+          "value": 1900,
+          "unit": "Rpm"
+        },
+        "atRpmTo": {
+          "value": 1900,
+          "unit": "Rpm"
+        }
+      }
+    }
   }
 ]

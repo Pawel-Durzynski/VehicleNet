@@ -144,11 +144,11 @@ internal sealed record VehicleBodyEngineDto
 
 internal sealed record BodySpecsDto
 {
-    public BodyBasicParametersDto BasicParameters { get; init; } = new();
+    public BodyBasicParametersDto? BasicParameters { get; init; }
 
-    public ExternalDimensionsDto ExternalDimensions { get; init; } = new();
+    public ExternalDimensionsDto? ExternalDimensions { get; init; }
 
-    public TrunkDimensionsDto TrunkDimensions { get; init; } = new();
+    public TrunkDimensionsDto? TrunkDimensions { get; init; }
 }
 
 internal sealed record BodyBasicParametersDto
@@ -188,11 +188,11 @@ internal sealed record EngineSpecsDto
 
     public FuelType FuelType { get; init; } = FuelType.Unknown;
 
-    public EngineArchitectureDto Architecture { get; init; } = new();
+    public EngineArchitectureDto? Architecture { get; init; }
 
-    public EnginePowerSpecsDto Power { get; init; } = new();
+    public EnginePowerSpecsDto? Power { get; init; }
 
-    public EngineTorqueSpecsDto Torque { get; init; } = new();
+    public EngineTorqueSpecsDto? Torque { get; init; }
 }
 
 internal sealed record EngineArchitectureDto
@@ -236,9 +236,9 @@ internal sealed record PerformanceSpecsDto
 
 internal sealed record EngineVariantSpecsDto
 {
-    public DrivetrainSpecsDto DrivetrainSpecs { get; init; } = new();
+    public DrivetrainSpecsDto? DrivetrainSpecs { get; init; }
 
-    public PerformanceSpecsDto PerformanceSpecs { get; init; } = new();
+    public PerformanceSpecsDto? PerformanceSpecs { get; init; }
 }
 
 internal sealed record VehicleBodyEngineVariantDto

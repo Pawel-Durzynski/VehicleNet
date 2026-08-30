@@ -111,26 +111,30 @@ public static class ServiceCollectionExtensions
             EngineVariantId = dto.EngineVariantId,
             EngineVariantSpecs = new EngineVariantSpecs
             {
-                DrivetrainSpecs = new DrivetrainSpecs
-                {
-                    TransmissionType = dto.EngineVariantSpecs.DrivetrainSpecs.TransmissionType,
-                    Drivetrain = dto.EngineVariantSpecs.DrivetrainSpecs.Drivetrain
-                },
-                PerformanceSpecs = new PerformanceSpecs
-                {
-                    Acceleration0To100 = dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100 is not null
-                        ? new ParameterValue(
-                            dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Value,
-                            dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Unit,
-                            dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.IsMissing)
-                        : ParameterValue.Missing(MeasurementUnit.Second),
-                    TopSpeed = dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed is not null
-                        ? new ParameterValue(
-                            dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Value,
-                            dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Unit,
-                            dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.IsMissing)
-                        : ParameterValue.Missing(MeasurementUnit.KilometerPerHour)
-                }
+                DrivetrainSpecs = dto.EngineVariantSpecs.DrivetrainSpecs is null
+                    ? null
+                    : new DrivetrainSpecs
+                    {
+                        TransmissionType = dto.EngineVariantSpecs.DrivetrainSpecs.TransmissionType,
+                        Drivetrain = dto.EngineVariantSpecs.DrivetrainSpecs.Drivetrain
+                    },
+                PerformanceSpecs = dto.EngineVariantSpecs.PerformanceSpecs is null
+                    ? null
+                    : new PerformanceSpecs
+                    {
+                        Acceleration0To100 = dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100 is not null
+                            ? new ParameterValue(
+                                dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Value,
+                                dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Unit,
+                                dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.IsMissing)
+                            : ParameterValue.Missing(MeasurementUnit.Second),
+                        TopSpeed = dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed is not null
+                            ? new ParameterValue(
+                                dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Value,
+                                dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Unit,
+                                dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.IsMissing)
+                            : ParameterValue.Missing(MeasurementUnit.KilometerPerHour)
+                    }
             },
             VehicleBodyEngine = bodyEngine,
             Generation = bodyEngine.Generation,

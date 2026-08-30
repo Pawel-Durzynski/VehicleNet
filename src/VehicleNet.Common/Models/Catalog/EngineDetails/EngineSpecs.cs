@@ -9,9 +9,9 @@ public record EngineSpecs
 
     public FuelType FuelType { get; init; } = FuelType.Unknown;
 
-    public required EngineArchitecture Architecture { get; init; }
+    public EngineArchitecture? Architecture { get; init; }
 
-    public required EnginePowerSpecs Power { get; init; }
+    public EnginePowerSpecs? Power { get; init; }
 
-    public required EngineTorqueSpecs Torque { get; init; }
+    public EngineTorqueSpecs? Torque { get; init; }
 }
