@@ -6,5 +6,13 @@
     "startYear": 1998,
     "endYear": 2010,
     "bodyType": "Wagon"
+  },
+  {
+    "id": 2,
+    "generationId": 1,
+    "name": "Hatchback",
+    "startYear": 1996,
+    "endYear": 2010,
+    "bodyType": "Hatchback"
   }
 ]

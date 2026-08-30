@@ -55,5 +55,62 @@
         }
       }
     }
+  },
+  {
+    "vehicleBodyId": 2,
+    "generationId": 1,
+    "versionId": 2,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "turningDiameter": {
+          "value": 10.4,
+          "unit": "Meter"
+        },
+        "turningRadius": {
+          "value": 5.2,
+          "unit": "Meter"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4511,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1731,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1429,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2512,
+          "unit": "Millimeter"
+        },
+        "groundClearance": {
+          "value": 125,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": {
+          "value": 1228,
+          "unit": "Liter"
+        },
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 528,
+          "unit": "Liter"
+        }
+      }
+    }
   }
 ]
