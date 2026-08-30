@@ -106,5 +106,101 @@
     "name": "1.9 TDI 4x4 90KM",
     "generationId": 1,
     "versionId": 1
+  },
+  {
+    "id": 19,
+    "name": "1.4 60KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 20,
+    "name": "1.4 MPI 75KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 21,
+    "name": "1.4 MPI 80KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 22,
+    "name": "1.6 101KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 23,
+    "name": "1.6 75KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 24,
+    "name": "1.6 MPI 102KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 25,
+    "name": "1.8 20V 125KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 26,
+    "name": "1.8 20V Turbo 150KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 27,
+    "name": "1.8 T 180KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 28,
+    "name": "1.8 T 4x4 150KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 29,
+    "name": "2.0 115KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 30,
+    "name": "1.9 SDI 68KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 31,
+    "name": "1.9 TDI 110KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 32,
+    "name": "1.9 TDI 130KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 33,
+    "name": "1.9 TDI 90KM",
+    "generationId": 1,
+    "versionId": 2
+  },
+  {
+    "id": 34,
+    "name": "1.9 TDI 101KM",
+    "generationId": 1,
+    "versionId": 2
   }
 ]
