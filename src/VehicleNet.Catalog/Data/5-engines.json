@@ -202,5 +202,89 @@
     "name": "1.9 TDI 101KM",
     "generationId": 1,
     "versionId": 2
+  },
+  {
+    "id": 35,
+    "name": "1.2 TSI 105KM 77kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 36,
+    "name": "1.4 MPI 80KM 59kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 37,
+    "name": "1.4 TSI 122KM 90kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 38,
+    "name": "1.6 i 16V FSI 115KM 85kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 39,
+    "name": "1.6 MPI 102KM 75kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 40,
+    "name": "1.8 TSI 160KM 118kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 41,
+    "name": "2.0 i 16V FSI 150KM 110kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 42,
+    "name": "2.0 TFSI 200KM 147kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 43,
+    "name": "1.6 TDI CR DPF 105KM 77kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 44,
+    "name": "1.9 TDI PD 105KM 77kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 45,
+    "name": "2.0 TDI CR DPF 140KM 103kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 46,
+    "name": "2.0 TDI CR DPF 170KM 125kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 47,
+    "name": "2.0 TDI CR DPF 110KM 81kW",
+    "generationId": 2,
+    "versionId": 3
+  },
+  {
+    "id": 48,
+    "name": "2.0 TDI PD 140KM 103kW",
+    "generationId": 2,
+    "versionId": 3
   }
 ]

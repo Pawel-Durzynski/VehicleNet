@@ -14,5 +14,53 @@
     "startYear": 1996,
     "endYear": 2010,
     "bodyType": "Hatchback"
+  },
+  {
+    "id": 3,
+    "generationId": 2,
+    "name": "Kombi",
+    "startYear": 2004,
+    "endYear": 2012,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 4,
+    "generationId": 2,
+    "name": "Scout",
+    "startYear": 2006,
+    "endYear": 2011,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 5,
+    "generationId": 2,
+    "name": "Hatchback",
+    "startYear": 2004,
+    "endYear": 2012,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 6,
+    "generationId": 2,
+    "name": "Kombi Facefiting",
+    "startYear": 2008,
+    "endYear": 2013,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 7,
+    "generationId": 2,
+    "name": "Hatchback Facefiting",
+    "startYear": 2008,
+    "endYear": 2013,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 8,
+    "generationId": 2,
+    "name": "Scout Facefiting",
+    "startYear": 2008,
+    "endYear": 2011,
+    "bodyType": "Wagon"
   }
 ]

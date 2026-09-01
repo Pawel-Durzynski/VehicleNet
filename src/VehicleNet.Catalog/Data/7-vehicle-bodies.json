@@ -112,5 +112,303 @@
         }
       }
     }
+  },
+  {
+    "vehicleBodyId": 3,
+    "generationId": 2,
+    "versionId": 3,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "turningDiameter": {
+          "value": 10.8,
+          "unit": "Meter"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4572,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1769,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1468,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2578,
+          "unit": "Millimeter"
+        },
+        "groundClearance": {
+          "value": 140,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": {
+          "value": 1620,
+          "unit": "Liter"
+        },
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 580,
+          "unit": "Liter"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyId": 4,
+    "generationId": 2,
+    "versionId": 4,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "turningDiameter": {
+          "value": 10.8,
+          "unit": "Meter"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4581,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1784,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1533,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2578,
+          "unit": "Millimeter"
+        },
+        "groundClearance": {
+          "value": 180,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": {
+          "value": 1620,
+          "unit": "Liter"
+        },
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 580,
+          "unit": "Liter"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyId": 5,
+    "generationId": 2,
+    "versionId": 5,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "turningDiameter": {
+          "value": 10.8,
+          "unit": "Meter"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4572,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1769,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1462,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2578,
+          "unit": "Millimeter"
+        },
+        "groundClearance": {
+          "value": 140,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": {
+          "value": 1455,
+          "unit": "Liter"
+        },
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 585,
+          "unit": "Liter"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyId": 6,
+    "generationId": 2,
+    "versionId": 6,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "turningDiameter": {
+          "value": 10.8,
+          "unit": "Meter"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4569,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1769,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1468,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2578,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 580,
+          "unit": "Liter"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyId": 7,
+    "generationId": 2,
+    "versionId": 7,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 4,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "turningDiameter": {
+          "value": 10.8,
+          "unit": "Meter"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4569,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1769,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1462,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2578,
+          "unit": "Millimeter"
+        },
+        "groundClearance": {
+          "value": 140,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 560,
+          "unit": "Liter"
+        }
+      }
+    }
+  },
+  {
+    "vehicleBodyId": 8,
+    "generationId": 2,
+    "versionId": 8,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": {
+          "value": 5,
+          "unit": "Count"
+        },
+        "numberOfSeats": {
+          "value": 5,
+          "unit": "Count"
+        }
+      },
+      "externalDimensions": {
+        "length": {
+          "value": 4584,
+          "unit": "Millimeter"
+        },
+        "width": {
+          "value": 1769,
+          "unit": "Millimeter"
+        },
+        "height": {
+          "value": 1533,
+          "unit": "Millimeter"
+        },
+        "wheelbase": {
+          "value": 2578,
+          "unit": "Millimeter"
+        },
+        "groundClearance": {
+          "value": 170,
+          "unit": "Millimeter"
+        }
+      },
+      "trunkDimensions": {
+        "minimumTrunkCapacitySeatsUp": {
+          "value": 605,
+          "unit": "Liter"
+        }
+      }
+    }
   }
 ]
