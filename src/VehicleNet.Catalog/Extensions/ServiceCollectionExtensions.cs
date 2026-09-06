@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
@@ -122,18 +123,8 @@ public static class ServiceCollectionExtensions
                     ? null
                     : new PerformanceSpecs
                     {
-                        Acceleration0To100 = dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100 is not null
-                            ? new ParameterValue(
-                                dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Value,
-                                dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Unit,
-                                dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.IsMissing)
-                            : ParameterValue.Missing(MeasurementUnit.Second),
-                        TopSpeed = dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed is not null
-                            ? new ParameterValue(
-                                dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Value,
-                                dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Unit,
-                                dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.IsMissing)
-                            : ParameterValue.Missing(MeasurementUnit.KilometerPerHour)
+                        Acceleration0To100 = ToParameterValue(dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100, MeasurementUnit.Second),
+                        TopSpeed = ToParameterValue(dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed, MeasurementUnit.KilometerPerHour)
                     }
             },
             VehicleBodyEngine = bodyEngine,
@@ -141,6 +132,44 @@ public static class ServiceCollectionExtensions
             Version = bodyEngine.Version,
             EngineVariant = engineVariant
         };
+    }
+
+    private static ParameterValue ToParameterValue(JsonElement? element, MeasurementUnit defaultUnit)
+    {
+        if (!element.HasValue)
+        {
+            return ParameterValue.Missing(defaultUnit);
+        }
+
+        var value = element.Value;
+
+        if (value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+        {
+            return ParameterValue.Missing(defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.Number)
+        {
+            return ParameterValue.Create(value.GetDecimal(), defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.String)
+        {
+            var raw = value.GetString();
+            if (string.IsNullOrWhiteSpace(raw))
+            {
+                return ParameterValue.Missing(defaultUnit);
+            }
+
+            if (!decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var parsedValue))
+            {
+                throw new InvalidOperationException($"Could not parse parameter value '{raw}'.");
+            }
+
+            return ParameterValue.Create(parsedValue, defaultUnit);
+        }
+
+        throw new InvalidOperationException($"Unsupported parameter value token kind '{value.ValueKind}'.");
     }
 
     private static IReadOnlyList<T> LoadResource<T>(

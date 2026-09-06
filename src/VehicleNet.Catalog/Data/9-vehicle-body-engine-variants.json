@@ -9,14 +9,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 15.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 171,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "15.5",
+        "topSpeed": "171"
       }
     }
   },
@@ -29,14 +23,8 @@
         "transmissionType": "Manual"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 172,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.4",
+        "topSpeed": "172"
       }
     }
   },
@@ -50,14 +38,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.4",
+        "topSpeed": "190"
       }
     }
   },
@@ -71,14 +53,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 15.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 167,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "15.0",
+        "topSpeed": "167"
       }
     }
   },
@@ -92,14 +68,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 188,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.4",
+        "topSpeed": "188"
       }
     }
   },
@@ -113,14 +83,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 200,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.6",
+        "topSpeed": "200"
       }
     }
   },
@@ -134,14 +98,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 219,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.5",
+        "topSpeed": "219"
       }
     }
   },
@@ -155,14 +113,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 231,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.0",
+        "topSpeed": "231"
       }
     }
   },
@@ -176,14 +128,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 211,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.3",
+        "topSpeed": "211"
       }
     }
   },
@@ -197,14 +143,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 194,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.9",
+        "topSpeed": "194"
       }
     }
   },
@@ -218,14 +158,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 193,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.8",
+        "topSpeed": "193"
       }
     }
   },
@@ -239,14 +173,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 19.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 163,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "19.4",
+        "topSpeed": "163"
       }
     }
   },
@@ -260,14 +188,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 192,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.5",
+        "topSpeed": "192"
       }
     }
   },
@@ -281,14 +203,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 207,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "207"
       }
     }
   },
@@ -302,14 +218,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 13.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 182,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "13.7",
+        "topSpeed": "182"
       }
     }
   },
@@ -323,14 +233,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 189,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.9",
+        "topSpeed": "189"
       }
     }
   },
@@ -344,14 +248,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 13.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 184,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "13.4",
+        "topSpeed": "184"
       }
     }
   },
@@ -365,14 +263,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 13.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 182,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "13.3",
+        "topSpeed": "182"
       }
     }
   },
@@ -386,14 +278,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 18.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 156,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "18.0",
+        "topSpeed": "156"
       }
     }
   },
@@ -407,14 +293,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 15.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 171,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "15.3",
+        "topSpeed": "171"
       }
     }
   },
@@ -428,14 +308,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 174,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.3",
+        "topSpeed": "174"
       }
     }
   },
@@ -449,14 +323,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 187,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.7",
+        "topSpeed": "187"
       }
     }
   },
@@ -470,14 +338,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 170,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.7",
+        "topSpeed": "170"
       }
     }
   },
@@ -491,14 +353,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.3",
+        "topSpeed": "190"
       }
     }
   },
@@ -512,14 +368,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 196,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.6",
+        "topSpeed": "196"
       }
     }
   },
@@ -533,14 +383,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 219,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.5",
+        "topSpeed": "219"
       }
     }
   },
@@ -554,14 +398,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 235,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.9",
+        "topSpeed": "235"
       }
     }
   },
@@ -575,14 +413,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 211,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.1",
+        "topSpeed": "211"
       }
     }
   },
@@ -596,14 +428,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 198,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.8",
+        "topSpeed": "198"
       }
     }
   },
@@ -617,14 +443,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 19.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 161,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "19.2",
+        "topSpeed": "161"
       }
     }
   },
@@ -638,14 +458,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 192,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.0",
+        "topSpeed": "192"
       }
     }
   },
@@ -659,14 +473,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 207,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "207"
       }
     }
   },
@@ -680,14 +488,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 13.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 182,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "13.7",
+        "topSpeed": "182"
       }
     }
   },
@@ -701,14 +503,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.8",
+        "topSpeed": "190"
       }
     }
   },
@@ -722,14 +518,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 191,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.9",
+        "topSpeed": "191"
       }
     }
   },
@@ -743,14 +533,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 191,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.9",
+        "topSpeed": "191"
       }
     }
   },
@@ -764,14 +548,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 173,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.2",
+        "topSpeed": "173"
       }
     }
   },
@@ -785,14 +563,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 215,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "215"
       }
     }
   },
@@ -806,14 +578,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 201,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "201"
       }
     }
   },
@@ -827,14 +593,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 198,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.4",
+        "topSpeed": "198"
       }
     }
   },
@@ -848,14 +608,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 188,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.4",
+        "topSpeed": "188"
       }
     }
   },
@@ -869,14 +623,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 222,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.9",
+        "topSpeed": "222"
       }
     }
   },
@@ -890,14 +638,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 218,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.1",
+        "topSpeed": "218"
       }
     }
   },
@@ -911,14 +653,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 222,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.9",
+        "topSpeed": "222"
       }
     }
   },
@@ -932,14 +668,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 212,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.4",
+        "topSpeed": "212"
       }
     }
   },
@@ -953,14 +683,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 239,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.5",
+        "topSpeed": "239"
       }
     }
   },
@@ -974,14 +698,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 237,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.5",
+        "topSpeed": "237"
       }
     }
   },
@@ -995,14 +713,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 189,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.9",
+        "topSpeed": "189"
       }
     }
   },
@@ -1016,14 +728,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.9",
+        "topSpeed": "190"
       }
     }
   },
@@ -1037,14 +743,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 189,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.1",
+        "topSpeed": "189"
       }
     }
   },
@@ -1058,14 +758,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 191,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.9",
+        "topSpeed": "191"
       }
     }
   },
@@ -1079,14 +773,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 181,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.9",
+        "topSpeed": "181"
       }
     }
   },
@@ -1100,14 +788,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 189,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.3",
+        "topSpeed": "189"
       }
     }
   },
@@ -1121,14 +803,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 210,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.6",
+        "topSpeed": "210"
       }
     }
   },
@@ -1142,14 +818,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 204,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "204"
       }
     }
   },
@@ -1163,14 +833,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 208,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "208"
       }
     }
   },
@@ -1184,14 +848,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 225,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.5",
+        "topSpeed": "225"
       }
     }
   },
@@ -1205,14 +863,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 223,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.5",
+        "topSpeed": "223"
       }
     }
   },
@@ -1226,14 +878,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 194,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.1",
+        "topSpeed": "194"
       }
     }
   },
@@ -1247,14 +893,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 193,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.2",
+        "topSpeed": "193"
       }
     }
   },
@@ -1268,14 +908,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 208,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "208"
       }
     }
   },
@@ -1289,14 +923,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 211,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.1",
+        "topSpeed": "211"
       }
     }
   },
@@ -1310,14 +938,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 200,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.0",
+        "topSpeed": "200"
       }
     }
   },
@@ -1331,14 +953,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 199,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "199"
       }
     }
   },
@@ -1352,14 +968,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 197,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.1",
+        "topSpeed": "197"
       }
     }
   },
@@ -1373,14 +983,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 192,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.8",
+        "topSpeed": "192"
       }
     }
   },
@@ -1394,14 +998,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 192,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.8",
+        "topSpeed": "192"
       }
     }
   },
@@ -1415,14 +1013,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 173,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.2",
+        "topSpeed": "173"
       }
     }
   },
@@ -1436,14 +1028,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 203,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "203"
       }
     }
   },
@@ -1457,14 +1043,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 202,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "202"
       }
     }
   },
@@ -1478,14 +1058,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 198,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.2",
+        "topSpeed": "198"
       }
     }
   },
@@ -1499,14 +1073,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 194,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.4",
+        "topSpeed": "194"
       }
     }
   },
@@ -1520,14 +1088,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.3",
+        "topSpeed": "190"
       }
     }
   },
@@ -1541,14 +1103,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 184,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.1",
+        "topSpeed": "184"
       }
     }
   },
@@ -1562,14 +1118,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 223,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.8",
+        "topSpeed": "223"
       }
     }
   },
@@ -1583,14 +1133,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 223,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.8",
+        "topSpeed": "223"
       }
     }
   },
@@ -1604,14 +1148,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 213,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.3",
+        "topSpeed": "213"
       }
     }
   },
@@ -1625,14 +1163,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 210,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.1",
+        "topSpeed": "210"
       }
     }
   },
@@ -1646,14 +1178,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 242,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.3",
+        "topSpeed": "242"
       }
     }
   },
@@ -1667,14 +1193,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 240,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.3",
+        "topSpeed": "240"
       }
     }
   },
@@ -1688,14 +1208,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.8",
+        "topSpeed": "190"
       }
     }
   },
@@ -1709,14 +1223,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.0",
+        "topSpeed": "190"
       }
     }
   },
@@ -1730,14 +1238,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 192,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.8",
+        "topSpeed": "192"
       }
     }
   },
@@ -1751,14 +1253,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 181,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.9",
+        "topSpeed": "181"
       }
     }
   },
@@ -1772,14 +1268,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 189,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.2",
+        "topSpeed": "189"
       }
     }
   },
@@ -1793,14 +1283,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 211,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.5",
+        "topSpeed": "211"
       }
     }
   },
@@ -1814,14 +1298,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 199,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.6",
+        "topSpeed": "199"
       }
     }
   },
@@ -1835,14 +1313,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 209,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.6",
+        "topSpeed": "209"
       }
     }
   },
@@ -1856,14 +1328,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 226,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.4",
+        "topSpeed": "226"
       }
     }
   },
@@ -1877,14 +1343,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 224,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.4",
+        "topSpeed": "224"
       }
     }
   },
@@ -1898,14 +1358,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.0,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 195,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.0",
+        "topSpeed": "195"
       }
     }
   },
@@ -1919,14 +1373,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 194,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.1",
+        "topSpeed": "194"
       }
     }
   },
@@ -1940,14 +1388,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 191,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.9",
+        "topSpeed": "191"
       }
     }
   },
@@ -1961,14 +1403,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 10.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 191,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "10.9",
+        "topSpeed": "191"
       }
     }
   },
@@ -1982,14 +1418,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 173,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.4",
+        "topSpeed": "173"
       }
     }
   },
@@ -2003,14 +1433,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 202,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "202"
       }
     }
   },
@@ -2024,14 +1448,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 201,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "201"
       }
     }
   },
@@ -2045,14 +1463,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 188,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.4",
+        "topSpeed": "188"
       }
     }
   },
@@ -2066,14 +1478,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 14.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 184,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "14.2",
+        "topSpeed": "184"
       }
     }
   },
@@ -2087,14 +1493,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 188,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.4",
+        "topSpeed": "188"
       }
     }
   },
@@ -2108,14 +1508,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 222,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.9",
+        "topSpeed": "222"
       }
     }
   },
@@ -2129,14 +1523,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 218,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.1",
+        "topSpeed": "218"
       }
     }
   },
@@ -2150,14 +1538,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 222,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.9",
+        "topSpeed": "222"
       }
     }
   },
@@ -2171,14 +1553,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 218,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.2",
+        "topSpeed": "218"
       }
     }
   },
@@ -2192,14 +1568,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 239,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.3",
+        "topSpeed": "239"
       }
     }
   },
@@ -2213,14 +1583,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 7.3,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 237,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "7.3",
+        "topSpeed": "237"
       }
     }
   },
@@ -2234,14 +1598,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 188,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.9",
+        "topSpeed": "188"
       }
     }
   },
@@ -2255,14 +1613,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.4",
+        "topSpeed": "190"
       }
     }
   },
@@ -2276,14 +1628,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.2,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 186,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.2",
+        "topSpeed": "186"
       }
     }
   },
@@ -2297,14 +1643,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.5,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 190,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.5",
+        "topSpeed": "190"
       }
     }
   },
@@ -2318,14 +1658,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 191,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.9",
+        "topSpeed": "191"
       }
     }
   },
@@ -2339,14 +1673,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 12.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 181,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "12.9",
+        "topSpeed": "181"
       }
     }
   },
@@ -2360,14 +1688,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 194,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.1",
+        "topSpeed": "194"
       }
     }
   },
@@ -2381,14 +1703,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.1,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 194,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.1",
+        "topSpeed": "194"
       }
     }
   },
@@ -2402,14 +1718,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 11.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 189,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "11.6",
+        "topSpeed": "189"
       }
     }
   },
@@ -2423,14 +1733,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.6,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 210,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.6",
+        "topSpeed": "210"
       }
     }
   },
@@ -2444,14 +1748,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.8,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 204,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.8",
+        "topSpeed": "204"
       }
     }
   },
@@ -2465,14 +1763,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 208,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "208"
       }
     }
   },
@@ -2486,14 +1778,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 203,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.9",
+        "topSpeed": "203"
       }
     }
   },
@@ -2507,14 +1793,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 225,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.4",
+        "topSpeed": "225"
       }
     }
   },
@@ -2528,14 +1808,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 8.4,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 223,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "8.4",
+        "topSpeed": "223"
       }
     }
   },
@@ -2549,14 +1823,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 207,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "207"
       }
     }
   },
@@ -2570,14 +1838,8 @@
         "drivetrain": "AWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.9,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 199,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.9",
+        "topSpeed": "199"
       }
     }
   },
@@ -2591,14 +1853,8 @@
         "drivetrain": "FWD"
       },
       "performanceSpecs": {
-        "acceleration0To100": {
-          "value": 9.7,
-          "unit": "Second"
-        },
-        "topSpeed": {
-          "value": 208,
-          "unit": "KilometerPerHour"
-        }
+        "acceleration0To100": "9.7",
+        "topSpeed": "208"
       }
     }
   }

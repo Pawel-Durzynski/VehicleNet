@@ -1,5 +1,5 @@
+using System.Text.Json;
 using VehicleNet.Common.Enums;
-using VehicleNet.Common.Models.Units;
 
 namespace VehicleNet.Catalog.Data.Json;
 
@@ -153,38 +153,38 @@ internal sealed record BodySpecsDto
 
 internal sealed record BodyBasicParametersDto
 {
-    public ParameterValueDto? NumberOfDoors { get; init; }
+    public JsonElement? NumberOfDoors { get; init; }
 
-    public ParameterValueDto? NumberOfSeats { get; init; }
+    public JsonElement? NumberOfSeats { get; init; }
 
-    public ParameterValueDto? TurningDiameter { get; init; }
+    public JsonElement? TurningDiameter { get; init; }
 
-    public ParameterValueDto? TurningRadius { get; init; }
+    public JsonElement? TurningRadius { get; init; }
 }
 
 internal sealed record ExternalDimensionsDto
 {
-    public ParameterValueDto? Length { get; init; }
+    public JsonElement? Length { get; init; }
 
-    public ParameterValueDto? Width { get; init; }
+    public JsonElement? Width { get; init; }
 
-    public ParameterValueDto? Height { get; init; }
+    public JsonElement? Height { get; init; }
 
-    public ParameterValueDto? Wheelbase { get; init; }
+    public JsonElement? Wheelbase { get; init; }
 
-    public ParameterValueDto? GroundClearance { get; init; }
+    public JsonElement? GroundClearance { get; init; }
 }
 
 internal sealed record TrunkDimensionsDto
 {
-    public ParameterValueDto? MaximumTrunkCapacitySeatsFolded { get; init; }
+    public JsonElement? MaximumTrunkCapacitySeatsFolded { get; init; }
 
-    public ParameterValueDto? MinimumTrunkCapacitySeatsUp { get; init; }
+    public JsonElement? MinimumTrunkCapacitySeatsUp { get; init; }
 }
 
 internal sealed record EngineSpecsDto
 {
-    public ParameterValueDto? Capacity { get; init; }
+    public JsonElement? Capacity { get; init; }
 
     public FuelType FuelType { get; init; } = FuelType.Unknown;
 
@@ -197,27 +197,27 @@ internal sealed record EngineSpecsDto
 
 internal sealed record EngineArchitectureDto
 {
-    public ParameterValueDto? CylinderCount { get; init; }
+    public JsonElement? CylinderCount { get; init; }
 
     public string CylinderArrangement { get; init; } = string.Empty;
 
-    public ParameterValueDto? ValveCount { get; init; }
+    public JsonElement? ValveCount { get; init; }
 }
 
 internal sealed record EnginePowerSpecsDto
 {
-    public ParameterValueDto? Horsepower { get; init; }
+    public JsonElement? Horsepower { get; init; }
 
-    public ParameterValueDto? At { get; init; }
+    public JsonElement? At { get; init; }
 }
 
 internal sealed record EngineTorqueSpecsDto
 {
-    public ParameterValueDto? MaxTorque { get; init; }
+    public JsonElement? MaxTorque { get; init; }
 
-    public ParameterValueDto? From { get; init; }
+    public JsonElement? From { get; init; }
 
-    public ParameterValueDto? To { get; init; }
+    public JsonElement? To { get; init; }
 }
 
 internal sealed record DrivetrainSpecsDto
@@ -229,9 +229,9 @@ internal sealed record DrivetrainSpecsDto
 
 internal sealed record PerformanceSpecsDto
 {
-    public ParameterValueDto? Acceleration0To100 { get; init; }
+    public JsonElement? Acceleration0To100 { get; init; }
 
-    public ParameterValueDto? TopSpeed { get; init; }
+    public JsonElement? TopSpeed { get; init; }
 }
 
 internal sealed record EngineVariantSpecsDto
@@ -252,11 +252,3 @@ internal sealed record VehicleBodyEngineVariantDto
     public EngineVariantSpecsDto EngineVariantSpecs { get; init; } = new();
 }
 
-internal sealed record ParameterValueDto
-{
-    public decimal? Value { get; init; }
-
-    public MeasurementUnit Unit { get; init; } = MeasurementUnit.None;
-
-    public bool IsMissing { get; init; }
-}

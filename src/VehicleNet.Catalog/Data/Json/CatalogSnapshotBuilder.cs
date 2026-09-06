@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Text.Json;
 using VehicleNet.Common.Models.Catalog;
 using VehicleNet.Common.Models.Catalog.BodyDetails;
 using VehicleNet.Common.Models.Catalog.EngineDetails;
@@ -184,16 +186,42 @@ internal sealed class CatalogSnapshotBuilder
         };
     }
 
-    private static ParameterValue ToParameterValue(ParameterValueDto? dto, MeasurementUnit defaultUnit)
+    private static ParameterValue ToParameterValue(JsonElement? dto, MeasurementUnit defaultUnit)
     {
-        if (dto is null)
+        if (!dto.HasValue)
         {
             return ParameterValue.Missing(defaultUnit);
         }
 
-        return dto.IsMissing || !dto.Value.HasValue
-            ? ParameterValue.Missing(dto.Unit == MeasurementUnit.None ? defaultUnit : dto.Unit)
-            : ParameterValue.Create(dto.Value.Value, dto.Unit == MeasurementUnit.None ? defaultUnit : dto.Unit);
+        var value = dto.Value;
+
+        if (value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+        {
+            return ParameterValue.Missing(defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.Number)
+        {
+            return ParameterValue.Create(value.GetDecimal(), defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.String)
+        {
+            var raw = value.GetString();
+            if (string.IsNullOrWhiteSpace(raw))
+            {
+                return ParameterValue.Missing(defaultUnit);
+            }
+
+            if (!decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var parsedValue))
+            {
+                throw new InvalidOperationException($"Could not parse parameter value '{raw}'.");
+            }
+
+            return ParameterValue.Create(parsedValue, defaultUnit);
+        }
+
+        throw new InvalidOperationException($"Unsupported parameter value token kind '{value.ValueKind}'.");
     }
 
     private static TTarget GetRequired<TTarget>(IReadOnlyDictionary<int, TTarget> items, int id, string itemName, string owner)

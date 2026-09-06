@@ -5,54 +5,21 @@
     "vId": 1,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.8,
-          "unit": "Meter"
-        },
-        "turningRadius": {
-          "value": 5.4,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.8",
+        "turningRadius": "5.4"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4511,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1731,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1448,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2512,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 164,
-          "unit": "Millimeter"
-        }
+        "length": "4511",
+        "width": "1731",
+        "height": "1448",
+        "wheelbase": "2512",
+        "groundClearance": "164"
       },
       "trunkDimensions": {
-        "maximumTrunkCapacitySeatsFolded": {
-          "value": 1412,
-          "unit": "Liter"
-        },
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 548,
-          "unit": "Liter"
-        }
+        "maximumTrunkCapacitySeatsFolded": "1412",
+        "minimumTrunkCapacitySeatsUp": "548"
       }
     }
   },
@@ -62,54 +29,21 @@
     "vId": 2,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.4,
-          "unit": "Meter"
-        },
-        "turningRadius": {
-          "value": 5.2,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.4",
+        "turningRadius": "5.2"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4511,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1731,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1429,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2512,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 125,
-          "unit": "Millimeter"
-        }
+        "length": "4511",
+        "width": "1731",
+        "height": "1429",
+        "wheelbase": "2512",
+        "groundClearance": "125"
       },
       "trunkDimensions": {
-        "maximumTrunkCapacitySeatsFolded": {
-          "value": 1228,
-          "unit": "Liter"
-        },
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 528,
-          "unit": "Liter"
-        }
+        "maximumTrunkCapacitySeatsFolded": "1228",
+        "minimumTrunkCapacitySeatsUp": "528"
       }
     }
   },
@@ -119,50 +53,20 @@
     "vId": 3,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.8,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.8"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4572,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1769,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1468,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2578,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 140,
-          "unit": "Millimeter"
-        }
+        "length": "4572",
+        "width": "1769",
+        "height": "1468",
+        "wheelbase": "2578",
+        "groundClearance": "140"
       },
       "trunkDimensions": {
-        "maximumTrunkCapacitySeatsFolded": {
-          "value": 1620,
-          "unit": "Liter"
-        },
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 580,
-          "unit": "Liter"
-        }
+        "maximumTrunkCapacitySeatsFolded": "1620",
+        "minimumTrunkCapacitySeatsUp": "580"
       }
     }
   },
@@ -172,50 +76,20 @@
     "vId": 4,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.8,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.8"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4581,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1784,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1533,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2578,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 180,
-          "unit": "Millimeter"
-        }
+        "length": "4581",
+        "width": "1784",
+        "height": "1533",
+        "wheelbase": "2578",
+        "groundClearance": "180"
       },
       "trunkDimensions": {
-        "maximumTrunkCapacitySeatsFolded": {
-          "value": 1620,
-          "unit": "Liter"
-        },
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 580,
-          "unit": "Liter"
-        }
+        "maximumTrunkCapacitySeatsFolded": "1620",
+        "minimumTrunkCapacitySeatsUp": "580"
       }
     }
   },
@@ -225,50 +99,20 @@
     "vId": 5,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.8,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.8"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4572,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1769,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1462,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2578,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 140,
-          "unit": "Millimeter"
-        }
+        "length": "4572",
+        "width": "1769",
+        "height": "1462",
+        "wheelbase": "2578",
+        "groundClearance": "140"
       },
       "trunkDimensions": {
-        "maximumTrunkCapacitySeatsFolded": {
-          "value": 1455,
-          "unit": "Liter"
-        },
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 585,
-          "unit": "Liter"
-        }
+        "maximumTrunkCapacitySeatsFolded": "1455",
+        "minimumTrunkCapacitySeatsUp": "585"
       }
     }
   },
@@ -278,42 +122,18 @@
     "vId": 6,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.8,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.8"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4569,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1769,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1468,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2578,
-          "unit": "Millimeter"
-        }
+        "length": "4569",
+        "width": "1769",
+        "height": "1468",
+        "wheelbase": "2578"
       },
       "trunkDimensions": {
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 580,
-          "unit": "Liter"
-        }
+        "minimumTrunkCapacitySeatsUp": "580"
       }
     }
   },
@@ -323,46 +143,19 @@
     "vId": 7,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 4,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "turningDiameter": {
-          "value": 10.8,
-          "unit": "Meter"
-        }
+        "numberOfDoors": "4",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.8"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4569,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1769,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1462,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2578,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 140,
-          "unit": "Millimeter"
-        }
+        "length": "4569",
+        "width": "1769",
+        "height": "1462",
+        "wheelbase": "2578",
+        "groundClearance": "140"
       },
       "trunkDimensions": {
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 560,
-          "unit": "Liter"
-        }
+        "minimumTrunkCapacitySeatsUp": "560"
       }
     }
   },
@@ -372,42 +165,18 @@
     "vId": 8,
     "bodySpecs": {
       "basicParameters": {
-        "numberOfDoors": {
-          "value": 5,
-          "unit": "Count"
-        },
-        "numberOfSeats": {
-          "value": 5,
-          "unit": "Count"
-        }
+        "numberOfDoors": "5",
+        "numberOfSeats": "5"
       },
       "externalDimensions": {
-        "length": {
-          "value": 4584,
-          "unit": "Millimeter"
-        },
-        "width": {
-          "value": 1769,
-          "unit": "Millimeter"
-        },
-        "height": {
-          "value": 1533,
-          "unit": "Millimeter"
-        },
-        "wheelbase": {
-          "value": 2578,
-          "unit": "Millimeter"
-        },
-        "groundClearance": {
-          "value": 170,
-          "unit": "Millimeter"
-        }
+        "length": "4584",
+        "width": "1769",
+        "height": "1533",
+        "wheelbase": "2578",
+        "groundClearance": "170"
       },
       "trunkDimensions": {
-        "minimumTrunkCapacitySeatsUp": {
-          "value": 605,
-          "unit": "Liter"
-        }
+        "minimumTrunkCapacitySeatsUp": "605"
       }
     }
   }
