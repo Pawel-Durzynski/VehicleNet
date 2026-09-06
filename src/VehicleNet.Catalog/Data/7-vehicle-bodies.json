@@ -1,8 +1,8 @@
 [
   {
-    "vehicleBodyId": 1,
-    "generationId": 1,
-    "versionId": 1,
+    "id": 1,
+    "gId": 1,
+    "vId": 1,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -57,9 +57,9 @@
     }
   },
   {
-    "vehicleBodyId": 2,
-    "generationId": 1,
-    "versionId": 2,
+    "id": 2,
+    "gId": 1,
+    "vId": 2,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -114,9 +114,9 @@
     }
   },
   {
-    "vehicleBodyId": 3,
-    "generationId": 2,
-    "versionId": 3,
+    "id": 3,
+    "gId": 2,
+    "vId": 3,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -167,9 +167,9 @@
     }
   },
   {
-    "vehicleBodyId": 4,
-    "generationId": 2,
-    "versionId": 4,
+    "id": 4,
+    "gId": 2,
+    "vId": 4,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -220,9 +220,9 @@
     }
   },
   {
-    "vehicleBodyId": 5,
-    "generationId": 2,
-    "versionId": 5,
+    "id": 5,
+    "gId": 2,
+    "vId": 5,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -273,9 +273,9 @@
     }
   },
   {
-    "vehicleBodyId": 6,
-    "generationId": 2,
-    "versionId": 6,
+    "id": 6,
+    "gId": 2,
+    "vId": 6,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -318,9 +318,9 @@
     }
   },
   {
-    "vehicleBodyId": 7,
-    "generationId": 2,
-    "versionId": 7,
+    "id": 7,
+    "gId": 2,
+    "vId": 7,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {
@@ -367,9 +367,9 @@
     }
   },
   {
-    "vehicleBodyId": 8,
-    "generationId": 2,
-    "versionId": 8,
+    "id": 8,
+    "gId": 2,
+    "vId": 8,
     "bodySpecs": {
       "basicParameters": {
         "numberOfDoors": {

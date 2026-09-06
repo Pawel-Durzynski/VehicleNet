@@ -30,10 +30,10 @@ internal sealed record CatalogJsonDocument
         ValidateUniqueIds(Generations, g => g.Id, "Generation");
         ValidateUniqueIds(Versions, v => v.Id, "Version");
         ValidateUniqueIds(Engines, e => e.Id, "Engine");
-        ValidateUniqueIds(EngineVariants, ev => ev.EngineVariantId, "EngineVariant");
-        ValidateUniqueIds(VehicleBodies, vb => vb.VehicleBodyId, "VehicleBody");
-        ValidateUniqueIds(VehicleBodyEngines, vbe => vbe.VehicleBodyEngineId, "VehicleBodyEngine");
-        ValidateUniqueIds(VehicleBodyEngineVariants, vbev => vbev.VehicleBodyEngineVariantId, "VehicleBodyEngineVariant");
+        ValidateUniqueIds(EngineVariants, ev => ev.Id, "EngineVariant");
+        ValidateUniqueIds(VehicleBodies, vb => vb.Id, "VehicleBody");
+        ValidateUniqueIds(VehicleBodyEngines, vbe => vbe.Id, "VehicleBodyEngine");
+        ValidateUniqueIds(VehicleBodyEngineVariants, vbev => vbev.Id, "VehicleBodyEngineVariant");
     }
 
     private static void ValidateUniqueIds<T>(IReadOnlyList<T> items, Func<T, int> idSelector, string entityName)
@@ -89,7 +89,7 @@ internal sealed record VersionDto
 {
     public required int Id { get; init; }
 
-    public required int GenerationId { get; init; }
+    public required int GId { get; init; }
 
     public required string Name { get; init; }
 
@@ -106,38 +106,38 @@ internal sealed record EngineDto
 
     public required string Name { get; init; }
 
-    public int? GenerationId { get; init; }
+    public int? GId { get; init; }
 
-    public int? VersionId { get; init; }
+    public int? VId { get; init; }
 }
 
 internal sealed record EngineVariantDto
 {
-    public required int EngineVariantId { get; init; }
+    public required int Id { get; init; }
 
-    public required int EngineId { get; init; }
+    public required int EId { get; init; }
 
     public required string Name { get; init; }
 }
 
 internal sealed record VehicleBodyDto
 {
-    public required int VehicleBodyId { get; init; }
+    public required int Id { get; init; }
 
-    public int? GenerationId { get; init; }
+    public int? GId { get; init; }
 
-    public int? VersionId { get; init; }
+    public int? VId { get; init; }
 
     public BodySpecsDto BodySpecs { get; init; } = new();
 }
 
 internal sealed record VehicleBodyEngineDto
 {
-    public required int VehicleBodyEngineId { get; init; }
+    public required int Id { get; init; }
 
-    public required int VehicleBodyId { get; init; }
+    public required int VbId { get; init; }
 
-    public int? EngineId { get; init; }
+    public int? EId { get; init; }
 
     public EngineSpecsDto EngineSpecs { get; init; } = new();
 }
@@ -208,16 +208,16 @@ internal sealed record EnginePowerSpecsDto
 {
     public ParameterValueDto? Horsepower { get; init; }
 
-    public ParameterValueDto? AtRpm { get; init; }
+    public ParameterValueDto? At { get; init; }
 }
 
 internal sealed record EngineTorqueSpecsDto
 {
     public ParameterValueDto? MaxTorque { get; init; }
 
-    public ParameterValueDto? AtRpmFrom { get; init; }
+    public ParameterValueDto? From { get; init; }
 
-    public ParameterValueDto? AtRpmTo { get; init; }
+    public ParameterValueDto? To { get; init; }
 }
 
 internal sealed record DrivetrainSpecsDto
@@ -243,11 +243,11 @@ internal sealed record EngineVariantSpecsDto
 
 internal sealed record VehicleBodyEngineVariantDto
 {
-    public required int VehicleBodyEngineVariantId { get; init; }
+    public required int Id { get; init; }
 
-    public required int VehicleBodyEngineId { get; init; }
+    public required int VbeId { get; init; }
 
-    public required int EngineVariantId { get; init; }
+    public required int EvId { get; init; }
 
     public EngineVariantSpecsDto EngineVariantSpecs { get; init; } = new();
 }

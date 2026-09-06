@@ -35,12 +35,12 @@ internal sealed class EngineService : IEngineService
 
         if (search.GenerationId.HasValue)
         {
-            query = query.Where(engine => engine.GenerationId == search.GenerationId.Value);
+            query = query.Where(engine => engine.GId == search.GenerationId.Value);
         }
 
         if (search.VersionId.HasValue)
         {
-            query = query.Where(engine => engine.VersionId == search.VersionId.Value);
+            query = query.Where(engine => engine.VId == search.VersionId.Value);
         }
 
         if (!string.IsNullOrWhiteSpace(search.Name))
@@ -57,12 +57,12 @@ internal sealed class EngineService : IEngineService
 
     private VehicleEngine MapEngine(EngineDto engine)
     {
-        var version = engine.VersionId.HasValue
-            ? BuildVersion(engine.VersionId.Value)
+        var version = engine.VId.HasValue
+            ? BuildVersion(engine.VId.Value)
             : null;
 
-        var generation = engine.GenerationId.HasValue
-            ? BuildGeneration(engine.GenerationId.Value)
+        var generation = engine.GId.HasValue
+            ? BuildGeneration(engine.GId.Value)
             : version?.Generation;
 
         return new VehicleEngine(
@@ -81,11 +81,11 @@ internal sealed class EngineService : IEngineService
             throw new InvalidOperationException($"version {versionId} was not found for engine.");
         }
 
-        var generation = BuildGeneration(version.GenerationId);
+        var generation = BuildGeneration(version.GId);
 
         return new VehicleVersion(
             version.Id,
-            version.GenerationId,
+            version.GId,
             version.Name,
             version.StartYear,
             version.EndYear,

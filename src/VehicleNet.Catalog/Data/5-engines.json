@@ -2,289 +2,481 @@
   {
     "id": 1,
     "name": "1.4 MPI 75KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 2,
     "name": "1.4 MPI 80KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 3,
     "name": "1.6 101KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 4,
     "name": "1.6 75KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 5,
     "name": "1.6 MPI 102KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 6,
     "name": "1.8 20V 125KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 7,
     "name": "1.8 20V Turbo 150KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 8,
     "name": "1.8 T 180KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 9,
     "name": "1.8 T 4x4 150KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 10,
     "name": "2.0 115KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 11,
     "name": "2.0 4x4 115KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 12,
     "name": "1.9 SDI 68KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 13,
     "name": "1.9 TDI 110KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 14,
     "name": "1.9 TDI 130KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 15,
     "name": "1.9 TDI 90KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 16,
     "name": "1.9 TDI 101KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 17,
     "name": "1.9 TDI 4x4 100KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 18,
     "name": "1.9 TDI 4x4 90KM",
-    "generationId": 1,
-    "versionId": 1
+    "gId": 1,
+    "vId": 1
   },
   {
     "id": 19,
     "name": "1.4 60KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 20,
     "name": "1.4 MPI 75KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 21,
     "name": "1.4 MPI 80KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 22,
     "name": "1.6 101KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 23,
     "name": "1.6 75KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 24,
     "name": "1.6 MPI 102KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 25,
     "name": "1.8 20V 125KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 26,
     "name": "1.8 20V Turbo 150KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 27,
     "name": "1.8 T 180KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 28,
     "name": "1.8 T 4x4 150KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 29,
     "name": "2.0 115KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 30,
     "name": "1.9 SDI 68KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 31,
     "name": "1.9 TDI 110KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 32,
     "name": "1.9 TDI 130KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 33,
     "name": "1.9 TDI 90KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 34,
     "name": "1.9 TDI 101KM",
-    "generationId": 1,
-    "versionId": 2
+    "gId": 1,
+    "vId": 2
   },
   {
     "id": 35,
     "name": "1.2 TSI 105KM 77kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 36,
     "name": "1.4 MPI 80KM 59kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 37,
     "name": "1.4 TSI 122KM 90kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 38,
     "name": "1.6 i 16V FSI 115KM 85kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 39,
     "name": "1.6 MPI 102KM 75kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 40,
     "name": "1.8 TSI 160KM 118kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 41,
     "name": "2.0 i 16V FSI 150KM 110kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 42,
     "name": "2.0 TFSI 200KM 147kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 43,
     "name": "1.6 TDI CR DPF 105KM 77kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 44,
     "name": "1.9 TDI PD 105KM 77kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 45,
     "name": "2.0 TDI CR DPF 140KM 103kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 46,
     "name": "2.0 TDI CR DPF 170KM 125kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 47,
     "name": "2.0 TDI CR DPF 110KM 81kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
   },
   {
     "id": 48,
     "name": "2.0 TDI PD 140KM 103kW",
-    "generationId": 2,
-    "versionId": 3
+    "gId": 2,
+    "vId": 3
+  },
+  {
+    "id": 49,
+    "name": "1.8 TSI 160KM 118kW",
+    "gId": 2,
+    "vId": 4
+  },
+  {
+    "id": 50,
+    "name": "2.0 FSI 150KM 110kW",
+    "gId": 2,
+    "vId": 4
+  },
+  {
+    "id": 51,
+    "name": "2.0 TDI CR DPF 140KM 103kW",
+    "gId": 2,
+    "vId": 4
+  },
+  {
+    "id": 52,
+    "name": "1.2 TSI 105KM 77kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 53,
+    "name": "1.4 MPI 80KM 59kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 54,
+    "name": "1.4 TSI 122KM 90kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 55,
+    "name": "1.6 i 16V FSI 115KM 85kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 56,
+    "name": "1.6 MPI 102KM 75kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 57,
+    "name": "1.8 TSI 160KM 118kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 58,
+    "name": "2.0 i 16V FSI 150KM 110kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 59,
+    "name": "2.0 TFSI 200KM 147kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 60,
+    "name": "1.6 TDI CR DPF 105KM 77kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 61,
+    "name": "1.9 TDI PD 105KM 77kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 62,
+    "name": "2.0 TDI CR DPF 140KM 103kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 63,
+    "name": "2.0 TDI CR DPF 170KM 125kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 64,
+    "name": "2.0 TDI CR DPF 110KM 81kW",
+    "gId": 2,
+    "vId": 5
+  },
+  {
+    "id": 65,
+    "name": "1.2 TSI 105KM 77kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 66,
+    "name": "1.4 MPI 80KM 59kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 67,
+    "name": "1.4 TSI 122KM 90kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 68,
+    "name": "1.6 MPI 102KM 75kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 69,
+    "name": "1.6 MPI Flex Fuel 102KM 75kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 70,
+    "name": "1.8 TSI 160KM 118kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 71,
+    "name": "1.8 TSI 150KM 110kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 72,
+    "name": "2.0 TFSI 200KM 147kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 73,
+    "name": "1.6 MPI LPG 102KM 75kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 74,
+    "name": "1.6 TDI CR DPF 105KM 77kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 75,
+    "name": "1.9 TDI 105KM 77kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 76,
+    "name": "2.0 TDI CR 110KM 81kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 77,
+    "name": "2.0 TDI CR DPF 110KM 81kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 78,
+    "name": "2.0 TDI CR DPF 140KM 103kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 79,
+    "name": "2.0 TDI CR DPF 170KM 125kW",
+    "gId": 2,
+    "vId": 6
+  },
+  {
+    "id": 80,
+    "name": "2.0 TDI PD 140KM 103kW",
+    "gId": 2,
+    "vId": 6
   }
 ]

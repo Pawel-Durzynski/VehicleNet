@@ -1,172 +1,627 @@
 [
   {
-    "engineVariantId": 1,
-    "engineId": 1,
+    "id": 1,
+    "eId": 1,
     "name": "1.4 MPI 75KM Manual"
   },
   {
-    "engineVariantId": 2,
-    "engineId": 2,
+    "id": 2,
+    "eId": 2,
     "name": "1.4 MPI 80KM Manual"
   },
   {
-    "engineVariantId": 3,
-    "engineId": 3,
+    "id": 3,
+    "eId": 3,
     "name": "1.6 101KM Manual"
   },
   {
-    "engineVariantId": 4,
-    "engineId": 4,
+    "id": 4,
+    "eId": 4,
     "name": "1.6 75KM Manual"
   },
   {
-    "engineVariantId": 5,
-    "engineId": 5,
+    "id": 5,
+    "eId": 5,
     "name": "1.6 MPI 102KM Manual"
   },
   {
-    "engineVariantId": 6,
-    "engineId": 6,
+    "id": 6,
+    "eId": 6,
     "name": "1.8 20V 125KM Manual"
   },
   {
-    "engineVariantId": 7,
-    "engineId": 7,
+    "id": 7,
+    "eId": 7,
     "name": "1.8 20V Turbo 150KM Manual"
   },
   {
-    "engineVariantId": 8,
-    "engineId": 8,
+    "id": 8,
+    "eId": 8,
     "name": "1.8 T 180KM Manual"
   },
   {
-    "engineVariantId": 9,
-    "engineId": 9,
+    "id": 9,
+    "eId": 9,
     "name": "1.8 T 4x4 150KM Manual"
   },
   {
-    "engineVariantId": 10,
-    "engineId": 10,
+    "id": 10,
+    "eId": 10,
     "name": "2.0 115KM Manual"
   },
   {
-    "engineVariantId": 11,
-    "engineId": 11,
+    "id": 11,
+    "eId": 11,
     "name": "2.0 4x4 115KM Manual"
   },
   {
-    "engineVariantId": 12,
-    "engineId": 12,
+    "id": 12,
+    "eId": 12,
     "name": "1.9 SDI 68KM Manual"
   },
   {
-    "engineVariantId": 13,
-    "engineId": 13,
+    "id": 13,
+    "eId": 13,
     "name": "1.9 TDI 110KM Manual"
   },
   {
-    "engineVariantId": 14,
-    "engineId": 14,
+    "id": 14,
+    "eId": 14,
     "name": "1.9 TDI 130KM Manual"
   },
   {
-    "engineVariantId": 15,
-    "engineId": 15,
+    "id": 15,
+    "eId": 15,
     "name": "1.9 TDI 90KM Manual"
   },
   {
-    "engineVariantId": 16,
-    "engineId": 16,
+    "id": 16,
+    "eId": 16,
     "name": "1.9 TDI 101KM Manual"
   },
   {
-    "engineVariantId": 17,
-    "engineId": 17,
+    "id": 17,
+    "eId": 17,
     "name": "1.9 TDI 4x4 100KM Manual"
   },
   {
-    "engineVariantId": 18,
-    "engineId": 18,
+    "id": 18,
+    "eId": 18,
     "name": "1.9 TDI 4x4 90KM Manual"
   },
   {
-    "engineVariantId": 19,
-    "engineId": 19,
+    "id": 19,
+    "eId": 19,
     "name": "1.4 60KM Manual"
   },
   {
-    "engineVariantId": 20,
-    "engineId": 20,
+    "id": 20,
+    "eId": 20,
     "name": "1.4 MPI 75KM Manual"
   },
   {
-    "engineVariantId": 21,
-    "engineId": 21,
+    "id": 21,
+    "eId": 21,
     "name": "1.4 MPI 80KM Manual"
   },
   {
-    "engineVariantId": 22,
-    "engineId": 22,
+    "id": 22,
+    "eId": 22,
     "name": "1.6 101KM Manual"
   },
   {
-    "engineVariantId": 23,
-    "engineId": 23,
+    "id": 23,
+    "eId": 23,
     "name": "1.6 75KM Manual"
   },
   {
-    "engineVariantId": 24,
-    "engineId": 24,
+    "id": 24,
+    "eId": 24,
     "name": "1.6 MPI 102KM Manual"
   },
   {
-    "engineVariantId": 25,
-    "engineId": 25,
+    "id": 25,
+    "eId": 25,
     "name": "1.8 20V 125KM Manual"
   },
   {
-    "engineVariantId": 26,
-    "engineId": 26,
+    "id": 26,
+    "eId": 26,
     "name": "1.8 20V Turbo 150KM Manual"
   },
   {
-    "engineVariantId": 27,
-    "engineId": 27,
+    "id": 27,
+    "eId": 27,
     "name": "1.8 T 180KM Manual"
   },
   {
-    "engineVariantId": 28,
-    "engineId": 28,
+    "id": 28,
+    "eId": 28,
     "name": "1.8 T 4x4 150KM Manual"
   },
   {
-    "engineVariantId": 29,
-    "engineId": 29,
+    "id": 29,
+    "eId": 29,
     "name": "2.0 115KM Manual"
   },
   {
-    "engineVariantId": 30,
-    "engineId": 30,
+    "id": 30,
+    "eId": 30,
     "name": "1.9 SDI 68KM Manual"
   },
   {
-    "engineVariantId": 31,
-    "engineId": 31,
+    "id": 31,
+    "eId": 31,
     "name": "1.9 TDI 110KM Manual"
   },
   {
-    "engineVariantId": 32,
-    "engineId": 32,
+    "id": 32,
+    "eId": 32,
     "name": "1.9 TDI 130KM Manual"
   },
   {
-    "engineVariantId": 33,
-    "engineId": 33,
+    "id": 33,
+    "eId": 33,
     "name": "1.9 TDI 90KM Manual"
   },
   {
-    "engineVariantId": 34,
-    "engineId": 34,
+    "id": 34,
+    "eId": 34,
     "name": "1.9 TDI 101KM Manual"
+  },
+  {
+    "id": 35,
+    "eId": 35,
+    "name": "1.2 TSI 105KM 77kW Manual"
+  },
+  {
+    "id": 36,
+    "eId": 35,
+    "name": "1.2 TSI 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 37,
+    "eId": 36,
+    "name": "1.4 MPI 80KM 59kW Manual"
+  },
+  {
+    "id": 38,
+    "eId": 37,
+    "name": "1.4 TSI 122KM 90kW Manual"
+  },
+  {
+    "id": 39,
+    "eId": 37,
+    "name": "1.4 TSI 122KM 90kW DSG Automatic"
+  },
+  {
+    "id": 40,
+    "eId": 38,
+    "name": "1.6 i 16V FSI 115KM 85kW Manual"
+  },
+  {
+    "id": 41,
+    "eId": 39,
+    "name": "1.6 MPI 102KM 75kW Manual"
+  },
+  {
+    "id": 42,
+    "eId": 39,
+    "name": "1.6 MPI 102KM 75kW Tiptronic Automatic"
+  },
+  {
+    "id": 43,
+    "eId": 40,
+    "name": "1.8 TSI 160KM 118kW Manual"
+  },
+  {
+    "id": 44,
+    "eId": 40,
+    "name": "1.8 TSI 160KM 118kW Manual AWD"
+  },
+  {
+    "id": 45,
+    "eId": 40,
+    "name": "1.8 TSI 160KM 118kW DSG Automatic"
+  },
+  {
+    "id": 46,
+    "eId": 41,
+    "name": "2.0 i 16V FSI 150KM 110kW Manual"
+  },
+  {
+    "id": 47,
+    "eId": 42,
+    "name": "2.0 TFSI 200KM 147kW Manual"
+  },
+  {
+    "id": 48,
+    "eId": 42,
+    "name": "2.0 TFSI 200KM 147kW DSG Automatic"
+  },
+  {
+    "id": 49,
+    "eId": 43,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual"
+  },
+  {
+    "id": 50,
+    "eId": 43,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual AWD"
+  },
+  {
+    "id": 51,
+    "eId": 43,
+    "name": "1.6 TDI CR DPF 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 52,
+    "eId": 44,
+    "name": "1.9 TDI PD 105KM 77kW Manual"
+  },
+  {
+    "id": 53,
+    "eId": 44,
+    "name": "1.9 TDI PD 105KM 77kW Manual AWD"
+  },
+  {
+    "id": 54,
+    "eId": 44,
+    "name": "1.9 TDI PD 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 55,
+    "eId": 45,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual"
+  },
+  {
+    "id": 56,
+    "eId": 45,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual AWD"
+  },
+  {
+    "id": 57,
+    "eId": 45,
+    "name": "2.0 TDI CR DPF 140KM 103kW DSG Automatic"
+  },
+  {
+    "id": 58,
+    "eId": 46,
+    "name": "2.0 TDI CR DPF 170KM 125kW Manual"
+  },
+  {
+    "id": 59,
+    "eId": 46,
+    "name": "2.0 TDI CR DPF 170KM 125kW DSG Automatic"
+  },
+  {
+    "id": 60,
+    "eId": 47,
+    "name": "2.0 TDI CR DPF 110KM 81kW Manual"
+  },
+  {
+    "id": 61,
+    "eId": 47,
+    "name": "2.0 TDI CR DPF 110KM 81kW DSG Automatic"
+  },
+  {
+    "id": 62,
+    "eId": 48,
+    "name": "2.0 TDI PD 140KM 103kW Manual"
+  },
+  {
+    "id": 63,
+    "eId": 49,
+    "name": "1.8 TSI 160KM 118kW Manual 4x4"
+  },
+  {
+    "id": 64,
+    "eId": 50,
+    "name": "2.0 FSI 150KM 110kW Manual 4x4"
+  },
+  {
+    "id": 65,
+    "eId": 51,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual 4x4"
+  },
+  {
+    "id": 66,
+    "eId": 51,
+    "name": "2.0 TDI CR DPF 140KM 103kW Automatic 4x4"
+  },
+  {
+    "id": 67,
+    "eId": 52,
+    "name": "1.2 TSI 105KM 77kW Manual"
+  },
+  {
+    "id": 68,
+    "eId": 52,
+    "name": "1.2 TSI 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 69,
+    "eId": 53,
+    "name": "1.4 MPI 80KM 59kW Manual"
+  },
+  {
+    "id": 70,
+    "eId": 54,
+    "name": "1.4 TSI 122KM 90kW Manual"
+  },
+  {
+    "id": 71,
+    "eId": 54,
+    "name": "1.4 TSI 122KM 90kW DSG Automatic"
+  },
+  {
+    "id": 72,
+    "eId": 55,
+    "name": "1.6 i 16V FSI 115KM 85kW Manual"
+  },
+  {
+    "id": 73,
+    "eId": 55,
+    "name": "1.6 i 16V FSI 115KM 85kW Automatic"
+  },
+  {
+    "id": 74,
+    "eId": 56,
+    "name": "1.6 MPI 102KM 75kW Manual"
+  },
+  {
+    "id": 75,
+    "eId": 56,
+    "name": "1.6 MPI 102KM 75kW Tiptronic Automatic"
+  },
+  {
+    "id": 76,
+    "eId": 57,
+    "name": "1.8 TSI 160KM 118kW Manual"
+  },
+  {
+    "id": 77,
+    "eId": 57,
+    "name": "1.8 TSI 160KM 118kW DSG Automatic"
+  },
+  {
+    "id": 78,
+    "eId": 58,
+    "name": "2.0 i 16V FSI 150KM 110kW Manual"
+  },
+  {
+    "id": 79,
+    "eId": 58,
+    "name": "2.0 i 16V FSI 150KM 110kW Automatic"
+  },
+  {
+    "id": 80,
+    "eId": 59,
+    "name": "2.0 TFSI 200KM 147kW Manual"
+  },
+  {
+    "id": 81,
+    "eId": 59,
+    "name": "2.0 TFSI 200KM 147kW DSG Automatic"
+  },
+  {
+    "id": 82,
+    "eId": 60,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual"
+  },
+  {
+    "id": 83,
+    "eId": 60,
+    "name": "1.6 TDI CR DPF 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 84,
+    "eId": 61,
+    "name": "1.9 TDI PD 105KM 77kW Manual"
+  },
+  {
+    "id": 85,
+    "eId": 61,
+    "name": "1.9 TDI PD 105KM 77kW Manual AWD"
+  },
+  {
+    "id": 86,
+    "eId": 61,
+    "name": "1.9 TDI PD 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 87,
+    "eId": 62,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual"
+  },
+  {
+    "id": 88,
+    "eId": 62,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual AWD"
+  },
+  {
+    "id": 89,
+    "eId": 62,
+    "name": "2.0 TDI CR DPF 140KM 103kW DSG Automatic"
+  },
+  {
+    "id": 90,
+    "eId": 63,
+    "name": "2.0 TDI CR DPF 170KM 125kW Manual"
+  },
+  {
+    "id": 91,
+    "eId": 63,
+    "name": "2.0 TDI CR DPF 170KM 125kW DSG Automatic"
+  },
+  {
+    "id": 92,
+    "eId": 64,
+    "name": "2.0 TDI CR DPF 110KM 81kW Manual"
+  },
+  {
+    "id": 93,
+    "eId": 64,
+    "name": "2.0 TDI CR DPF 110KM 81kW DSG Automatic"
+  },
+  {
+    "id": 94,
+    "eId": 65,
+    "name": "1.2 TSI 105KM 77kW Manual"
+  },
+  {
+    "id": 95,
+    "eId": 65,
+    "name": "1.2 TSI 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 96,
+    "eId": 66,
+    "name": "1.4 MPI 80KM 59kW Manual"
+  },
+  {
+    "id": 97,
+    "eId": 67,
+    "name": "1.4 TSI 122KM 90kW Manual"
+  },
+  {
+    "id": 98,
+    "eId": 67,
+    "name": "1.4 TSI 122KM 90kW DSG Automatic"
+  },
+  {
+    "id": 99,
+    "eId": 68,
+    "name": "1.6 MPI 102KM 75kW Manual"
+  },
+  {
+    "id": 100,
+    "eId": 68,
+    "name": "1.6 MPI 102KM 75kW Automatic"
+  },
+  {
+    "id": 101,
+    "eId": 69,
+    "name": "1.6 MPI Flex Fuel 102KM 75kW Manual"
+  },
+  {
+    "id": 102,
+    "eId": 70,
+    "name": "1.8 TSI 160KM 118kW Manual"
+  },
+  {
+    "id": 103,
+    "eId": 70,
+    "name": "1.8 TSI 160KM 118kW Manual AWD"
+  },
+  {
+    "id": 104,
+    "eId": 70,
+    "name": "1.8 TSI 160KM 118kW DSG Automatic"
+  },
+  {
+    "id": 105,
+    "eId": 71,
+    "name": "1.8 TSI 150KM 110kW Manual"
+  },
+  {
+    "id": 106,
+    "eId": 72,
+    "name": "2.0 TFSI 200KM 147kW Manual"
+  },
+  {
+    "id": 107,
+    "eId": 72,
+    "name": "2.0 TFSI 200KM 147kW DSG Automatic"
+  },
+  {
+    "id": 108,
+    "eId": 73,
+    "name": "1.6 MPI LPG 102KM 75kW Manual"
+  },
+  {
+    "id": 109,
+    "eId": 74,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual"
+  },
+  {
+    "id": 110,
+    "eId": 74,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual AWD"
+  },
+  {
+    "id": 111,
+    "eId": 74,
+    "name": "1.6 TDI CR DPF 105KM 77kW DSG Automatic"
+  },
+  {
+    "id": 112,
+    "eId": 75,
+    "name": "1.9 TDI 105KM 77kW Manual"
+  },
+  {
+    "id": 113,
+    "eId": 75,
+    "name": "1.9 TDI 105KM 77kW Manual AWD"
+  },
+  {
+    "id": 114,
+    "eId": 76,
+    "name": "2.0 TDI CR 110KM 81kW Manual"
+  },
+  {
+    "id": 115,
+    "eId": 77,
+    "name": "2.0 TDI CR DPF 110KM 81kW Manual"
+  },
+  {
+    "id": 116,
+    "eId": 77,
+    "name": "2.0 TDI CR DPF 110KM 81kW Manual AWD"
+  },
+  {
+    "id": 117,
+    "eId": 78,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual"
+  },
+  {
+    "id": 118,
+    "eId": 78,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual AWD"
+  },
+  {
+    "id": 119,
+    "eId": 78,
+    "name": "2.0 TDI CR DPF 140KM 103kW DSG Automatic"
+  },
+  {
+    "id": 120,
+    "eId": 78,
+    "name": "2.0 TDI CR DPF 140KM 103kW DSG Automatic AWD"
+  },
+  {
+    "id": 121,
+    "eId": 79,
+    "name": "2.0 TDI CR DPF 170KM 125kW Manual"
+  },
+  {
+    "id": 122,
+    "eId": 79,
+    "name": "2.0 TDI CR DPF 170KM 125kW DSG Automatic"
+  },
+  {
+    "id": 123,
+    "eId": 80,
+    "name": "2.0 TDI PD 140KM 103kW Manual"
+  },
+  {
+    "id": 124,
+    "eId": 80,
+    "name": "2.0 TDI PD 140KM 103kW Manual AWD"
+  },
+  {
+    "id": 125,
+    "eId": 80,
+    "name": "2.0 TDI PD 140KM 103kW DSG Automatic"
   }
 ]

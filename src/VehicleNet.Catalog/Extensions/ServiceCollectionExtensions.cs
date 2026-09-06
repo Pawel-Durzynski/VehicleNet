@@ -33,7 +33,7 @@ public static class ServiceCollectionExtensions
         ValidateUniqueIds(generations, g => g.Id, "Generation", "3-generations.json");
         ValidateUniqueIds(versions, v => v.Id, "Version", "4-versions.json");
         ValidateUniqueIds(engines, e => e.Id, "Engine", "5-engines.json");
-        ValidateUniqueIds(engineVariants, ev => ev.EngineVariantId, "EngineVariant", "6-engine-variants.json");
+        ValidateUniqueIds(engineVariants, ev => ev.Id, "EngineVariant", "6-engine-variants.json");
 
         services.AddSingleton<IEnumerable<ManufacturerDto>>(manufacturers);
         services.AddSingleton<IEnumerable<ModelDto>>(models);
@@ -69,7 +69,7 @@ public static class ServiceCollectionExtensions
 
         // Load and convert vehicle body engine variants
         var vehicleBodyEngineVariantDtos = LoadResource(assembly, "9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto);
-        ValidateUniqueIds(vehicleBodyEngineVariantDtos, vbev => vbev.VehicleBodyEngineVariantId, "VehicleBodyEngineVariant", "9-vehicle-body-engine-variants.json");
+        ValidateUniqueIds(vehicleBodyEngineVariantDtos, vbev => vbev.Id, "VehicleBodyEngineVariant", "9-vehicle-body-engine-variants.json");
 
         services.AddSingleton<IEnumerable<VehicleBodyEngineVariant>>(sp =>
         {
@@ -91,24 +91,24 @@ public static class ServiceCollectionExtensions
         IEngineVariantService engineVariantService)
     {
         var bodyEngineCriteria = new VehicleBodyEngineSearchCriteriaBuilder()
-            .WithVehicleBodyEngineId(dto.VehicleBodyEngineId)
+            .WithVehicleBodyEngineId(dto.VbeId)
             .Build();
 
         var bodyEngineResult = vehicleBodyEngineService.Search(bodyEngineCriteria);
         var bodyEngine = bodyEngineResult.Items.FirstOrDefault()
-            ?? throw new InvalidOperationException($"VehicleBodyEngine {dto.VehicleBodyEngineId} was not found for variant {dto.VehicleBodyEngineVariantId}.");
+            ?? throw new InvalidOperationException($"VehicleBodyEngine {dto.VbeId} was not found for variant {dto.Id}.");
 
         var engineVariants = engineVariantService.Search(new EngineVariantSearch { });
-        var engineVariant = engineVariants.FirstOrDefault(v => v.EngineVariantId == dto.EngineVariantId)
-            ?? throw new InvalidOperationException($"EngineVariant {dto.EngineVariantId} was not found for variant {dto.VehicleBodyEngineVariantId}.");
+        var engineVariant = engineVariants.FirstOrDefault(v => v.EngineVariantId == dto.EvId)
+            ?? throw new InvalidOperationException($"EngineVariant {dto.EvId} was not found for variant {dto.Id}.");
 
         return new VehicleBodyEngineVariant
         {
-            VehicleBodyEngineVariantId = dto.VehicleBodyEngineVariantId,
+            VehicleBodyEngineVariantId = dto.Id,
             GenerationId = bodyEngine.GenerationId,
             VersionId = bodyEngine.VersionId,
-            VehicleBodyEngineId = dto.VehicleBodyEngineId,
-            EngineVariantId = dto.EngineVariantId,
+            VehicleBodyEngineId = dto.VbeId,
+            EngineVariantId = dto.EvId,
             EngineVariantSpecs = new EngineVariantSpecs
             {
                 DrivetrainSpecs = dto.EngineVariantSpecs.DrivetrainSpecs is null

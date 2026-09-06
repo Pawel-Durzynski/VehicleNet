@@ -49,12 +49,12 @@ internal sealed class CatalogSnapshotBuilder
             version => version.Id,
             version => new VehicleVersion(
                 version.Id,
-                version.GenerationId,
+                version.GId,
                 version.Name,
                 version.StartYear,
                 version.EndYear,
                 version.BodyType,
-                GetRequired(generations, version.GenerationId, "generation", $"version {version.Id}")),
+                GetRequired(generations, version.GId, "generation", $"version {version.Id}")),
             "version");
 
         var engines = CreateIndex(
@@ -63,22 +63,22 @@ internal sealed class CatalogSnapshotBuilder
             engine => new VehicleEngine(
                 engine.Id,
                 engine.Name,
-                engine.GenerationId,
-                engine.GenerationId.HasValue ? GetRequired(generations, engine.GenerationId.Value, "generation", $"engine {engine.Id}") : null,
-                engine.VersionId,
-                engine.VersionId.HasValue ? GetRequired(versions, engine.VersionId.Value, "version", $"engine {engine.Id}") : null),
+                engine.GId,
+                engine.GId.HasValue ? GetRequired(generations, engine.GId.Value, "generation", $"engine {engine.Id}") : null,
+                engine.VId,
+                engine.VId.HasValue ? GetRequired(versions, engine.VId.Value, "version", $"engine {engine.Id}") : null),
             "engine");
 
         var bodies = CreateIndex(
             document.VehicleBodies,
-            body => body.VehicleBodyId,
+            body => body.Id,
             body => new VehicleBody
             {
-                VehicleBodyId = body.VehicleBodyId,
-                GenerationId = body.GenerationId,
-                Generation = body.GenerationId.HasValue ? GetRequired(generations, body.GenerationId.Value, "generation", $"body {body.VehicleBodyId}") : null,
-                VersionId = body.VersionId,
-                Version = body.VersionId.HasValue ? GetRequired(versions, body.VersionId.Value, "version", $"body {body.VehicleBodyId}") : null,
+                VehicleBodyId = body.Id,
+                GenerationId = body.GId,
+                Generation = body.GId.HasValue ? GetRequired(generations, body.GId.Value, "generation", $"body {body.Id}") : null,
+                VersionId = body.VId,
+                Version = body.VId.HasValue ? GetRequired(versions, body.VId.Value, "version", $"body {body.Id}") : null,
                 BodySpecs = BuildBodySpecs(body.BodySpecs)
             },
             "body");
@@ -95,22 +95,22 @@ internal sealed class CatalogSnapshotBuilder
         IReadOnlyDictionary<int, VehicleVersion> versions,
         IReadOnlyDictionary<int, VehicleEngine> engines)
     {
-        var engineId = bodyEngine.EngineId ?? throw new InvalidOperationException($"vehicle spec {bodyEngine.VehicleBodyEngineId} is missing engineId.");
-        var body = GetRequired(bodies, bodyEngine.VehicleBodyId, "body", $"vehicle spec {bodyEngine.VehicleBodyEngineId}");
+        var engineId = bodyEngine.EId ?? throw new InvalidOperationException($"vehicle spec {bodyEngine.Id} is missing engineId.");
+        var body = GetRequired(bodies, bodyEngine.VbId, "body", $"vehicle spec {bodyEngine.Id}");
         var generationId = body.GenerationId ?? throw new InvalidOperationException($"body {body.VehicleBodyId} is missing generationId.");
         var versionId = body.VersionId ?? throw new InvalidOperationException($"body {body.VehicleBodyId} is missing versionId.");
 
         return new VehicleBodyEngine
         {
-            VehicleBodyEngineId = bodyEngine.VehicleBodyEngineId,
-            VehicleBodyId = bodyEngine.VehicleBodyId,
+            VehicleBodyEngineId = bodyEngine.Id,
+            VehicleBodyId = bodyEngine.VbId,
             VehicleBody = body,
             GenerationId = generationId,
-            Generation = GetRequired(generations, generationId, "generation", $"vehicle spec {bodyEngine.VehicleBodyEngineId}"),
+            Generation = GetRequired(generations, generationId, "generation", $"vehicle spec {bodyEngine.Id}"),
             VersionId = versionId,
-            Version = GetRequired(versions, versionId, "version", $"vehicle spec {bodyEngine.VehicleBodyEngineId}"),
+            Version = GetRequired(versions, versionId, "version", $"vehicle spec {bodyEngine.Id}"),
             EngineId = engineId,
-            Engine = GetRequired(engines, engineId, "engine", $"vehicle spec {bodyEngine.VehicleBodyEngineId}"),
+            Engine = GetRequired(engines, engineId, "engine", $"vehicle spec {bodyEngine.Id}"),
             EngineSpecs = BuildEngineSpecs(bodyEngine.EngineSpecs)
         };
     }
@@ -171,15 +171,15 @@ internal sealed class CatalogSnapshotBuilder
                 : new EnginePowerSpecs
                 {
                     Horsepower = ToParameterValue(dto.Power.Horsepower, MeasurementUnit.Horsepower),
-                    AtRpm = ToParameterValue(dto.Power.AtRpm, MeasurementUnit.Rpm)
+                    AtRpm = ToParameterValue(dto.Power.At, MeasurementUnit.Rpm)
                 },
             Torque = dto.Torque is null
                 ? null
                 : new EngineTorqueSpecs
                 {
                     MaxTorque = ToParameterValue(dto.Torque.MaxTorque, MeasurementUnit.NewtonMeter),
-                    AtRpmFrom = ToParameterValue(dto.Torque.AtRpmFrom, MeasurementUnit.Rpm),
-                    AtRpmTo = ToParameterValue(dto.Torque.AtRpmTo, MeasurementUnit.Rpm)
+                    AtRpmFrom = ToParameterValue(dto.Torque.From, MeasurementUnit.Rpm),
+                    AtRpmTo = ToParameterValue(dto.Torque.To, MeasurementUnit.Rpm)
                 }
         };
     }
