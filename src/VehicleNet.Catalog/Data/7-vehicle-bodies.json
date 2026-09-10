@@ -179,5 +179,238 @@
         "minimumTrunkCapacitySeatsUp": "605"
       }
     }
+  },
+  {
+    "id": 9,
+    "gId": 3,
+    "vId": 9,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.6",
+        "turningRadius": "5.3"
+      },
+      "externalDimensions": {
+        "length": "4687",
+        "width": "1814",
+        "height": "1531",
+        "wheelbase": "2680",
+        "groundClearance": "171"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "610"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "gId": 3,
+    "vId": 10,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.6",
+        "turningRadius": "5.3"
+      },
+      "externalDimensions": {
+        "length": "4670",
+        "width": "1814",
+        "height": "1461",
+        "wheelbase": "2686",
+        "groundClearance": "140"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1580",
+        "minimumTrunkCapacitySeatsUp": "590"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "gId": 3,
+    "vId": 11,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.6",
+        "turningRadius": "5.3"
+      },
+      "externalDimensions": {
+        "length": "4667",
+        "width": "1814",
+        "height": "1466",
+        "wheelbase": "2686",
+        "groundClearance": "130"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "610"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "gId": 3,
+    "vId": 12,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.6",
+        "turningRadius": "5.3"
+      },
+      "externalDimensions": {
+        "length": "4689",
+        "width": "1814",
+        "height": "1448",
+        "wheelbase": "2680",
+        "groundClearance": "160"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1580",
+        "minimumTrunkCapacitySeatsUp": "590"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "gId": 3,
+    "vId": 13,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "10.6",
+        "turningRadius": "5.3"
+      },
+      "externalDimensions": {
+        "length": "4686",
+        "width": "1814",
+        "height": "1448",
+        "wheelbase": "2680",
+        "groundClearance": "160"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "610"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "gId": 3,
+    "vId": 14,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5"
+      },
+      "externalDimensions": {
+        "length": "4685",
+        "width": "1814",
+        "height": "1531",
+        "wheelbase": "2679",
+        "groundClearance": "171"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "610"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "gId": 3,
+    "vId": 15,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "11.5",
+        "turningRadius": "5.8"
+      },
+      "externalDimensions": {
+        "length": "4659",
+        "width": "1814",
+        "height": "1480",
+        "wheelbase": "2686",
+        "groundClearance": "140"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "610"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "gId": 3,
+    "vId": 16,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "4",
+        "numberOfSeats": "5"
+      },
+      "externalDimensions": {
+        "length": "4685",
+        "width": "1814",
+        "height": "1449",
+        "wheelbase": "2680",
+        "groundClearance": "128"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "590"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "gId": 3,
+    "vId": 17,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "11.1",
+        "turningRadius": "5.5"
+      },
+      "externalDimensions": {
+        "length": "4659",
+        "width": "1814",
+        "height": "1461",
+        "wheelbase": "2686",
+        "groundClearance": "140"
+      },
+      "trunkDimensions": {
+        "minimumTrunkCapacitySeatsUp": "590"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "gId": 3,
+    "vId": 18,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5"
+      },
+      "externalDimensions": {
+        "length": "4685",
+        "width": "1814",
+        "height": "1452",
+        "wheelbase": "2680",
+        "groundClearance": "127"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1740",
+        "minimumTrunkCapacitySeatsUp": "610"
+      }
+    }
   }
 ]
