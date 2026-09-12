@@ -168,5 +168,145 @@
     "id": 34,
     "eId": 34,
     "name": "1.9 TDI 101KM Manual"
+  },
+  {
+    "id": 35,
+    "eId": 35,
+    "name": "1.2 TSI 105KM 77kW Manual 6-speed"
+  },
+  {
+    "id": 36,
+    "eId": 35,
+    "name": "1.2 TSI 105KM 77kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 37,
+    "eId": 36,
+    "name": "1.4 MPI 80KM 59kW Manual 5-speed"
+  },
+  {
+    "id": 38,
+    "eId": 37,
+    "name": "1.4 TSI 122KM 90kW Manual 6-speed"
+  },
+  {
+    "id": 39,
+    "eId": 37,
+    "name": "1.4 TSI 122KM 90kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 40,
+    "eId": 38,
+    "name": "1.6 MPI 102KM 75kW Manual 5-speed"
+  },
+  {
+    "id": 41,
+    "eId": 39,
+    "name": "1.6 MPI Flex Fuel 102KM 75kW Manual 5-speed"
+  },
+  {
+    "id": 42,
+    "eId": 39,
+    "name": "1.6 MPI Flex Fuel 102KM 75kW Tiptronic Automatic 6-speed"
+  },
+  {
+    "id": 43,
+    "eId": 40,
+    "name": "1.8 TSI 160KM 118kW Manual 6-speed"
+  },
+  {
+    "id": 44,
+    "eId": 40,
+    "name": "1.8 TSI 160KM 118kW Manual 6-speed 4x4"
+  },
+  {
+    "id": 45,
+    "eId": 40,
+    "name": "1.8 TSI 160KM 118kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 46,
+    "eId": 41,
+    "name": "1.8 TSI 150KM 110kW Manual 6-speed"
+  },
+  {
+    "id": 47,
+    "eId": 42,
+    "name": "2.0 TFSI 200KM 147kW Manual 6-speed"
+  },
+  {
+    "id": 48,
+    "eId": 42,
+    "name": "2.0 TFSI 200KM 147kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 49,
+    "eId": 43,
+    "name": "1.6 MPI LPG 102KM 75kW Manual 5-speed"
+  },
+  {
+    "id": 50,
+    "eId": 43,
+    "name": "1.6 MPI LPG 102KM 75kW Manual 5-speed 4x4"
+  },
+  {
+    "id": 51,
+    "eId": 43,
+    "name": "1.6 MPI LPG 102KM 75kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 52,
+    "eId": 44,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual 5-speed"
+  },
+  {
+    "id": 53,
+    "eId": 44,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual 5-speed 4x4"
+  },
+  {
+    "id": 54,
+    "eId": 44,
+    "name": "1.6 TDI CR DPF 105KM 77kW DSG Automatic 6-speed"
+  },
+  {
+    "id": 55,
+    "eId": 45,
+    "name": "1.9 TDI 105KM 77kW Manual 6-speed"
+  },
+  {
+    "id": 56,
+    "eId": 45,
+    "name": "1.9 TDI 105KM 77kW Manual 6-speed 4x4"
+  },
+  {
+    "id": 57,
+    "eId": 45,
+    "name": "1.9 TDI 105KM 77kW DSG Automatic 6-speed"
+  },
+  {
+    "id": 58,
+    "eId": 46,
+    "name": "2.0 TDI CR 110KM 81kW Manual 6-speed"
+  },
+  {
+    "id": 59,
+    "eId": 46,
+    "name": "2.0 TDI CR 110KM 81kW DSG Automatic 6-speed"
+  },
+  {
+    "id": 60,
+    "eId": 47,
+    "name": "2.0 TDI CR DPF 110KM 81kW Manual 6-speed"
+  },
+  {
+    "id": 61,
+    "eId": 47,
+    "name": "2.0 TDI CR DPF 110KM 81kW DSG Automatic 6-speed"
+  },
+  {
+    "id": 62,
+    "eId": 48,
+    "name": "2.0 TDI CR DPF 140KM 103kW Manual 6-speed"
   }
 ]
