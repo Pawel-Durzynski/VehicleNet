@@ -142,5 +142,77 @@
     "startYear": 2013,
     "endYear": 2020,
     "bodyType": "Wagon"
+  },
+  {
+    "id": 19,
+    "gId": 4,
+    "name": "RS Kombi",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 20,
+    "gId": 4,
+    "name": "Liftback",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 21,
+    "gId": 4,
+    "name": "Kombi",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 22,
+    "gId": 4,
+    "name": "RS Liftback",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 23,
+    "gId": 4,
+    "name": "Scout",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 24,
+    "gId": 4,
+    "name": "Liftback Plug-in",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 25,
+    "gId": 4,
+    "name": "Kombi Plug-in",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 26,
+    "gId": 4,
+    "name": "RS Liftback Plug-In",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 27,
+    "gId": 4,
+    "name": "RS Kombi Plug-In",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
   }
 ]
