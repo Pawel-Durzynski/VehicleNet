@@ -30,5 +30,37 @@
     "startYear": 2020,
     "endYear": null,
     "containsVersions": true
+  },
+  {
+    "id": 5,
+    "modelId": 2,
+    "name": "I",
+    "startYear": 1999,
+    "endYear": 2008,
+    "containsVersions": true
+  },
+  {
+    "id": 6,
+    "modelId": 2,
+    "name": "II",
+    "startYear": 2007,
+    "endYear": 2014,
+    "containsVersions": true
+  },
+  {
+    "id": 7,
+    "modelId": 2,
+    "name": "III",
+    "startYear": 2014,
+    "endYear": 2021,
+    "containsVersions": true
+  },
+  {
+    "id": 8,
+    "modelId": 2,
+    "name": "IV",
+    "startYear": 2021,
+    "endYear": null,
+    "containsVersions": true
   }
 ]

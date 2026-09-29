@@ -5274,5 +5274,653 @@
         "topSpeed": "225"
       }
     }
+  },
+  {
+    "id": 357,
+    "vbeId": 203,
+    "evId": 357,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "21.6",
+        "topSpeed": "147"
+      }
+    }
+  },
+  {
+    "id": 358,
+    "vbeId": 204,
+    "evId": 358,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "16.3",
+        "topSpeed": "160"
+      }
+    }
+  },
+  {
+    "id": 359,
+    "vbeId": 205,
+    "evId": 359,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "16.5",
+        "topSpeed": "157"
+      }
+    }
+  },
+  {
+    "id": 360,
+    "vbeId": 206,
+    "evId": 360,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "15.4",
+        "topSpeed": "162"
+      }
+    }
+  },
+  {
+    "id": 361,
+    "vbeId": 207,
+    "evId": 361,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "13.1",
+        "topSpeed": "173"
+      }
+    }
+  },
+  {
+    "id": 362,
+    "vbeId": 208,
+    "evId": 362,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "11.6",
+        "topSpeed": "185"
+      }
+    }
+  },
+  {
+    "id": 363,
+    "vbeId": 209,
+    "evId": 363,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.1",
+        "topSpeed": "168"
+      }
+    }
+  },
+  {
+    "id": 364,
+    "vbeId": 209,
+    "evId": 364,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Automatic",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "17.3",
+        "topSpeed": "166"
+      }
+    }
+  },
+  {
+    "id": 365,
+    "vbeId": 210,
+    "evId": 365,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "10.2",
+        "topSpeed": "196"
+      }
+    }
+  },
+  {
+    "id": 366,
+    "vbeId": 211,
+    "evId": 366,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.4",
+        "topSpeed": "169"
+      }
+    }
+  },
+  {
+    "id": 367,
+    "vbeId": 212,
+    "evId": 367,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.0",
+        "topSpeed": "172"
+      }
+    }
+  },
+  {
+    "id": 368,
+    "vbeId": 213,
+    "evId": 368,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "18.3",
+        "topSpeed": "158"
+      }
+    }
+  },
+  {
+    "id": 369,
+    "vbeId": 214,
+    "evId": 369,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "11.6",
+        "topSpeed": "185"
+      }
+    }
+  },
+  {
+    "id": 370,
+    "vbeId": 215,
+    "evId": 370,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      }
+    }
+  },
+  {
+    "id": 371,
+    "vbeId": 216,
+    "evId": 371,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "RWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "21.6",
+        "topSpeed": "147"
+      }
+    }
+  },
+  {
+    "id": 372,
+    "vbeId": 217,
+    "evId": 372,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "16.3",
+        "topSpeed": "162"
+      }
+    }
+  },
+  {
+    "id": 373,
+    "vbeId": 218,
+    "evId": 373,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      }
+    }
+  },
+  {
+    "id": 374,
+    "vbeId": 219,
+    "evId": 374,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "16.5",
+        "topSpeed": "157"
+      }
+    }
+  },
+  {
+    "id": 375,
+    "vbeId": 220,
+    "evId": 375,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "15.8",
+        "topSpeed": "164"
+      }
+    }
+  },
+  {
+    "id": 376,
+    "vbeId": 221,
+    "evId": 376,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "13.1",
+        "topSpeed": "173"
+      }
+    }
+  },
+  {
+    "id": 377,
+    "vbeId": 222,
+    "evId": 377,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "11.5",
+        "topSpeed": "185"
+      }
+    }
+  },
+  {
+    "id": 378,
+    "vbeId": 223,
+    "evId": 378,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.1",
+        "topSpeed": "170"
+      }
+    }
+  },
+  {
+    "id": 379,
+    "vbeId": 224,
+    "evId": 379,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "9.9",
+        "topSpeed": "195"
+      }
+    }
+  },
+  {
+    "id": 380,
+    "vbeId": 225,
+    "evId": 380,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.4",
+        "topSpeed": "170"
+      }
+    }
+  },
+  {
+    "id": 381,
+    "vbeId": 226,
+    "evId": 381,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "15.8",
+        "topSpeed": "166"
+      }
+    }
+  },
+  {
+    "id": 382,
+    "vbeId": 227,
+    "evId": 382,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.0",
+        "topSpeed": "173"
+      }
+    }
+  },
+  {
+    "id": 383,
+    "vbeId": 228,
+    "evId": 383,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "19.0",
+        "topSpeed": "158"
+      }
+    }
+  },
+  {
+    "id": 384,
+    "vbeId": 229,
+    "evId": 384,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "11.6",
+        "topSpeed": "187"
+      }
+    }
+  },
+  {
+    "id": 385,
+    "vbeId": 230,
+    "evId": 385,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      }
+    }
+  },
+  {
+    "id": 386,
+    "vbeId": 231,
+    "evId": 386,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "20.0",
+        "topSpeed": "148"
+      }
+    }
+  },
+  {
+    "id": 387,
+    "vbeId": 232,
+    "evId": 387,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "18.4",
+        "topSpeed": "151"
+      }
+    }
+  },
+  {
+    "id": 388,
+    "vbeId": 233,
+    "evId": 388,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "15.9",
+        "topSpeed": "160"
+      }
+    }
+  },
+  {
+    "id": 389,
+    "vbeId": 234,
+    "evId": 389,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "16.5",
+        "topSpeed": "157"
+      }
+    }
+  },
+  {
+    "id": 390,
+    "vbeId": 235,
+    "evId": 390,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "15.0",
+        "topSpeed": "162"
+      }
+    }
+  },
+  {
+    "id": 391,
+    "vbeId": 236,
+    "evId": 391,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "11.5",
+        "topSpeed": "185"
+      }
+    }
+  },
+  {
+    "id": 392,
+    "vbeId": 237,
+    "evId": 392,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "13.8",
+        "topSpeed": "167"
+      }
+    }
+  },
+  {
+    "id": 393,
+    "vbeId": 237,
+    "evId": 393,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Automatic",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "17.0",
+        "topSpeed": "166"
+      }
+    }
+  },
+  {
+    "id": 394,
+    "vbeId": 238,
+    "evId": 394,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "9.9",
+        "topSpeed": "195"
+      }
+    }
+  },
+  {
+    "id": 395,
+    "vbeId": 239,
+    "evId": 395,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "14.2",
+        "topSpeed": "168"
+      }
+    }
+  },
+  {
+    "id": 396,
+    "vbeId": 240,
+    "evId": 396,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "13.8",
+        "topSpeed": "170"
+      }
+    }
+  },
+  {
+    "id": 397,
+    "vbeId": 241,
+    "evId": 397,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "15.6",
+        "topSpeed": "162"
+      }
+    }
+  },
+  {
+    "id": 398,
+    "vbeId": 242,
+    "evId": 398,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "18.0",
+        "topSpeed": "158"
+      }
+    }
+  },
+  {
+    "id": 399,
+    "vbeId": 243,
+    "evId": 399,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "11.5",
+        "topSpeed": "185"
+      }
+    }
+  },
+  {
+    "id": 400,
+    "vbeId": 244,
+    "evId": 400,
+    "engineVariantSpecs": {
+      "drivetrainSpecs": {
+        "transmissionType": "Manual",
+        "drivetrain": "FWD"
+      },
+      "performanceSpecs": {
+        "acceleration0To100": "9.6",
+        "topSpeed": "204"
+      }
+    }
   }
 ]

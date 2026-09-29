@@ -214,5 +214,101 @@
     "startYear": 2020,
     "endYear": null,
     "bodyType": "Wagon"
+  },
+  {
+    "id": 28,
+    "gId": 5,
+    "name": "Sedan",
+    "startYear": 2001,
+    "endYear": 2008,
+    "bodyType": "Sedan"
+  },
+  {
+    "id": 29,
+    "gId": 5,
+    "name": "Kombi",
+    "startYear": 2000,
+    "endYear": 2008,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 30,
+    "gId": 5,
+    "name": "Hatchback",
+    "startYear": 1999,
+    "endYear": 2007,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 31,
+    "gId": 6,
+    "name": "Hatchback Facelifting",
+    "startYear": 2010,
+    "endYear": 2014,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 32,
+    "gId": 6,
+    "name": "Kombi Facelifting",
+    "startYear": 2010,
+    "endYear": 2014,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 33,
+    "gId": 6,
+    "name": "Kombi",
+    "startYear": 2007,
+    "endYear": 2010,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 34,
+    "gId": 6,
+    "name": "Hatchback",
+    "startYear": 2007,
+    "endYear": 2010,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 35,
+    "gId": 7,
+    "name": "Hatchback Facelifting",
+    "startYear": 2018,
+    "endYear": 2021,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 36,
+    "gId": 7,
+    "name": "Kombi Facelifting",
+    "startYear": 2018,
+    "endYear": 2021,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 37,
+    "gId": 7,
+    "name": "Hatchback",
+    "startYear": 2014,
+    "endYear": 2018,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 38,
+    "gId": 7,
+    "name": "Kombi",
+    "startYear": 2014,
+    "endYear": 2018,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 39,
+    "gId": 8,
+    "name": "Hatchback",
+    "startYear": 2021,
+    "endYear": null,
+    "bodyType": "Hatchback"
   }
 ]
