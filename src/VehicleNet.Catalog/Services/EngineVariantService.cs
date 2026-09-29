@@ -27,7 +27,7 @@ internal sealed class EngineVariantService : IEngineVariantService
 
         if (search.EngineId.HasValue)
         {
-            query = query.Where(variant => variant.EngineId == search.EngineId.Value);
+            query = query.Where(variant => variant.EId == search.EngineId.Value);
         }
 
         if (!string.IsNullOrWhiteSpace(search.Name))
@@ -45,13 +45,13 @@ internal sealed class EngineVariantService : IEngineVariantService
     private EngineVariant MapVariant(EngineVariantDto dto)
     {
         var engines = _engineService.Search(new EngineSearch { });
-        var engine = engines.FirstOrDefault(e => e.Id == dto.EngineId)
-            ?? throw new InvalidOperationException($"Engine {dto.EngineId} was not found for variant {dto.EngineVariantId}.");
+        var engine = engines.FirstOrDefault(e => e.Id == dto.EId)
+            ?? throw new InvalidOperationException($"Engine {dto.EId} was not found for variant {dto.Id}.");
 
         return new EngineVariant
         {
-            EngineVariantId = dto.EngineVariantId,
-            EngineId = dto.EngineId,
+            EngineVariantId = dto.Id,
+            EngineId = dto.EId,
             Name = dto.Name,
             Engine = engine
         };

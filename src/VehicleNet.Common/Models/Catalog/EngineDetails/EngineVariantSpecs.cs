@@ -2,7 +2,7 @@ namespace VehicleNet.Common.Models.Catalog.EngineDetails;
 
 public record EngineVariantSpecs
 {
-    public required DrivetrainSpecs DrivetrainSpecs { get; init; }
+    public DrivetrainSpecs? DrivetrainSpecs { get; init; }
 
-    public required PerformanceSpecs PerformanceSpecs { get; init; }
+    public PerformanceSpecs? PerformanceSpecs { get; init; }
 }

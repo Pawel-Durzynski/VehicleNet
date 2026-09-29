@@ -2,8 +2,32 @@
   {
     "id": 1,
     "modelId": 1,
+    "name": "I",
+    "startYear": 1996,
+    "endYear": 2010,
+    "containsVersions": true
+  },
+  {
+    "id": 2,
+    "modelId": 1,
+    "name": "II",
+    "startYear": 2004,
+    "endYear": 2013,
+    "containsVersions": true
+  },
+  {
+    "id": 3,
+    "modelId": 1,
+    "name": "III",
+    "startYear": 2013,
+    "endYear": 2020,
+    "containsVersions": true
+  },
+  {
+    "id": 4,
+    "modelId": 1,
     "name": "IV",
-    "startYear": 2019,
+    "startYear": 2020,
     "endYear": null,
     "containsVersions": true
   }

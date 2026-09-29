@@ -1,8 +1,216 @@
 [
   {
     "id": 1,
-    "generationId": 1,
+    "gId": 1,
+    "name": "Kombi",
+    "startYear": 1998,
+    "endYear": 2010,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 2,
+    "gId": 1,
+    "name": "Hatchback",
+    "startYear": 1996,
+    "endYear": 2010,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 3,
+    "gId": 2,
+    "name": "Kombi",
+    "startYear": 2004,
+    "endYear": 2012,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 4,
+    "gId": 2,
+    "name": "Scout",
+    "startYear": 2006,
+    "endYear": 2011,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 5,
+    "gId": 2,
+    "name": "Hatchback",
+    "startYear": 2004,
+    "endYear": 2012,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 6,
+    "gId": 2,
+    "name": "Kombi Facefiting",
+    "startYear": 2008,
+    "endYear": 2013,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 7,
+    "gId": 2,
+    "name": "Hatchback Facefiting",
+    "startYear": 2008,
+    "endYear": 2013,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 8,
+    "gId": 2,
+    "name": "Scout Facefiting",
+    "startYear": 2008,
+    "endYear": 2011,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 9,
+    "gId": 3,
+    "name": "Scout Kombi",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 10,
+    "gId": 3,
+    "name": "Liftback Facelifting",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 11,
+    "gId": 3,
+    "name": "Kombi Facelifting",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 12,
+    "gId": 3,
+    "name": "RS Facelifting",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 13,
+    "gId": 3,
+    "name": "RS Kombi Facelifting",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 14,
+    "gId": 3,
+    "name": "Scout",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 15,
+    "gId": 3,
+    "name": "Kombi",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 16,
+    "gId": 3,
     "name": "RS",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 17,
+    "gId": 3,
+    "name": "Liftback",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 18,
+    "gId": 3,
+    "name": "RS Kombi",
+    "startYear": 2013,
+    "endYear": 2020,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 19,
+    "gId": 4,
+    "name": "RS Kombi",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 20,
+    "gId": 4,
+    "name": "Liftback",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 21,
+    "gId": 4,
+    "name": "Kombi",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 22,
+    "gId": 4,
+    "name": "RS Liftback",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 23,
+    "gId": 4,
+    "name": "Scout",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 24,
+    "gId": 4,
+    "name": "Liftback Plug-in",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 25,
+    "gId": 4,
+    "name": "Kombi Plug-in",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Wagon"
+  },
+  {
+    "id": 26,
+    "gId": 4,
+    "name": "RS Liftback Plug-In",
+    "startYear": 2020,
+    "endYear": null,
+    "bodyType": "Hatchback"
+  },
+  {
+    "id": 27,
+    "gId": 4,
+    "name": "RS Kombi Plug-In",
     "startYear": 2020,
     "endYear": null,
     "bodyType": "Wagon"

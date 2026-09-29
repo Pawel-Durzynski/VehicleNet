@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
@@ -33,7 +34,7 @@ public static class ServiceCollectionExtensions
         ValidateUniqueIds(generations, g => g.Id, "Generation", "3-generations.json");
         ValidateUniqueIds(versions, v => v.Id, "Version", "4-versions.json");
         ValidateUniqueIds(engines, e => e.Id, "Engine", "5-engines.json");
-        ValidateUniqueIds(engineVariants, ev => ev.EngineVariantId, "EngineVariant", "6-engine-variants.json");
+        ValidateUniqueIds(engineVariants, ev => ev.Id, "EngineVariant", "6-engine-variants.json");
 
         services.AddSingleton<IEnumerable<ManufacturerDto>>(manufacturers);
         services.AddSingleton<IEnumerable<ModelDto>>(models);
@@ -69,7 +70,7 @@ public static class ServiceCollectionExtensions
 
         // Load and convert vehicle body engine variants
         var vehicleBodyEngineVariantDtos = LoadResource(assembly, "9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto);
-        ValidateUniqueIds(vehicleBodyEngineVariantDtos, vbev => vbev.VehicleBodyEngineVariantId, "VehicleBodyEngineVariant", "9-vehicle-body-engine-variants.json");
+        ValidateUniqueIds(vehicleBodyEngineVariantDtos, vbev => vbev.Id, "VehicleBodyEngineVariant", "9-vehicle-body-engine-variants.json");
 
         services.AddSingleton<IEnumerable<VehicleBodyEngineVariant>>(sp =>
         {
@@ -91,52 +92,84 @@ public static class ServiceCollectionExtensions
         IEngineVariantService engineVariantService)
     {
         var bodyEngineCriteria = new VehicleBodyEngineSearchCriteriaBuilder()
-            .WithVehicleBodyEngineId(dto.VehicleBodyEngineId)
+            .WithVehicleBodyEngineId(dto.VbeId)
             .Build();
 
         var bodyEngineResult = vehicleBodyEngineService.Search(bodyEngineCriteria);
         var bodyEngine = bodyEngineResult.Items.FirstOrDefault()
-            ?? throw new InvalidOperationException($"VehicleBodyEngine {dto.VehicleBodyEngineId} was not found for variant {dto.VehicleBodyEngineVariantId}.");
+            ?? throw new InvalidOperationException($"VehicleBodyEngine {dto.VbeId} was not found for variant {dto.Id}.");
 
         var engineVariants = engineVariantService.Search(new EngineVariantSearch { });
-        var engineVariant = engineVariants.FirstOrDefault(v => v.EngineVariantId == dto.EngineVariantId)
-            ?? throw new InvalidOperationException($"EngineVariant {dto.EngineVariantId} was not found for variant {dto.VehicleBodyEngineVariantId}.");
+        var engineVariant = engineVariants.FirstOrDefault(v => v.EngineVariantId == dto.EvId)
+            ?? throw new InvalidOperationException($"EngineVariant {dto.EvId} was not found for variant {dto.Id}.");
 
         return new VehicleBodyEngineVariant
         {
-            VehicleBodyEngineVariantId = dto.VehicleBodyEngineVariantId,
+            VehicleBodyEngineVariantId = dto.Id,
             GenerationId = bodyEngine.GenerationId,
             VersionId = bodyEngine.VersionId,
-            VehicleBodyEngineId = dto.VehicleBodyEngineId,
-            EngineVariantId = dto.EngineVariantId,
+            VehicleBodyEngineId = dto.VbeId,
+            EngineVariantId = dto.EvId,
             EngineVariantSpecs = new EngineVariantSpecs
             {
-                DrivetrainSpecs = new DrivetrainSpecs
-                {
-                    TransmissionType = dto.EngineVariantSpecs.DrivetrainSpecs.TransmissionType,
-                    Drivetrain = dto.EngineVariantSpecs.DrivetrainSpecs.Drivetrain
-                },
-                PerformanceSpecs = new PerformanceSpecs
-                {
-                    Acceleration0To100 = dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100 is not null
-                        ? new ParameterValue(
-                            dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Value,
-                            dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.Unit,
-                            dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100.IsMissing)
-                        : ParameterValue.Missing(MeasurementUnit.Second),
-                    TopSpeed = dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed is not null
-                        ? new ParameterValue(
-                            dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Value,
-                            dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.Unit,
-                            dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed.IsMissing)
-                        : ParameterValue.Missing(MeasurementUnit.KilometerPerHour)
-                }
+                DrivetrainSpecs = dto.EngineVariantSpecs.DrivetrainSpecs is null
+                    ? null
+                    : new DrivetrainSpecs
+                    {
+                        TransmissionType = dto.EngineVariantSpecs.DrivetrainSpecs.TransmissionType,
+                        Drivetrain = dto.EngineVariantSpecs.DrivetrainSpecs.Drivetrain
+                    },
+                PerformanceSpecs = dto.EngineVariantSpecs.PerformanceSpecs is null
+                    ? null
+                    : new PerformanceSpecs
+                    {
+                        Acceleration0To100 = ToParameterValue(dto.EngineVariantSpecs.PerformanceSpecs.Acceleration0To100, MeasurementUnit.Second),
+                        TopSpeed = ToParameterValue(dto.EngineVariantSpecs.PerformanceSpecs.TopSpeed, MeasurementUnit.KilometerPerHour)
+                    }
             },
             VehicleBodyEngine = bodyEngine,
             Generation = bodyEngine.Generation,
             Version = bodyEngine.Version,
             EngineVariant = engineVariant
         };
+    }
+
+    private static ParameterValue ToParameterValue(JsonElement? element, MeasurementUnit defaultUnit)
+    {
+        if (!element.HasValue)
+        {
+            return ParameterValue.Missing(defaultUnit);
+        }
+
+        var value = element.Value;
+
+        if (value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+        {
+            return ParameterValue.Missing(defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.Number)
+        {
+            return ParameterValue.Create(value.GetDecimal(), defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.String)
+        {
+            var raw = value.GetString();
+            if (string.IsNullOrWhiteSpace(raw))
+            {
+                return ParameterValue.Missing(defaultUnit);
+            }
+
+            if (!decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var parsedValue))
+            {
+                throw new InvalidOperationException($"Could not parse parameter value '{raw}'.");
+            }
+
+            return ParameterValue.Create(parsedValue, defaultUnit);
+        }
+
+        throw new InvalidOperationException($"Unsupported parameter value token kind '{value.ValueKind}'.");
     }
 
     private static IReadOnlyList<T> LoadResource<T>(

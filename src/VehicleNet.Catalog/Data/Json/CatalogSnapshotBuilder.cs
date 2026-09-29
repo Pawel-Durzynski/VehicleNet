@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Text.Json;
 using VehicleNet.Common.Models.Catalog;
 using VehicleNet.Common.Models.Catalog.BodyDetails;
 using VehicleNet.Common.Models.Catalog.EngineDetails;
@@ -49,12 +51,12 @@ internal sealed class CatalogSnapshotBuilder
             version => version.Id,
             version => new VehicleVersion(
                 version.Id,
-                version.GenerationId,
+                version.GId,
                 version.Name,
                 version.StartYear,
                 version.EndYear,
                 version.BodyType,
-                GetRequired(generations, version.GenerationId, "generation", $"version {version.Id}")),
+                GetRequired(generations, version.GId, "generation", $"version {version.Id}")),
             "version");
 
         var engines = CreateIndex(
@@ -63,22 +65,22 @@ internal sealed class CatalogSnapshotBuilder
             engine => new VehicleEngine(
                 engine.Id,
                 engine.Name,
-                engine.GenerationId,
-                engine.GenerationId.HasValue ? GetRequired(generations, engine.GenerationId.Value, "generation", $"engine {engine.Id}") : null,
-                engine.VersionId,
-                engine.VersionId.HasValue ? GetRequired(versions, engine.VersionId.Value, "version", $"engine {engine.Id}") : null),
+                engine.GId,
+                engine.GId.HasValue ? GetRequired(generations, engine.GId.Value, "generation", $"engine {engine.Id}") : null,
+                engine.VId,
+                engine.VId.HasValue ? GetRequired(versions, engine.VId.Value, "version", $"engine {engine.Id}") : null),
             "engine");
 
         var bodies = CreateIndex(
             document.VehicleBodies,
-            body => body.VehicleBodyId,
+            body => body.Id,
             body => new VehicleBody
             {
-                VehicleBodyId = body.VehicleBodyId,
-                GenerationId = body.GenerationId,
-                Generation = body.GenerationId.HasValue ? GetRequired(generations, body.GenerationId.Value, "generation", $"body {body.VehicleBodyId}") : null,
-                VersionId = body.VersionId,
-                Version = body.VersionId.HasValue ? GetRequired(versions, body.VersionId.Value, "version", $"body {body.VehicleBodyId}") : null,
+                VehicleBodyId = body.Id,
+                GenerationId = body.GId,
+                Generation = body.GId.HasValue ? GetRequired(generations, body.GId.Value, "generation", $"body {body.Id}") : null,
+                VersionId = body.VId,
+                Version = body.VId.HasValue ? GetRequired(versions, body.VId.Value, "version", $"body {body.Id}") : null,
                 BodySpecs = BuildBodySpecs(body.BodySpecs)
             },
             "body");
@@ -95,22 +97,22 @@ internal sealed class CatalogSnapshotBuilder
         IReadOnlyDictionary<int, VehicleVersion> versions,
         IReadOnlyDictionary<int, VehicleEngine> engines)
     {
-        var engineId = bodyEngine.EngineId ?? throw new InvalidOperationException($"vehicle spec {bodyEngine.VehicleBodyEngineId} is missing engineId.");
-        var body = GetRequired(bodies, bodyEngine.VehicleBodyId, "body", $"vehicle spec {bodyEngine.VehicleBodyEngineId}");
+        var engineId = bodyEngine.EId ?? throw new InvalidOperationException($"vehicle spec {bodyEngine.Id} is missing engineId.");
+        var body = GetRequired(bodies, bodyEngine.VbId, "body", $"vehicle spec {bodyEngine.Id}");
         var generationId = body.GenerationId ?? throw new InvalidOperationException($"body {body.VehicleBodyId} is missing generationId.");
         var versionId = body.VersionId ?? throw new InvalidOperationException($"body {body.VehicleBodyId} is missing versionId.");
 
         return new VehicleBodyEngine
         {
-            VehicleBodyEngineId = bodyEngine.VehicleBodyEngineId,
-            VehicleBodyId = bodyEngine.VehicleBodyId,
+            VehicleBodyEngineId = bodyEngine.Id,
+            VehicleBodyId = bodyEngine.VbId,
             VehicleBody = body,
             GenerationId = generationId,
-            Generation = GetRequired(generations, generationId, "generation", $"vehicle spec {bodyEngine.VehicleBodyEngineId}"),
+            Generation = GetRequired(generations, generationId, "generation", $"vehicle spec {bodyEngine.Id}"),
             VersionId = versionId,
-            Version = GetRequired(versions, versionId, "version", $"vehicle spec {bodyEngine.VehicleBodyEngineId}"),
+            Version = GetRequired(versions, versionId, "version", $"vehicle spec {bodyEngine.Id}"),
             EngineId = engineId,
-            Engine = GetRequired(engines, engineId, "engine", $"vehicle spec {bodyEngine.VehicleBodyEngineId}"),
+            Engine = GetRequired(engines, engineId, "engine", $"vehicle spec {bodyEngine.Id}"),
             EngineSpecs = BuildEngineSpecs(bodyEngine.EngineSpecs)
         };
     }
@@ -121,26 +123,32 @@ internal sealed class CatalogSnapshotBuilder
 
         return new BodySpecs
         {
-            BasicParameters = new BasicParameters
-            {
-                NumberOfDoors = ToParameterValue(dto.BasicParameters.NumberOfDoors, MeasurementUnit.Count),
-                NumberOfSeats = ToParameterValue(dto.BasicParameters.NumberOfSeats, MeasurementUnit.Count),
-                TurningDiameter = ToParameterValue(dto.BasicParameters.TurningDiameter, MeasurementUnit.Meter),
-                TurningRadius = ToParameterValue(dto.BasicParameters.TurningRadius, MeasurementUnit.Meter),
-            },
-            ExternalDimensions = new ExternalDimensions
-            {
-                Length = ToParameterValue(dto.ExternalDimensions.Length, MeasurementUnit.Millimeter),
-                Width = ToParameterValue(dto.ExternalDimensions.Width, MeasurementUnit.Millimeter),
-                Height = ToParameterValue(dto.ExternalDimensions.Height, MeasurementUnit.Millimeter),
-                Wheelbase = ToParameterValue(dto.ExternalDimensions.Wheelbase, MeasurementUnit.Millimeter),
-                GroundClearance = ToParameterValue(dto.ExternalDimensions.GroundClearance, MeasurementUnit.Millimeter),
-            },
-            TrunkDimensions = new TrunkDimensions
-            {
-                MaximumTrunkCapacitySeatsFolded = ToParameterValue(dto.TrunkDimensions.MaximumTrunkCapacitySeatsFolded, MeasurementUnit.Liter),
-                MinimumTrunkCapacitySeatsUp = ToParameterValue(dto.TrunkDimensions.MinimumTrunkCapacitySeatsUp, MeasurementUnit.Liter),
-            }
+            BasicParameters = dto.BasicParameters is null
+                ? null
+                : new BasicParameters
+                {
+                    NumberOfDoors = ToParameterValue(dto.BasicParameters.NumberOfDoors, MeasurementUnit.Count),
+                    NumberOfSeats = ToParameterValue(dto.BasicParameters.NumberOfSeats, MeasurementUnit.Count),
+                    TurningDiameter = ToParameterValue(dto.BasicParameters.TurningDiameter, MeasurementUnit.Meter),
+                    TurningRadius = ToParameterValue(dto.BasicParameters.TurningRadius, MeasurementUnit.Meter),
+                },
+            ExternalDimensions = dto.ExternalDimensions is null
+                ? null
+                : new ExternalDimensions
+                {
+                    Length = ToParameterValue(dto.ExternalDimensions.Length, MeasurementUnit.Millimeter),
+                    Width = ToParameterValue(dto.ExternalDimensions.Width, MeasurementUnit.Millimeter),
+                    Height = ToParameterValue(dto.ExternalDimensions.Height, MeasurementUnit.Millimeter),
+                    Wheelbase = ToParameterValue(dto.ExternalDimensions.Wheelbase, MeasurementUnit.Millimeter),
+                    GroundClearance = ToParameterValue(dto.ExternalDimensions.GroundClearance, MeasurementUnit.Millimeter),
+                },
+            TrunkDimensions = dto.TrunkDimensions is null
+                ? null
+                : new TrunkDimensions
+                {
+                    MaximumTrunkCapacitySeatsFolded = ToParameterValue(dto.TrunkDimensions.MaximumTrunkCapacitySeatsFolded, MeasurementUnit.Liter),
+                    MinimumTrunkCapacitySeatsUp = ToParameterValue(dto.TrunkDimensions.MinimumTrunkCapacitySeatsUp, MeasurementUnit.Liter),
+                }
         };
     }
 
@@ -152,58 +160,68 @@ internal sealed class CatalogSnapshotBuilder
         {
             Capacity = ToParameterValue(dto.Capacity, MeasurementUnit.CubicCentimeter),
             FuelType = dto.FuelType,
-            Architecture = new EngineArchitecture
-            {
-                CylinderCount = ToParameterValue(dto.Architecture.CylinderCount, MeasurementUnit.Count),
-                CylinderArrangement = dto.Architecture.CylinderArrangement,
-                ValveCount = ToParameterValue(dto.Architecture.ValveCount, MeasurementUnit.Count)
-            },
-            Power = new EnginePowerSpecs
-            {
-                Horsepower = ToParameterValue(dto.Power.Horsepower, MeasurementUnit.Horsepower),
-                AtRpm = ToParameterValue(dto.Power.AtRpm, MeasurementUnit.Rpm)
-            },
-            Torque = new EngineTorqueSpecs
-            {
-                MaxTorque = ToParameterValue(dto.Torque.MaxTorque, MeasurementUnit.NewtonMeter),
-                AtRpmFrom = ToParameterValue(dto.Torque.AtRpmFrom, MeasurementUnit.Rpm),
-                AtRpmTo = ToParameterValue(dto.Torque.AtRpmTo, MeasurementUnit.Rpm)
-            }
+            Architecture = dto.Architecture is null
+                ? null
+                : new EngineArchitecture
+                {
+                    CylinderCount = ToParameterValue(dto.Architecture.CylinderCount, MeasurementUnit.Count),
+                    CylinderArrangement = dto.Architecture.CylinderArrangement,
+                    ValveCount = ToParameterValue(dto.Architecture.ValveCount, MeasurementUnit.Count)
+                },
+            Power = dto.Power is null
+                ? null
+                : new EnginePowerSpecs
+                {
+                    Horsepower = ToParameterValue(dto.Power.Horsepower, MeasurementUnit.Horsepower),
+                    AtRpm = ToParameterValue(dto.Power.At, MeasurementUnit.Rpm)
+                },
+            Torque = dto.Torque is null
+                ? null
+                : new EngineTorqueSpecs
+                {
+                    MaxTorque = ToParameterValue(dto.Torque.MaxTorque, MeasurementUnit.NewtonMeter),
+                    AtRpmFrom = ToParameterValue(dto.Torque.From, MeasurementUnit.Rpm),
+                    AtRpmTo = ToParameterValue(dto.Torque.To, MeasurementUnit.Rpm)
+                }
         };
     }
 
-    private static DrivetrainSpecs BuildDrivetrainSpecs(DrivetrainSpecsDto dto)
+    private static ParameterValue ToParameterValue(JsonElement? dto, MeasurementUnit defaultUnit)
     {
-        dto ??= new DrivetrainSpecsDto();
-
-        return new DrivetrainSpecs
-        {
-            TransmissionType = dto.TransmissionType,
-            Drivetrain = dto.Drivetrain
-        };
-    }
-
-    private static PerformanceSpecs BuildPerformanceSpecs(PerformanceSpecsDto dto)
-    {
-        dto ??= new PerformanceSpecsDto();
-
-        return new PerformanceSpecs
-        {
-            Acceleration0To100 = ToParameterValue(dto.Acceleration0To100, MeasurementUnit.Second),
-            TopSpeed = ToParameterValue(dto.TopSpeed, MeasurementUnit.KilometerPerHour)
-        };
-    }
-
-    private static ParameterValue ToParameterValue(ParameterValueDto? dto, MeasurementUnit defaultUnit)
-    {
-        if (dto is null)
+        if (!dto.HasValue)
         {
             return ParameterValue.Missing(defaultUnit);
         }
 
-        return dto.IsMissing || !dto.Value.HasValue
-            ? ParameterValue.Missing(dto.Unit == MeasurementUnit.None ? defaultUnit : dto.Unit)
-            : ParameterValue.Create(dto.Value.Value, dto.Unit == MeasurementUnit.None ? defaultUnit : dto.Unit);
+        var value = dto.Value;
+
+        if (value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+        {
+            return ParameterValue.Missing(defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.Number)
+        {
+            return ParameterValue.Create(value.GetDecimal(), defaultUnit);
+        }
+
+        if (value.ValueKind is JsonValueKind.String)
+        {
+            var raw = value.GetString();
+            if (string.IsNullOrWhiteSpace(raw))
+            {
+                return ParameterValue.Missing(defaultUnit);
+            }
+
+            if (!decimal.TryParse(raw, NumberStyles.Number, CultureInfo.InvariantCulture, out var parsedValue))
+            {
+                throw new InvalidOperationException($"Could not parse parameter value '{raw}'.");
+            }
+
+            return ParameterValue.Create(parsedValue, defaultUnit);
+        }
+
+        throw new InvalidOperationException($"Unsupported parameter value token kind '{value.ValueKind}'.");
     }
 
     private static TTarget GetRequired<TTarget>(IReadOnlyDictionary<int, TTarget> items, int id, string itemName, string owner)

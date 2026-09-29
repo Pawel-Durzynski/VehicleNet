@@ -32,7 +32,7 @@ internal sealed class VersionService : IVersionService
 
         if (search.GenerationId.HasValue)
         {
-            query = query.Where(version => version.GenerationId == search.GenerationId.Value);
+            query = query.Where(version => version.GId == search.GenerationId.Value);
         }
 
         if (!string.IsNullOrWhiteSpace(search.Name))
@@ -44,9 +44,9 @@ internal sealed class VersionService : IVersionService
         return query
             .Select(version =>
             {
-                if (!_generationsById.TryGetValue(version.GenerationId, out var generation))
+                if (!_generationsById.TryGetValue(version.GId, out var generation))
                 {
-                    throw new InvalidOperationException($"generation {version.GenerationId} was not found for version.");
+                    throw new InvalidOperationException($"generation {version.GId} was not found for version.");
                 }
 
                 if (!_modelsById.TryGetValue(generation.ModelId, out var model))
@@ -81,7 +81,7 @@ internal sealed class VersionService : IVersionService
 
                 return new VehicleVersion(
                     version.Id,
-                    version.GenerationId,
+                    version.GId,
                     version.Name,
                     version.StartYear,
                     version.EndYear,

@@ -29,8 +29,8 @@ public sealed class EngineVariantServiceTests
 
         var variants = new[]
         {
-            new EngineVariantDto { EngineVariantId = 2, EngineId = 10, Name = "TSI DSG" },
-            new EngineVariantDto { EngineVariantId = 1, EngineId = 10, Name = "TSI Manual" }
+            new EngineVariantDto { Id = 2, EId = 10, Name = "TSI DSG" },
+            new EngineVariantDto { Id = 1, EId = 10, Name = "TSI Manual" }
         };
 
         var sut = new EngineVariantService(variants, engineServiceMock.Object);
@@ -57,7 +57,7 @@ public sealed class EngineVariantServiceTests
 
         var variants = new[]
         {
-            new EngineVariantDto { EngineVariantId = 1, EngineId = 999, Name = "Missing Engine Variant" }
+            new EngineVariantDto { Id = 1, EId = 999, Name = "Missing Engine Variant" }
         };
 
         var sut = new EngineVariantService(variants, engineServiceMock.Object);
