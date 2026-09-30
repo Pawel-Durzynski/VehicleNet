@@ -23,6 +23,10 @@ internal sealed class EngineVariantService : IEngineVariantService
     {
         ArgumentNullException.ThrowIfNull(search);
 
+        var enginesById = _engineService
+            .Search(new EngineSearch { })
+            .ToDictionary(engine => engine.Id);
+
         var query = _variants.AsEnumerable();
 
         if (search.EngineId.HasValue)
@@ -37,16 +41,19 @@ internal sealed class EngineVariantService : IEngineVariantService
         }
 
         return query
-            .Select(MapVariant)
+            .Select(dto => MapVariant(dto, enginesById))
             .OrderBy(variant => variant.Name)
             .ToList();
     }
 
-    private EngineVariant MapVariant(EngineVariantDto dto)
+    private static EngineVariant MapVariant(
+        EngineVariantDto dto,
+        IReadOnlyDictionary<int, VehicleEngine> enginesById)
     {
-        var engines = _engineService.Search(new EngineSearch { });
-        var engine = engines.FirstOrDefault(e => e.Id == dto.EId)
-            ?? throw new InvalidOperationException($"Engine {dto.EId} was not found for variant {dto.Id}.");
+        if (!enginesById.TryGetValue(dto.EId, out var engine))
+        {
+            throw new InvalidOperationException($"Engine {dto.EId} was not found for variant {dto.Id}.");
+        }
 
         return new EngineVariant
         {

@@ -3,5 +3,10 @@
     "id": 1,
     "name": "Octavia",
     "manufacturerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Fabia",
+    "manufacturerId": 1
   }
 ]

@@ -1,6 +1,11 @@
 # VehicleNet
 
-VehicleNet is a modular, high-performance .NET library for automotive data. It provides robust tools for VIN (Vehicle Identification Number) validation, random VIN generation for testing purposes, and a comprehensive catalog of vehicle manufacturers, models, and specifications.
+VehicleNet is a modular, high-performance .NET library for automotive data. It provides robust tools for VIN (Vehicle Identification Number) validation, random VIN generation for testing purposes, and a comprehensive catalog of vehicle manufacturers, models, and specifications (24 parameters).
+
+VehicleNet.Catalog for now contains following models:
+Skoda: Fabia, Octavia
+
+The catalog will be growing. Contributors are welcome to help with extending the catalog.
 
 ## Features
 

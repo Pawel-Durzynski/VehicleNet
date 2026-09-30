@@ -22,34 +22,6 @@ internal sealed record CatalogJsonDocument
     public IReadOnlyList<VehicleBodyEngineDto> VehicleBodyEngines { get; init; } = [];
 
     public IReadOnlyList<VehicleBodyEngineVariantDto> VehicleBodyEngineVariants { get; init; } = [];
-
-    public void Validate()
-    {
-        ValidateUniqueIds(Manufacturers, m => m.Id, "Manufacturer");
-        ValidateUniqueIds(Models, m => m.Id, "Model");
-        ValidateUniqueIds(Generations, g => g.Id, "Generation");
-        ValidateUniqueIds(Versions, v => v.Id, "Version");
-        ValidateUniqueIds(Engines, e => e.Id, "Engine");
-        ValidateUniqueIds(EngineVariants, ev => ev.Id, "EngineVariant");
-        ValidateUniqueIds(VehicleBodies, vb => vb.Id, "VehicleBody");
-        ValidateUniqueIds(VehicleBodyEngines, vbe => vbe.Id, "VehicleBodyEngine");
-        ValidateUniqueIds(VehicleBodyEngineVariants, vbev => vbev.Id, "VehicleBodyEngineVariant");
-    }
-
-    private static void ValidateUniqueIds<T>(IReadOnlyList<T> items, Func<T, int> idSelector, string entityName)
-    {
-        var duplicates = items
-            .GroupBy(idSelector)
-            .Where(g => g.Count() > 1)
-            .Select(g => g.Key)
-            .ToList();
-
-        if (duplicates.Count > 0)
-        {
-            throw new InvalidOperationException(
-                $"Duplicate {entityName} IDs found: {string.Join(", ", duplicates)}. Each {entityName} must have a unique ID.");
-        }
-    }
 }
 
 internal sealed record ManufacturerDto

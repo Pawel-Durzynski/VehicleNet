@@ -9,6 +9,7 @@ public sealed class JsonVehicleCatalogSource : IVehicleCatalogSource
 {
     private readonly Assembly _assembly;
     private readonly CatalogSnapshotBuilder _builder;
+    private readonly IReadOnlyList<VehicleBodyEngine>? _snapshot;
 
     public JsonVehicleCatalogSource()
         : this(typeof(JsonVehicleCatalogSource).Assembly, new CatalogSnapshotBuilder())
@@ -21,9 +22,20 @@ public sealed class JsonVehicleCatalogSource : IVehicleCatalogSource
         _builder = builder;
     }
 
+    internal JsonVehicleCatalogSource(IReadOnlyList<VehicleBodyEngine> snapshot)
+        : this(typeof(JsonVehicleCatalogSource).Assembly, new CatalogSnapshotBuilder())
+    {
+        _snapshot = snapshot;
+    }
+
     public async Task<IReadOnlyList<VehicleBodyEngine>> LoadAsync(CancellationToken cancellationToken = default)
     {
         cancellationToken.ThrowIfCancellationRequested();
+
+        if (_snapshot is not null)
+        {
+            return _snapshot;
+        }
 
         var document = new CatalogJsonDocument
         {
@@ -37,8 +49,6 @@ public sealed class JsonVehicleCatalogSource : IVehicleCatalogSource
             VehicleBodyEngines = await LoadResourceAsync("8-vehicle-body-engines.json", context => context.IReadOnlyListVehicleBodyEngineDto, cancellationToken),
             VehicleBodyEngineVariants = await LoadResourceAsync("9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto, cancellationToken)
         };
-
-        document.Validate();
 
         return _builder.Build(document);
     }

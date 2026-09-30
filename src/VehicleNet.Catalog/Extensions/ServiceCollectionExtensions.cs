@@ -20,28 +20,26 @@ public static class ServiceCollectionExtensions
         ArgumentNullException.ThrowIfNull(services);
 
         var assembly = typeof(JsonVehicleCatalogSource).Assembly;
+        var document = new CatalogJsonDocument
+        {
+            Manufacturers = LoadResource(assembly, "1-manufacturers.json", context => context.IReadOnlyListManufacturerDto),
+            Models = LoadResource(assembly, "2-models.json", context => context.IReadOnlyListModelDto),
+            Generations = LoadResource(assembly, "3-generations.json", context => context.IReadOnlyListGenerationDto),
+            Versions = LoadResource(assembly, "4-versions.json", context => context.IReadOnlyListVersionDto),
+            Engines = LoadResource(assembly, "5-engines.json", context => context.IReadOnlyListEngineDto),
+            EngineVariants = LoadResource(assembly, "6-engine-variants.json", context => context.IReadOnlyListEngineVariantDto),
+            VehicleBodies = LoadResource(assembly, "7-vehicle-bodies.json", context => context.IReadOnlyListVehicleBodyDto),
+            VehicleBodyEngines = LoadResource(assembly, "8-vehicle-body-engines.json", context => context.IReadOnlyListVehicleBodyEngineDto),
+            VehicleBodyEngineVariants = LoadResource(assembly, "9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto)
+        };
+        var vehicleBodyEngines = new CatalogSnapshotBuilder().Build(document);
 
-        var manufacturers = LoadResource(assembly, "1-manufacturers.json", context => context.IReadOnlyListManufacturerDto);
-        var models = LoadResource(assembly, "2-models.json", context => context.IReadOnlyListModelDto);
-        var generations = LoadResource(assembly, "3-generations.json", context => context.IReadOnlyListGenerationDto);
-        var versions = LoadResource(assembly, "4-versions.json", context => context.IReadOnlyListVersionDto);
-        var engines = LoadResource(assembly, "5-engines.json", context => context.IReadOnlyListEngineDto);
-        var engineVariants = LoadResource(assembly, "6-engine-variants.json", context => context.IReadOnlyListEngineVariantDto);
-
-        // Validate ID uniqueness
-        ValidateUniqueIds(manufacturers, m => m.Id, "Manufacturer", "1-manufacturers.json");
-        ValidateUniqueIds(models, m => m.Id, "Model", "2-models.json");
-        ValidateUniqueIds(generations, g => g.Id, "Generation", "3-generations.json");
-        ValidateUniqueIds(versions, v => v.Id, "Version", "4-versions.json");
-        ValidateUniqueIds(engines, e => e.Id, "Engine", "5-engines.json");
-        ValidateUniqueIds(engineVariants, ev => ev.Id, "EngineVariant", "6-engine-variants.json");
-
-        services.AddSingleton<IEnumerable<ManufacturerDto>>(manufacturers);
-        services.AddSingleton<IEnumerable<ModelDto>>(models);
-        services.AddSingleton<IEnumerable<GenerationDto>>(generations);
-        services.AddSingleton<IEnumerable<VersionDto>>(versions);
-        services.AddSingleton<IEnumerable<EngineDto>>(engines);
-        services.AddSingleton<IEnumerable<EngineVariantDto>>(engineVariants);
+        services.AddSingleton<IEnumerable<ManufacturerDto>>(document.Manufacturers);
+        services.AddSingleton<IEnumerable<ModelDto>>(document.Models);
+        services.AddSingleton<IEnumerable<GenerationDto>>(document.Generations);
+        services.AddSingleton<IEnumerable<VersionDto>>(document.Versions);
+        services.AddSingleton<IEnumerable<EngineDto>>(document.Engines);
+        services.AddSingleton<IEnumerable<EngineVariantDto>>(document.EngineVariants);
 
         services.AddSingleton<IManufacturerService, ManufacturerService>();
         services.AddSingleton<IModelService, ModelService>();
@@ -50,13 +48,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IEngineService, EngineService>();
         services.AddSingleton<IEngineVariantService, EngineVariantService>();
 
-        services.AddSingleton<IVehicleCatalogSource, JsonVehicleCatalogSource>();
-
-        services.AddSingleton<IEnumerable<VehicleBodyEngine>>(sp =>
-            sp.GetRequiredService<IVehicleCatalogSource>()
-                .LoadAsync()
-                .GetAwaiter()
-                .GetResult());
+        services.AddSingleton<IVehicleCatalogSource>(new JsonVehicleCatalogSource(vehicleBodyEngines));
+        services.AddSingleton<IEnumerable<VehicleBodyEngine>>(vehicleBodyEngines);
 
         services.AddSingleton<IEnumerable<VehicleBody>>(sp =>
             sp.GetRequiredService<IEnumerable<VehicleBodyEngine>>()
@@ -68,16 +61,18 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IVehicleBodyEngineService, VehicleBodyEngineService>();
         services.AddSingleton<IVehicleBodyService, VehicleBodyService>();
 
-        // Load and convert vehicle body engine variants
-        var vehicleBodyEngineVariantDtos = LoadResource(assembly, "9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto);
-        ValidateUniqueIds(vehicleBodyEngineVariantDtos, vbev => vbev.Id, "VehicleBodyEngineVariant", "9-vehicle-body-engine-variants.json");
-
         services.AddSingleton<IEnumerable<VehicleBodyEngineVariant>>(sp =>
         {
-            var bodyEngineService = sp.GetRequiredService<IVehicleBodyEngineService>();
-            var engineVariantService = sp.GetRequiredService<IEngineVariantService>();
-            return vehicleBodyEngineVariantDtos
-                .Select(dto => MapVehicleBodyEngineVariant(dto, bodyEngineService, engineVariantService))
+            var bodyEnginesById = sp
+                .GetRequiredService<IEnumerable<VehicleBodyEngine>>()
+                .ToDictionary(bodyEngine => bodyEngine.VehicleBodyEngineId);
+            var engineVariantsById = sp
+                .GetRequiredService<IEngineVariantService>()
+                .Search(new EngineVariantSearch { })
+                .ToDictionary(engineVariant => engineVariant.EngineVariantId);
+
+            return document.VehicleBodyEngineVariants
+                .Select(dto => MapVehicleBodyEngineVariant(dto, bodyEnginesById, engineVariantsById))
                 .ToList();
         });
 
@@ -88,20 +83,18 @@ public static class ServiceCollectionExtensions
 
     private static VehicleBodyEngineVariant MapVehicleBodyEngineVariant(
         VehicleBodyEngineVariantDto dto,
-        IVehicleBodyEngineService vehicleBodyEngineService,
-        IEngineVariantService engineVariantService)
+        IReadOnlyDictionary<int, VehicleBodyEngine> bodyEnginesById,
+        IReadOnlyDictionary<int, EngineVariant> engineVariantsById)
     {
-        var bodyEngineCriteria = new VehicleBodyEngineSearchCriteriaBuilder()
-            .WithVehicleBodyEngineId(dto.VbeId)
-            .Build();
+        if (!bodyEnginesById.TryGetValue(dto.VbeId, out var bodyEngine))
+        {
+            throw new InvalidOperationException($"VehicleBodyEngine {dto.VbeId} was not found for variant {dto.Id}.");
+        }
 
-        var bodyEngineResult = vehicleBodyEngineService.Search(bodyEngineCriteria);
-        var bodyEngine = bodyEngineResult.Items.FirstOrDefault()
-            ?? throw new InvalidOperationException($"VehicleBodyEngine {dto.VbeId} was not found for variant {dto.Id}.");
-
-        var engineVariants = engineVariantService.Search(new EngineVariantSearch { });
-        var engineVariant = engineVariants.FirstOrDefault(v => v.EngineVariantId == dto.EvId)
-            ?? throw new InvalidOperationException($"EngineVariant {dto.EvId} was not found for variant {dto.Id}.");
+        if (!engineVariantsById.TryGetValue(dto.EvId, out var engineVariant))
+        {
+            throw new InvalidOperationException($"EngineVariant {dto.EvId} was not found for variant {dto.Id}.");
+        }
 
         return new VehicleBodyEngineVariant
         {
@@ -188,20 +181,5 @@ public static class ServiceCollectionExtensions
         var result = JsonSerializer.Deserialize(stream, jsonTypeInfoFactory(CatalogJsonSerializerContext.Default));
 
         return result ?? throw new InvalidOperationException($"Catalog JSON resource '{fileName}' was empty or invalid.");
-    }
-
-    private static void ValidateUniqueIds<T>(IReadOnlyList<T> items, Func<T, int> idSelector, string entityName, string fileName)
-    {
-        var duplicates = items
-            .GroupBy(idSelector)
-            .Where(g => g.Count() > 1)
-            .Select(g => g.Key)
-            .ToList();
-
-        if (duplicates.Count > 0)
-        {
-            throw new InvalidOperationException(
-                $"Duplicate {entityName} IDs found in '{fileName}': {string.Join(", ", duplicates)}. Each {entityName} must have a unique ID.");
-        }
     }
 }
