@@ -1998,5 +1998,410 @@
     "id": 400,
     "eId": 244,
     "name": "1.9 TDI RS 130KM 96kW Manual"
+  },
+  {
+    "id": 401,
+    "eId": 245,
+    "name": "1.2 HTP 60KM 44kW Manual"
+  },
+  {
+    "id": 402,
+    "eId": 246,
+    "name": "1.2 HTP 70KM 51kW Manual"
+  },
+  {
+    "id": 403,
+    "eId": 247,
+    "name": "1.2 TSI 85KM 63kW Manual"
+  },
+  {
+    "id": 404,
+    "eId": 248,
+    "name": "1.2 TSI 105KM 77kW Manual"
+  },
+  {
+    "id": 405,
+    "eId": 248,
+    "name": "1.2 TSI 105KM 77kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 406,
+    "eId": 249,
+    "name": "1.4 16V 85KM 63kW Manual"
+  },
+  {
+    "id": 407,
+    "eId": 250,
+    "name": "1.4 TSI 180KM 132kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 408,
+    "eId": 251,
+    "name": "1.6 16V 105KM 77kW Manual"
+  },
+  {
+    "id": 409,
+    "eId": 251,
+    "name": "1.6 16V 105KM 77kW Automatic 6-speed"
+  },
+  {
+    "id": 410,
+    "eId": 252,
+    "name": "1.2 TDI CR DPF 75KM 55kW Manual"
+  },
+  {
+    "id": 411,
+    "eId": 253,
+    "name": "1.6 TDI CR DPF 75KM 55kW Manual"
+  },
+  {
+    "id": 412,
+    "eId": 254,
+    "name": "1.6 TDI CR DPF 90KM 66kW Manual"
+  },
+  {
+    "id": 413,
+    "eId": 255,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual"
+  },
+  {
+    "id": 414,
+    "eId": 256,
+    "name": "1.2 HTP 60KM 44kW Manual"
+  },
+  {
+    "id": 415,
+    "eId": 257,
+    "name": "1.2 HTP 70KM 51kW Manual"
+  },
+  {
+    "id": 416,
+    "eId": 258,
+    "name": "1.2 TSI 105KM 77kW Manual"
+  },
+  {
+    "id": 417,
+    "eId": 258,
+    "name": "1.2 TSI 105KM 77kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 418,
+    "eId": 259,
+    "name": "1.2 TSI 85KM 63kW Manual"
+  },
+  {
+    "id": 419,
+    "eId": 260,
+    "name": "1.4 16V 85KM 63kW Manual"
+  },
+  {
+    "id": 420,
+    "eId": 261,
+    "name": "1.4 TSI 180KM 132kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 421,
+    "eId": 262,
+    "name": "1.6 16V 105KM 77kW Manual"
+  },
+  {
+    "id": 422,
+    "eId": 262,
+    "name": "1.6 16V 105KM 77kW Automatic 6-speed"
+  },
+  {
+    "id": 423,
+    "eId": 263,
+    "name": "1.2 TDI CR DPF 75KM 55kW Manual"
+  },
+  {
+    "id": 424,
+    "eId": 264,
+    "name": "1.6 TDI CR DPF 105KM 77kW Manual"
+  },
+  {
+    "id": 425,
+    "eId": 265,
+    "name": "1.6 TDI CR DPF 75KM 55kW Manual"
+  },
+  {
+    "id": 426,
+    "eId": 266,
+    "name": "1.6 TDI CR DPF 90KM 66kW Manual"
+  },
+  {
+    "id": 427,
+    "eId": 267,
+    "name": "1.2 60KM 44kW Manual"
+  },
+  {
+    "id": 428,
+    "eId": 268,
+    "name": "1.2 70KM 51kW Manual"
+  },
+  {
+    "id": 429,
+    "eId": 269,
+    "name": "1.4 i 16V 85KM 63kW Manual"
+  },
+  {
+    "id": 430,
+    "eId": 270,
+    "name": "1.6 i 16V 105KM 77kW Manual"
+  },
+  {
+    "id": 431,
+    "eId": 270,
+    "name": "1.6 i 16V 105KM 77kW Automatic"
+  },
+  {
+    "id": 432,
+    "eId": 271,
+    "name": "1.4 TDI 80KM 59kW Manual"
+  },
+  {
+    "id": 433,
+    "eId": 272,
+    "name": "1.4 TDI 70KM 51kW Manual"
+  },
+  {
+    "id": 434,
+    "eId": 273,
+    "name": "1.9 TDI 105KM 77kW Manual"
+  },
+  {
+    "id": 435,
+    "eId": 274,
+    "name": "1.2 i HTP 60KM 44kW Manual"
+  },
+  {
+    "id": 436,
+    "eId": 275,
+    "name": "1.2 i HTP 12V 70KM 51kW Manual"
+  },
+  {
+    "id": 437,
+    "eId": 276,
+    "name": "1.4 i 16V 85KM 63kW Manual"
+  },
+  {
+    "id": 438,
+    "eId": 277,
+    "name": "1.6 i 16V 105KM 77kW Manual 6-speed"
+  },
+  {
+    "id": 439,
+    "eId": 277,
+    "name": "1.6 i 16V 105KM 77kW Automatic"
+  },
+  {
+    "id": 440,
+    "eId": 278,
+    "name": "1.4 TDI 70KM 51kW Manual"
+  },
+  {
+    "id": 441,
+    "eId": 279,
+    "name": "1.4 TDI 80KM 59kW Manual"
+  },
+  {
+    "id": 442,
+    "eId": 280,
+    "name": "1.9 TDI 105KM 77kW Manual"
+  },
+  {
+    "id": 443,
+    "eId": 281,
+    "name": "1.0 MPI 60KM 44kW Manual"
+  },
+  {
+    "id": 444,
+    "eId": 282,
+    "name": "1.0 MPI 75KM 55kW Manual"
+  },
+  {
+    "id": 445,
+    "eId": 283,
+    "name": "1.0 TSI 95KM 70kW Manual"
+  },
+  {
+    "id": 446,
+    "eId": 283,
+    "name": "1.0 TSI 95KM 70kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 447,
+    "eId": 284,
+    "name": "1.0 TSI 110KM 81kW Manual 6-speed"
+  },
+  {
+    "id": 448,
+    "eId": 284,
+    "name": "1.0 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 449,
+    "eId": 285,
+    "name": "1.0 MPI 75KM 55kW Manual"
+  },
+  {
+    "id": 450,
+    "eId": 286,
+    "name": "1.0 MPI 60KM 44kW Manual"
+  },
+  {
+    "id": 451,
+    "eId": 287,
+    "name": "1.0 TSI 95KM 70kW Manual"
+  },
+  {
+    "id": 452,
+    "eId": 287,
+    "name": "1.0 TSI 95KM 70kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 453,
+    "eId": 288,
+    "name": "1.0 TSI 110KM 81kW Manual"
+  },
+  {
+    "id": 454,
+    "eId": 288,
+    "name": "1.0 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 455,
+    "eId": 289,
+    "name": "1.0 MPI 60KM 44kW Manual"
+  },
+  {
+    "id": 456,
+    "eId": 290,
+    "name": "1.0 MPI 75KM 55kW Manual"
+  },
+  {
+    "id": 457,
+    "eId": 291,
+    "name": "1.0 TSI 95KM 70kW Manual"
+  },
+  {
+    "id": 458,
+    "eId": 292,
+    "name": "1.0 TSI 110KM 81kW Manual"
+  },
+  {
+    "id": 459,
+    "eId": 292,
+    "name": "1.0 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 460,
+    "eId": 293,
+    "name": "1.2 TSI 90KM 66kW Manual"
+  },
+  {
+    "id": 461,
+    "eId": 294,
+    "name": "1.2 TSI 110KM 81kW Manual"
+  },
+  {
+    "id": 462,
+    "eId": 294,
+    "name": "1.2 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 463,
+    "eId": 295,
+    "name": "1.4 TSI 125KM 92kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 464,
+    "eId": 296,
+    "name": "1.4 TDI 90KM 66kW Manual"
+  },
+  {
+    "id": 465,
+    "eId": 296,
+    "name": "1.4 TDI 90KM 66kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 466,
+    "eId": 297,
+    "name": "1.4 TDI 105KM 77kW Manual"
+  },
+  {
+    "id": 467,
+    "eId": 298,
+    "name": "1.0 MPI 75KM 55kW Manual"
+  },
+  {
+    "id": 468,
+    "eId": 299,
+    "name": "1.0 TSI 95KM 70kW Manual"
+  },
+  {
+    "id": 469,
+    "eId": 300,
+    "name": "1.0 TSI 110KM 81kW Manual"
+  },
+  {
+    "id": 470,
+    "eId": 300,
+    "name": "1.0 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 471,
+    "eId": 301,
+    "name": "1.2 TSI 90KM 66kW Manual"
+  },
+  {
+    "id": 472,
+    "eId": 302,
+    "name": "1.2 TSI 110KM 81kW Manual"
+  },
+  {
+    "id": 473,
+    "eId": 302,
+    "name": "1.2 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 474,
+    "eId": 303,
+    "name": "1.4 TDI 90KM 66kW Manual"
+  },
+  {
+    "id": 475,
+    "eId": 303,
+    "name": "1.4 TDI 90KM 66kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 476,
+    "eId": 304,
+    "name": "1.4 TDI 105KM 77kW Manual"
+  },
+  {
+    "id": 477,
+    "eId": 305,
+    "name": "1.0 MPI 80KM 59kW Manual"
+  },
+  {
+    "id": 478,
+    "eId": 306,
+    "name": "1.0 TSI 95KM 70kW Manual"
+  },
+  {
+    "id": 479,
+    "eId": 307,
+    "name": "1.0 TSI 110KM 81kW Manual"
+  },
+  {
+    "id": 480,
+    "eId": 307,
+    "name": "1.0 TSI 110KM 81kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 481,
+    "eId": 308,
+    "name": "1.5 TSI 150KM 110kW DSG Automatic 7-speed Euro 6d Start&Stop"
   }
 ]
