@@ -20,20 +20,26 @@ public static class ServiceCollectionExtensions
         ArgumentNullException.ThrowIfNull(services);
 
         var assembly = typeof(JsonVehicleCatalogSource).Assembly;
+        var document = new CatalogJsonDocument
+        {
+            Manufacturers = LoadResource(assembly, "1-manufacturers.json", context => context.IReadOnlyListManufacturerDto),
+            Models = LoadResource(assembly, "2-models.json", context => context.IReadOnlyListModelDto),
+            Generations = LoadResource(assembly, "3-generations.json", context => context.IReadOnlyListGenerationDto),
+            Versions = LoadResource(assembly, "4-versions.json", context => context.IReadOnlyListVersionDto),
+            Engines = LoadResource(assembly, "5-engines.json", context => context.IReadOnlyListEngineDto),
+            EngineVariants = LoadResource(assembly, "6-engine-variants.json", context => context.IReadOnlyListEngineVariantDto),
+            VehicleBodies = LoadResource(assembly, "7-vehicle-bodies.json", context => context.IReadOnlyListVehicleBodyDto),
+            VehicleBodyEngines = LoadResource(assembly, "8-vehicle-body-engines.json", context => context.IReadOnlyListVehicleBodyEngineDto),
+            VehicleBodyEngineVariants = LoadResource(assembly, "9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto)
+        };
+        var vehicleBodyEngines = new CatalogSnapshotBuilder().Build(document);
 
-        var manufacturers = LoadResource(assembly, "1-manufacturers.json", context => context.IReadOnlyListManufacturerDto);
-        var models = LoadResource(assembly, "2-models.json", context => context.IReadOnlyListModelDto);
-        var generations = LoadResource(assembly, "3-generations.json", context => context.IReadOnlyListGenerationDto);
-        var versions = LoadResource(assembly, "4-versions.json", context => context.IReadOnlyListVersionDto);
-        var engines = LoadResource(assembly, "5-engines.json", context => context.IReadOnlyListEngineDto);
-        var engineVariants = LoadResource(assembly, "6-engine-variants.json", context => context.IReadOnlyListEngineVariantDto);
-
-        services.AddSingleton<IEnumerable<ManufacturerDto>>(manufacturers);
-        services.AddSingleton<IEnumerable<ModelDto>>(models);
-        services.AddSingleton<IEnumerable<GenerationDto>>(generations);
-        services.AddSingleton<IEnumerable<VersionDto>>(versions);
-        services.AddSingleton<IEnumerable<EngineDto>>(engines);
-        services.AddSingleton<IEnumerable<EngineVariantDto>>(engineVariants);
+        services.AddSingleton<IEnumerable<ManufacturerDto>>(document.Manufacturers);
+        services.AddSingleton<IEnumerable<ModelDto>>(document.Models);
+        services.AddSingleton<IEnumerable<GenerationDto>>(document.Generations);
+        services.AddSingleton<IEnumerable<VersionDto>>(document.Versions);
+        services.AddSingleton<IEnumerable<EngineDto>>(document.Engines);
+        services.AddSingleton<IEnumerable<EngineVariantDto>>(document.EngineVariants);
 
         services.AddSingleton<IManufacturerService, ManufacturerService>();
         services.AddSingleton<IModelService, ModelService>();
@@ -42,13 +48,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IEngineService, EngineService>();
         services.AddSingleton<IEngineVariantService, EngineVariantService>();
 
-        services.AddSingleton<IVehicleCatalogSource, JsonVehicleCatalogSource>();
-
-        services.AddSingleton<IEnumerable<VehicleBodyEngine>>(sp =>
-            sp.GetRequiredService<IVehicleCatalogSource>()
-                .LoadAsync()
-                .GetAwaiter()
-                .GetResult());
+        services.AddSingleton<IVehicleCatalogSource>(new JsonVehicleCatalogSource(vehicleBodyEngines));
+        services.AddSingleton<IEnumerable<VehicleBodyEngine>>(vehicleBodyEngines);
 
         services.AddSingleton<IEnumerable<VehicleBody>>(sp =>
             sp.GetRequiredService<IEnumerable<VehicleBodyEngine>>()
@@ -60,9 +61,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IVehicleBodyEngineService, VehicleBodyEngineService>();
         services.AddSingleton<IVehicleBodyService, VehicleBodyService>();
 
-        // Load and convert vehicle body engine variants
-        var vehicleBodyEngineVariantDtos = LoadResource(assembly, "9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto);
-
         services.AddSingleton<IEnumerable<VehicleBodyEngineVariant>>(sp =>
         {
             var bodyEnginesById = sp
@@ -73,7 +71,7 @@ public static class ServiceCollectionExtensions
                 .Search(new EngineVariantSearch { })
                 .ToDictionary(engineVariant => engineVariant.EngineVariantId);
 
-            return vehicleBodyEngineVariantDtos
+            return document.VehicleBodyEngineVariants
                 .Select(dto => MapVehicleBodyEngineVariant(dto, bodyEnginesById, engineVariantsById))
                 .ToList();
         });
