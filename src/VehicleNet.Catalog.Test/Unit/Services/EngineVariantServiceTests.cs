@@ -44,7 +44,7 @@ public sealed class EngineVariantServiceTests
             Assert.That(result.All(v => v.Engine.Id == 10), Is.True);
         });
 
-        engineServiceMock.Verify(s => s.Search(It.IsAny<EngineSearch>()), Times.Exactly(2));
+        engineServiceMock.Verify(s => s.Search(It.IsAny<EngineSearch>()), Times.Once);
     }
 
     [Test]

@@ -38,8 +38,6 @@ public sealed class JsonVehicleCatalogSource : IVehicleCatalogSource
             VehicleBodyEngineVariants = await LoadResourceAsync("9-vehicle-body-engine-variants.json", context => context.IReadOnlyListVehicleBodyEngineVariantDto, cancellationToken)
         };
 
-        document.Validate();
-
         return _builder.Build(document);
     }
 

@@ -17,13 +17,6 @@ services.AddTransient<VehicleNetCatalog>();
 services.AddTransient<VehicleNetVin>();
 
 using var serviceProvider = services.BuildServiceProvider();
-var catalogPlayground = serviceProvider.GetRequiredService<VehicleNetCatalog>();
-catalogPlayground.Playground();
-
-var vinPlayground = serviceProvider.GetRequiredService<VehicleNetVin>();
-vinPlayground.Playground();
-
-Console.Clear();
 
 var manufacturerService = serviceProvider.GetRequiredService<IManufacturerService>();
 var modelService = serviceProvider.GetRequiredService<IModelService>();
