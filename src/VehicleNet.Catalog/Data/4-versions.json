@@ -310,5 +310,61 @@
     "startYear": 2021,
     "endYear": null,
     "bodyType": "Hatchback"
+  },
+  {
+    "id": 40,
+    "gId": 9,
+    "name": "SUV Facelifting",
+    "startYear": 2021,
+    "endYear": 2024,
+    "bodyType": "Suv"
+  },
+  {
+    "id": 41,
+    "gId": 9,
+    "name": "RS Facelifting",
+    "startYear": 2021,
+    "endYear": 2024,
+    "bodyType": "Suv"
+  },
+  {
+    "id": 42,
+    "gId": 9,
+    "name": "RS",
+    "startYear": 2019,
+    "endYear": 2020,
+    "bodyType": "Suv"
+  },
+  {
+    "id": 43,
+    "gId": 9,
+    "name": "Scout",
+    "startYear": 2017,
+    "endYear": 2020,
+    "bodyType": "Suv"
+  },
+  {
+    "id": 44,
+    "gId": 9,
+    "name": "SUV",
+    "startYear": 2016,
+    "endYear": 2021,
+    "bodyType": "Suv"
+  },
+  {
+    "id": 45,
+    "gId": 10,
+    "name": "SUV",
+    "startYear": 2024,
+    "endYear": null,
+    "bodyType": "Suv"
+  },
+  {
+    "id": 46,
+    "gId": 10,
+    "name": "SUV Plug-In",
+    "startYear": 2024,
+    "endYear": null,
+    "bodyType": "Suv"
   }
 ]

@@ -3,7 +3,8 @@
 `VehicleNet.Catalog` provides a ready-to-use vehicle catalog with manufacturers, models, generations, versions, engines, body specs, and engine variant specs (24 parameters).
 
 VehicleNet.Catalog for now contains following models:
-Skoda: Fabia, Octavia
+
+Skoda: Fabia, Octavia, Kodiaq
 
 The catalog will be growing. Contributors are welcome to help with extending the catalog.
 

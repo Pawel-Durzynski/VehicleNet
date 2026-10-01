@@ -31,100 +31,119 @@ var manufacturers = manufacturerService.Search(new ManufacturerSearch())
     .DistinctBy(x => x.Id)
     .ToList();
 
-var selectedManufacturer = PromptSingleSelection("Select manufacturer", manufacturers, x => x.Name);
-if (selectedManufacturer is null)
-{
-    return;
-}
-
-var models = modelService.Search(new ModelSearch { ManufacturerId = selectedManufacturer.Id })
-    .OrderBy(x => x.Name)
-    .DistinctBy(x => x.Id)
-    .ToList();
-
-var selectedModel = PromptSingleSelection("Select model", models, x => x.Name);
-if (selectedModel is null)
-{
-    return;
-}
-
-var generations = generationService.Search(new GenerationSearch { ModelId = selectedModel.Id })
-    .OrderBy(x => x.StartYear)
-    .ThenBy(x => x.Name)
-    .DistinctBy(x => x.Id)
-    .ToList();
-
-var selectedGeneration = PromptSingleSelection("Select generation", generations, x => $"{x.Name} ({x.StartYear}-{FormatYear(x.EndYear)})");
-if (selectedGeneration is null)
-{
-    return;
-}
-
+VehicleManufacturer? selectedManufacturer = null;
+VehicleModel? selectedModel = null;
+VehicleGeneration? selectedGeneration = null;
 VehicleVersion? selectedVersion = null;
-if (selectedGeneration.ContainsVersions)
-{
-    var versions = versionService.Search(new VersionSearch { GenerationId = selectedGeneration.Id })
-        .OrderBy(x => x.StartYear)
-        .ThenBy(x => x.Name)
-        .DistinctBy(x => x.Id)
-        .ToList();
+VehicleEngine? selectedEngine = null;
+var stage = CatalogStage.Manufacturer;
 
-    selectedVersion = PromptSingleSelection("Select version", versions, x => x.DisplayName);
-    if (selectedVersion is null)
+while (true)
+{
+    switch (stage)
     {
-        return;
+        case CatalogStage.Manufacturer:
+            selectedManufacturer = PromptSingleSelection("Select manufacturer", manufacturers, x => x.Name, includeBack: false);
+            if (selectedManufacturer is null)
+            {
+                return;
+            }
+
+            stage = CatalogStage.Model;
+            break;
+
+        case CatalogStage.Model:
+            var models = modelService.Search(new ModelSearch { ManufacturerId = selectedManufacturer!.Id })
+                .OrderBy(x => x.Name)
+                .DistinctBy(x => x.Id)
+                .ToList();
+
+            selectedModel = PromptSingleSelection("Select model", models, x => x.Name);
+            stage = selectedModel is null ? CatalogStage.Manufacturer : CatalogStage.Generation;
+            break;
+
+        case CatalogStage.Generation:
+            var generations = generationService.Search(new GenerationSearch { ModelId = selectedModel!.Id })
+                .OrderBy(x => x.StartYear)
+                .ThenBy(x => x.Name)
+                .DistinctBy(x => x.Id)
+                .ToList();
+
+            selectedGeneration = PromptSingleSelection("Select generation", generations, x => $"{x.Name} ({x.StartYear}-{FormatYear(x.EndYear)})");
+            stage = selectedGeneration is null
+                ? CatalogStage.Model
+                : selectedGeneration.ContainsVersions ? CatalogStage.Version : CatalogStage.Engine;
+            break;
+
+        case CatalogStage.Version:
+            var versions = versionService.Search(new VersionSearch { GenerationId = selectedGeneration!.Id })
+                .OrderBy(x => x.StartYear)
+                .ThenBy(x => x.Name)
+                .DistinctBy(x => x.Id)
+                .ToList();
+
+            selectedVersion = PromptSingleSelection("Select version", versions, x => x.DisplayName);
+            stage = selectedVersion is null ? CatalogStage.Generation : CatalogStage.Engine;
+            break;
+
+        case CatalogStage.Engine:
+            var engines = selectedGeneration!.ContainsVersions
+                ? engineService.Search(new EngineSearch { VersionId = selectedVersion!.Id })
+                : engineService.Search(new EngineSearch { GenerationId = selectedGeneration.Id });
+
+            var engineChoices = engines
+                .OrderBy(x => x.Name)
+                .DistinctBy(x => x.Id)
+                .ToList();
+
+            selectedEngine = PromptSingleSelection("Select engine", engineChoices, x => x.Name);
+            stage = selectedEngine is null
+                ? selectedGeneration.ContainsVersions ? CatalogStage.Version : CatalogStage.Generation
+                : CatalogStage.EngineVariant;
+            break;
+
+        case CatalogStage.EngineVariant:
+            var engineVariants = engineVariantService.Search(new EngineVariantSearch { EngineId = selectedEngine!.Id })
+                .OrderBy(x => x.Name)
+                .DistinctBy(x => x.EngineVariantId)
+                .ToList();
+
+            var selectedEngineVariant = PromptSingleSelection("Select engine version", engineVariants, x => x.Name);
+            if (selectedEngineVariant is null)
+            {
+                stage = CatalogStage.Engine;
+                break;
+            }
+
+            var vehicleBodyEngineVariants = vehicleBodyEngineVariantService
+                .Search(new VehicleBodyEngineVariantSearch { EngineVariantId = selectedEngineVariant.EngineVariantId })
+                .Items
+                .DistinctBy(x => x.VehicleBodyEngineVariantId)
+                .ToList();
+
+            var bodySpecs = vehicleBodyEngineVariants
+                .Select(x => x.VehicleBodyEngine.VehicleBody)
+                .Where(x => x is not null)
+                .Cast<VehicleBody>()
+                .DistinctBy(x => x.VehicleBodyId)
+                .ToList();
+
+            var engineSpecs = vehicleBodyEngineVariants
+                .Select(x => x.VehicleBodyEngine)
+                .DistinctBy(x => x.VehicleBodyEngineId)
+                .ToList();
+
+            RenderBodySpecTable(bodySpecs);
+            RenderEngineSpecTable(engineSpecs);
+            RenderEngineVersionSpecTable(vehicleBodyEngineVariants);
+            stage = PromptResultsNavigation() == ResultsNavigation.MainMenu
+                ? CatalogStage.Manufacturer
+                : CatalogStage.EngineVariant;
+            break;
     }
 }
 
-var engines = selectedGeneration.ContainsVersions
-    ? engineService.Search(new EngineSearch { VersionId = selectedVersion!.Id })
-    : engineService.Search(new EngineSearch { GenerationId = selectedGeneration.Id });
-
-var engineChoices = engines
-    .OrderBy(x => x.Name)
-    .DistinctBy(x => x.Id)
-    .ToList();
-
-var selectedEngine = PromptSingleSelection("Select engine", engineChoices, x => x.Name);
-if (selectedEngine is null)
-{
-    return;
-}
-
-var engineVariants = engineVariantService.Search(new EngineVariantSearch { EngineId = selectedEngine.Id })
-    .OrderBy(x => x.Name)
-    .DistinctBy(x => x.EngineVariantId)
-    .ToList();
-
-var selectedEngineVariant = PromptSingleSelection("Select engine version", engineVariants, x => x.Name);
-if (selectedEngineVariant is null)
-{
-    return;
-}
-
-var vehicleBodyEngineVariants = vehicleBodyEngineVariantService
-    .Search(new VehicleBodyEngineVariantSearch { EngineVariantId = selectedEngineVariant.EngineVariantId })
-    .Items
-    .DistinctBy(x => x.VehicleBodyEngineVariantId)
-    .ToList();
-
-var bodySpecs = vehicleBodyEngineVariants
-    .Select(x => x.VehicleBodyEngine.VehicleBody)
-    .Where(x => x is not null)
-    .Cast<VehicleBody>()
-    .DistinctBy(x => x.VehicleBodyId)
-    .ToList();
-
-var engineSpecs = vehicleBodyEngineVariants
-    .Select(x => x.VehicleBodyEngine)
-    .DistinctBy(x => x.VehicleBodyEngineId)
-    .ToList();
-
-RenderBodySpecTable(bodySpecs);
-RenderEngineSpecTable(engineSpecs);
-RenderEngineVersionSpecTable(vehicleBodyEngineVariants);
-
-static T? PromptSingleSelection<T>(string title, IReadOnlyList<T> choices, Func<T, string> display)
+static T? PromptSingleSelection<T>(string title, IReadOnlyList<T> choices, Func<T, string> display, bool includeBack = true)
     where T : class
 {
     if (choices.Count == 0)
@@ -133,12 +152,34 @@ static T? PromptSingleSelection<T>(string title, IReadOnlyList<T> choices, Func<
         return null;
     }
 
-    var prompt = new SelectionPrompt<T>()
+    var back = new SelectionChoice<T>(null, "[grey]Back[/]");
+    var prompt = new SelectionPrompt<SelectionChoice<T>>()
         .Title($"[cyan]{title}[/]")
-        .UseConverter(display)
-        .AddChoices(choices);
+        .UseConverter(x => x.Label);
+    if (includeBack)
+    {
+        prompt.AddChoice(back);
+    }
 
-    return AnsiConsole.Prompt(prompt);
+    prompt.AddChoices(choices.Select(x => new SelectionChoice<T>(x, display(x))));
+
+    var selection = AnsiConsole.Prompt(prompt);
+    if (selection.Value is null)
+    {
+        AnsiConsole.Clear();
+    }
+
+    return selection.Value;
+}
+
+static ResultsNavigation PromptResultsNavigation()
+{
+    var prompt = new SelectionPrompt<ResultsNavigation>()
+        .UseConverter(x => x == ResultsNavigation.Back ? "Back" : "Main Menu");
+    prompt.AddChoices(ResultsNavigation.Back, ResultsNavigation.MainMenu);
+    var selection = AnsiConsole.Prompt(prompt);
+    AnsiConsole.Clear();
+    return selection;
 }
 
 static void RenderBodySpecTable(IReadOnlyList<VehicleBody> items)
@@ -246,3 +287,22 @@ static string Format(ParameterValue? value)
 }
 
 static string FormatYear(int? year) => year?.ToString() ?? "present";
+
+file sealed record SelectionChoice<T>(T? Value, string Label)
+    where T : class;
+
+file enum CatalogStage
+{
+    Manufacturer,
+    Model,
+    Generation,
+    Version,
+    Engine,
+    EngineVariant
+}
+
+file enum ResultsNavigation
+{
+    Back,
+    MainMenu
+}

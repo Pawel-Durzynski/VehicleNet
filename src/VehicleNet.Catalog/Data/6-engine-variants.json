@@ -2403,5 +2403,185 @@
     "id": 481,
     "eId": 308,
     "name": "1.5 TSI 150KM 110kW DSG Automatic 7-speed Euro 6d Start&Stop"
+  },
+  {
+    "id": 482,
+    "eId": 309,
+    "name": "1.5 TSI 150KM 110kW Manual 6-speed"
+  },
+  {
+    "id": 483,
+    "eId": 309,
+    "name": "1.5 TSI 150KM 110kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 484,
+    "eId": 310,
+    "name": "2.0 TSI 190KM 140kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 485,
+    "eId": 311,
+    "name": "2.0 TDI SCR 150KM 110kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 486,
+    "eId": 311,
+    "name": "2.0 TDI SCR 150KM 110kW DSG Automatic 7-speed 4x4"
+  },
+  {
+    "id": 487,
+    "eId": 312,
+    "name": "2.0 TDI SCR 200KM 147kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 488,
+    "eId": 313,
+    "name": "2.0 TSI 245KM 180kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 489,
+    "eId": 314,
+    "name": "2.0 TDI 240KM 177kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 490,
+    "eId": 315,
+    "name": "1.4 TSI ACT 150KM 110kW Manual 6-speed 4x4"
+  },
+  {
+    "id": 491,
+    "eId": 315,
+    "name": "1.4 TSI ACT 150KM 110kW DSG Automatic 6-speed 4x4"
+  },
+  {
+    "id": 492,
+    "eId": 316,
+    "name": "1.5 TSI 150KM 110kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 493,
+    "eId": 317,
+    "name": "2.0 TSI 180KM 132kW DSG Automatic 7-speed 4x4 Euro 6"
+  },
+  {
+    "id": 494,
+    "eId": 318,
+    "name": "2.0 TSI 190KM 140kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 495,
+    "eId": 319,
+    "name": "2.0 TDI SCR 150KM 110kW Manual 6-speed 4x4 Euro 6"
+  },
+  {
+    "id": 496,
+    "eId": 319,
+    "name": "2.0 TDI SCR 150KM 110kW DSG Automatic 7-speed 4x4 Euro 6"
+  },
+  {
+    "id": 497,
+    "eId": 320,
+    "name": "2.0 TDI SCR 190KM 140kW DSG Automatic 7-speed 4x4 Euro 6"
+  },
+  {
+    "id": 498,
+    "eId": 321,
+    "name": "1.4 TSI 125KM 92kW Manual 6-speed Euro 6"
+  },
+  {
+    "id": 499,
+    "eId": 322,
+    "name": "1.4 TSI 150KM 110kW Manual 4x4"
+  },
+  {
+    "id": 500,
+    "eId": 322,
+    "name": "1.4 TSI 150KM 110kW DSG Automatic 6-speed 4x4"
+  },
+  {
+    "id": 501,
+    "eId": 323,
+    "name": "1.4 TSI ACT 150KM 110kW Manual 6-speed 4x4"
+  },
+  {
+    "id": 502,
+    "eId": 323,
+    "name": "1.4 TSI ACT 150KM 110kW DSG Automatic 6-speed Euro 6"
+  },
+  {
+    "id": 503,
+    "eId": 323,
+    "name": "1.4 TSI ACT 150KM 110kW DSG Automatic 6-speed 4x4 Euro 6"
+  },
+  {
+    "id": 504,
+    "eId": 324,
+    "name": "1.5 TSI ACT 150KM 110kW Manual 6-speed Euro 6d"
+  },
+  {
+    "id": 505,
+    "eId": 324,
+    "name": "1.5 TSI ACT 150KM 110kW DSG Automatic 7-speed Euro 6d"
+  },
+  {
+    "id": 506,
+    "eId": 324,
+    "name": "1.5 TSI ACT 150KM 110kW DSG Automatic 7-speed 4x4 Euro 6d"
+  },
+  {
+    "id": 507,
+    "eId": 325,
+    "name": "2.0 TSI 180KM 132kW DSG Automatic 7-speed 4x4 Euro 6"
+  },
+  {
+    "id": 508,
+    "eId": 326,
+    "name": "2.0 TSI 190KM 140kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 509,
+    "eId": 327,
+    "name": "2.0 TDI 150KM 110kW Manual 6-speed 4x4"
+  },
+  {
+    "id": 510,
+    "eId": 327,
+    "name": "2.0 TDI 150KM 110kW DSG Automatic 7-speed"
+  },
+  {
+    "id": 511,
+    "eId": 327,
+    "name": "2.0 TDI 150KM 110kW DSG Automatic 7-speed 4x4 Euro 6"
+  },
+  {
+    "id": 512,
+    "eId": 328,
+    "name": "2.0 TDI 190KM 140kW DSG Automatic 7-speed 4x4 Euro 6"
+  },
+  {
+    "id": 513,
+    "eId": 329,
+    "name": "2.0 TDI SCR 200KM 147kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 514,
+    "eId": 330,
+    "name": "1.5 TSI mHEV 150KM 110kW DSG Automatic 7-speed Euro 6d Start&Stop"
+  },
+  {
+    "id": 515,
+    "eId": 331,
+    "name": "2.0 TDI SCR 150KM 110kW DSG Automatic 7-speed Euro 6d Start&Stop"
+  },
+  {
+    "id": 516,
+    "eId": 332,
+    "name": "2.0 TDI SCR 193KM 142kW DSG Automatic 7-speed 4x4 Euro 6d Start&Stop"
+  },
+  {
+    "id": 517,
+    "eId": 333,
+    "name": "1.5 TSI Plug-In Hybrid 204KM 150kW DSG Automatic 6-speed Euro 6d Start&Stop"
   }
 ]
