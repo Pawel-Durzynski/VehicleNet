@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Fabia",
     "manufacturerId": 1
+  },
+  {
+    "id": 3,
+    "name": "Kodiaq",
+    "manufacturerId": 1
   }
 ]

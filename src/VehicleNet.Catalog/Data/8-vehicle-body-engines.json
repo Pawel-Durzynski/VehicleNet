@@ -6970,5 +6970,578 @@
         "to": "3500"
       }
     }
+  },
+  {
+    "id": 309,
+    "vbId": 40,
+    "eId": 309,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1498",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "1500"
+      }
+    }
+  },
+  {
+    "id": 310,
+    "vbId": 40,
+    "eId": 310,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1984",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "190",
+        "at": "4200"
+      },
+      "torque": {
+        "maxTorque": "320",
+        "from": "1500",
+        "to": "1500"
+      }
+    }
+  },
+  {
+    "id": 311,
+    "vbId": 40,
+    "eId": 311,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "3000"
+      },
+      "torque": {
+        "maxTorque": "360",
+        "from": "1700",
+        "to": "2750"
+      }
+    }
+  },
+  {
+    "id": 312,
+    "vbId": 40,
+    "eId": 312,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "200",
+        "at": "3500"
+      },
+      "torque": {
+        "maxTorque": "400",
+        "from": "1750",
+        "to": "3000"
+      }
+    }
+  },
+  {
+    "id": 313,
+    "vbId": 41,
+    "eId": 313,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1984",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "245",
+        "at": "5250"
+      },
+      "torque": {
+        "maxTorque": "370",
+        "from": "1600",
+        "to": "3400"
+      }
+    }
+  },
+  {
+    "id": 314,
+    "vbId": 42,
+    "eId": 314,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "240",
+        "at": "4000"
+      },
+      "torque": {
+        "maxTorque": "500",
+        "from": "1750",
+        "to": "2500"
+      }
+    }
+  },
+  {
+    "id": 315,
+    "vbId": 43,
+    "eId": 315,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1395",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "3500"
+      }
+    }
+  },
+  {
+    "id": 316,
+    "vbId": 43,
+    "eId": 316,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1498",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "3500"
+      }
+    }
+  },
+  {
+    "id": 317,
+    "vbId": 43,
+    "eId": 317,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1984",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "180",
+        "at": "3900"
+      },
+      "torque": {
+        "maxTorque": "320",
+        "from": "1400",
+        "to": "3940"
+      }
+    }
+  },
+  {
+    "id": 318,
+    "vbId": 43,
+    "eId": 318,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1984",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "190",
+        "at": "3900"
+      },
+      "torque": {
+        "maxTorque": "320",
+        "from": "1500",
+        "to": "4100"
+      }
+    }
+  },
+  {
+    "id": 319,
+    "vbId": 43,
+    "eId": 319,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "3500"
+      },
+      "torque": {
+        "maxTorque": "340",
+        "from": "1750",
+        "to": "3000"
+      }
+    }
+  },
+  {
+    "id": 320,
+    "vbId": 43,
+    "eId": 320,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "190",
+        "at": "3500"
+      },
+      "torque": {
+        "maxTorque": "400",
+        "from": "1750",
+        "to": "3250"
+      }
+    }
+  },
+  {
+    "id": 321,
+    "vbId": 44,
+    "eId": 321,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1395",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "125",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "200",
+        "from": "1400",
+        "to": "4000"
+      }
+    }
+  },
+  {
+    "id": 322,
+    "vbId": 44,
+    "eId": 322,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1395",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "3500"
+      }
+    }
+  },
+  {
+    "id": 323,
+    "vbId": 44,
+    "eId": 323,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1395",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "3500"
+      }
+    }
+  },
+  {
+    "id": 324,
+    "vbId": 44,
+    "eId": 324,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1498",
+      "architecture": {
+        "cylinderCount": "4",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "3500"
+      }
+    }
+  },
+  {
+    "id": 325,
+    "vbId": 44,
+    "eId": 325,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1984",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "180",
+        "at": "3900"
+      },
+      "torque": {
+        "maxTorque": "320",
+        "from": "1400",
+        "to": "3940"
+      }
+    }
+  },
+  {
+    "id": 326,
+    "vbId": 44,
+    "eId": 326,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1984",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "190",
+        "at": "4500"
+      },
+      "torque": {
+        "maxTorque": "320",
+        "from": "1500",
+        "to": "4100"
+      }
+    }
+  },
+  {
+    "id": 327,
+    "vbId": 44,
+    "eId": 327,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "3500"
+      },
+      "torque": {
+        "maxTorque": "340",
+        "from": "1750",
+        "to": "3000"
+      }
+    }
+  },
+  {
+    "id": 328,
+    "vbId": 44,
+    "eId": 328,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "190",
+        "at": "3500"
+      },
+      "torque": {
+        "maxTorque": "400",
+        "from": "1750",
+        "to": "3250"
+      }
+    }
+  },
+  {
+    "id": 329,
+    "vbId": 44,
+    "eId": 329,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1986",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "200",
+        "at": "3600"
+      },
+      "torque": {
+        "maxTorque": "400",
+        "from": "1750",
+        "to": "3500"
+      }
+    }
+  },
+  {
+    "id": 330,
+    "vbId": 45,
+    "eId": 330,
+    "engineSpecs": {
+      "fuelType": "Petrol",
+      "capacity": "1498",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "250",
+        "from": "1500",
+        "to": "1500"
+      }
+    }
+  },
+  {
+    "id": 331,
+    "vbId": 45,
+    "eId": 331,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "150",
+        "at": "3000"
+      },
+      "torque": {
+        "maxTorque": "360",
+        "from": "1700",
+        "to": "2750"
+      }
+    }
+  },
+  {
+    "id": 332,
+    "vbId": 45,
+    "eId": 332,
+    "engineSpecs": {
+      "fuelType": "Diesel",
+      "capacity": "1968",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "193",
+        "at": "3500"
+      },
+      "torque": {
+        "maxTorque": "400",
+        "from": "1750",
+        "to": "3000"
+      }
+    }
+  },
+  {
+    "id": 333,
+    "vbId": 46,
+    "eId": 333,
+    "engineSpecs": {
+      "fuelType": "PlugInHybrid",
+      "capacity": "1498",
+      "architecture": {
+        "cylinderCount": "4",
+        "cylinderArrangement": "Inline",
+        "valveCount": "16"
+      },
+      "power": {
+        "horsepower": "204",
+        "at": "5000"
+      },
+      "torque": {
+        "maxTorque": "350",
+        "from": "1500",
+        "to": "1500"
+      }
+    }
   }
 ]

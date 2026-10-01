@@ -898,5 +898,173 @@
         "minimumTrunkCapacitySeatsUp": "380"
       }
     }
+  },
+  {
+    "id": 40,
+    "gId": 9,
+    "vId": 40,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "12.2",
+        "turningRadius": "6.1"
+      },
+      "externalDimensions": {
+        "length": "4699",
+        "width": "1882",
+        "height": "1681",
+        "wheelbase": "2791",
+        "groundClearance": "199"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "2065",
+        "minimumTrunkCapacitySeatsUp": "835"
+      }
+    }
+  },
+  {
+    "id": 41,
+    "gId": 9,
+    "vId": 41,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "12.2",
+        "turningRadius": "6.1"
+      },
+      "externalDimensions": {
+        "length": "4699",
+        "width": "1882",
+        "height": "1685",
+        "wheelbase": "2791",
+        "groundClearance": "195"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1960",
+        "minimumTrunkCapacitySeatsUp": "835"
+      }
+    }
+  },
+  {
+    "id": 42,
+    "gId": 9,
+    "vId": 42,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "12.2",
+        "turningRadius": "6.1"
+      },
+      "externalDimensions": {
+        "length": "4699",
+        "width": "1882",
+        "height": "1660",
+        "wheelbase": "2791",
+        "groundClearance": "195"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "2065",
+        "minimumTrunkCapacitySeatsUp": "650"
+      }
+    }
+  },
+  {
+    "id": 43,
+    "gId": 9,
+    "vId": 43,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "12.2",
+        "turningRadius": "6.1"
+      },
+      "externalDimensions": {
+        "length": "4697",
+        "width": "1882",
+        "height": "1676",
+        "wheelbase": "2791",
+        "groundClearance": "187"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "2065",
+        "minimumTrunkCapacitySeatsUp": "720"
+      }
+    }
+  },
+  {
+    "id": 44,
+    "gId": 9,
+    "vId": 44,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "12.2",
+        "turningRadius": "6.1"
+      },
+      "externalDimensions": {
+        "length": "4697",
+        "width": "1882",
+        "height": "1676",
+        "wheelbase": "2791",
+        "groundClearance": "187"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "2100",
+        "minimumTrunkCapacitySeatsUp": "650"
+      }
+    }
+  },
+  {
+    "id": 45,
+    "gId": 10,
+    "vId": 45,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "11.2",
+        "turningRadius": "5.6"
+      },
+      "externalDimensions": {
+        "length": "4758",
+        "width": "1864",
+        "height": "1679",
+        "wheelbase": "2788",
+        "groundClearance": "189"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "2105",
+        "minimumTrunkCapacitySeatsUp": "910"
+      }
+    }
+  },
+  {
+    "id": 46,
+    "gId": 10,
+    "vId": 46,
+    "bodySpecs": {
+      "basicParameters": {
+        "numberOfDoors": "5",
+        "numberOfSeats": "5",
+        "turningDiameter": "11.2",
+        "turningRadius": "5.6"
+      },
+      "externalDimensions": {
+        "length": "4758",
+        "width": "1864",
+        "height": "1679",
+        "wheelbase": "2788",
+        "groundClearance": "189"
+      },
+      "trunkDimensions": {
+        "maximumTrunkCapacitySeatsFolded": "1945",
+        "minimumTrunkCapacitySeatsUp": "745"
+      }
+    }
   }
 ]
