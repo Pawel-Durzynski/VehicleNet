@@ -13,8 +13,16 @@ using VehicleNet.Common.Models.Units;
 
 namespace VehicleNet.Catalog.Extensions;
 
+/// <summary>
+/// Provides extension methods for configuring and adding vehicle catalog services to an <see cref="IServiceCollection"/>.
+/// </summary>
 public static class ServiceCollectionExtensions
 {
+    /// <summary>
+    /// Adds the vehicle catalog services to the specified <see cref="IServiceCollection"/>.
+    /// </summary>
+    /// <param name="services">The service collection to which the vehicle catalog services will be added.</param>
+    /// <returns>The updated service collection.</returns>
     public static IServiceCollection AddVehicleCatalogServices(this IServiceCollection services)
     {
         ArgumentNullException.ThrowIfNull(services);

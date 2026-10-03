@@ -4,9 +4,10 @@ using VehicleNet.Vin.Interfaces;
 
 namespace VehicleNet.Vin.Services;
 
+/// <inheritdoc/>
 public sealed class VinValidatorService : IVinValidator
 {
-
+    /// <inheritdoc/>
     public VinValidationResult Validate(string? vin)
     {
         if (string.IsNullOrWhiteSpace(vin))
@@ -38,6 +39,7 @@ public sealed class VinValidatorService : IVinValidator
         return VinValidationResult.Success();
     }
 
+    /// <inheritdoc/>
     public bool IsValid(string? vin) => Validate(vin).IsValid;
 
     private static char CalculateCheckDigit(string vin)

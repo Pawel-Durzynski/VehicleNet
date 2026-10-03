@@ -11,6 +11,12 @@ internal sealed class GenerationService : IGenerationService
     private readonly IReadOnlyDictionary<int, ModelDto> _modelsById;
     private readonly IReadOnlyDictionary<int, ManufacturerDto> _manufacturersById;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="GenerationService"/> class with the specified data sources.
+    /// </summary>
+    /// <param name="generations">The collection of generation data transfer objects.</param>
+    /// <param name="models">The collection of model data transfer objects.</param>
+    /// <param name="manufacturers">The collection of manufacturer data transfer objects.</param>
     public GenerationService(
         IEnumerable<GenerationDto> generations,
         IEnumerable<ModelDto> models,
@@ -21,6 +27,7 @@ internal sealed class GenerationService : IGenerationService
         _manufacturersById = manufacturers.ToDictionary(manufacturer => manufacturer.Id);
     }
 
+    /// <inheritdoc/>
     public IEnumerable<VehicleGeneration> Search(GenerationSearch search)
     {
         ArgumentNullException.ThrowIfNull(search);

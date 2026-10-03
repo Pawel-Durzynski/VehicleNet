@@ -5,29 +5,45 @@ using VehicleNet.Common.Models.Catalog;
 
 namespace VehicleNet.Catalog.Data.Json;
 
+/// <summary>
+/// Represents a source of vehicle catalog data that loads the data from embedded JSON resources within the assembly.
+/// </summary>
 public sealed class JsonVehicleCatalogSource : IVehicleCatalogSource
 {
     private readonly Assembly _assembly;
     private readonly CatalogSnapshotBuilder _builder;
     private readonly IReadOnlyList<VehicleBodyEngine>? _snapshot;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="JsonVehicleCatalogSource"/> class.
+    /// </summary>
     public JsonVehicleCatalogSource()
         : this(typeof(JsonVehicleCatalogSource).Assembly, new CatalogSnapshotBuilder())
     {
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="JsonVehicleCatalogSource"/> class with the specified assembly and catalog snapshot builder.
+    /// </summary>
+    /// <param name="assembly">The assembly containing the embedded JSON resources.</param>
+    /// <param name="builder">The catalog snapshot builder used to build the catalog snapshot.</param>
     internal JsonVehicleCatalogSource(Assembly assembly, CatalogSnapshotBuilder builder)
     {
         _assembly = assembly;
         _builder = builder;
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="JsonVehicleCatalogSource"/> class with the specified catalog snapshot.
+    /// </summary>
+    /// <param name="snapshot">The catalog snapshot to be used by the source.</param>
     internal JsonVehicleCatalogSource(IReadOnlyList<VehicleBodyEngine> snapshot)
         : this(typeof(JsonVehicleCatalogSource).Assembly, new CatalogSnapshotBuilder())
     {
         _snapshot = snapshot;
     }
 
+    /// <inheritdoc />
     public async Task<IReadOnlyList<VehicleBodyEngine>> LoadAsync(CancellationToken cancellationToken = default)
     {
         cancellationToken.ThrowIfCancellationRequested();

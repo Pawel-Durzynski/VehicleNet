@@ -4,6 +4,7 @@ using VehicleNet.Vin.Interfaces;
 
 namespace VehicleNet.Vin.Services;
 
+/// <inheritdoc/>
 public sealed class VinGeneratorService : IVinGenerator
 {
     private static readonly char[] AllowedVinChars = "ABCDEFGHJKLMNPRSTUVWXYZ0123456789".ToCharArray();
@@ -12,6 +13,7 @@ public sealed class VinGeneratorService : IVinGenerator
     private static readonly char[] Digits = "0123456789".ToCharArray();
     private static readonly Dictionary<int, char> ModelYearCodeByYear = BuildModelYearCodeMap();
 
+    /// <inheritdoc/>
     public string GenerateMockVin(VinGenerationOptions? options = null, Random? random = null)
     {
         random ??= Random.Shared;

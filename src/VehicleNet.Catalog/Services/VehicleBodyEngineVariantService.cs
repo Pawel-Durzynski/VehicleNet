@@ -8,11 +8,16 @@ internal sealed class VehicleBodyEngineVariantService : IVehicleBodyEngineVarian
 {
     private readonly IReadOnlyList<VehicleBodyEngineVariant> _specifications;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="VehicleBodyEngineVariantService"/> class with the specified collection of vehicle body-engine variant specifications.
+    /// </summary>
+    /// <param name="specifications">The collection of vehicle body-engine variant specifications.</param>
     public VehicleBodyEngineVariantService(IEnumerable<VehicleBodyEngineVariant> specifications)
     {
         _specifications = specifications.ToList();
     }
 
+    /// <inheritdoc/>
     public VehicleBodyEngineVariantSearchResult Search(VehicleBodyEngineVariantSearch search, CancellationToken cancellationToken = default)
     {
         cancellationToken.ThrowIfCancellationRequested();
@@ -33,12 +38,12 @@ internal sealed class VehicleBodyEngineVariantService : IVehicleBodyEngineVarian
 
         if (search.TransmissionType.HasValue)
         {
-            query = query.Where(spec => spec.EngineVariantSpecs.DrivetrainSpecs.TransmissionType == search.TransmissionType.Value);
+            query = query.Where(spec => spec.EngineVariantSpecs.DrivetrainSpecs?.TransmissionType == search.TransmissionType.Value);
         }
 
         if (search.Drivetrain.HasValue)
         {
-            query = query.Where(spec => spec.EngineVariantSpecs.DrivetrainSpecs.Drivetrain == search.Drivetrain.Value);
+            query = query.Where(spec => spec.EngineVariantSpecs.DrivetrainSpecs?.Drivetrain == search.Drivetrain.Value);
         }
 
         var filtered = query.ToList();

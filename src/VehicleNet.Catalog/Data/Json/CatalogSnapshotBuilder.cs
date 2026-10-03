@@ -10,6 +10,11 @@ namespace VehicleNet.Catalog.Data.Json;
 
 internal sealed class CatalogSnapshotBuilder
 {
+    /// <summary>
+    /// Builds a catalog snapshot from the provided JSON document.
+    /// </summary>
+    /// <param name="document">The JSON document containing the catalog data.</param>
+    /// <returns>A list of vehicle body-engine combinations.</returns>
     public IReadOnlyList<VehicleBodyEngine> Build(CatalogJsonDocument document)
     {
         ArgumentNullException.ThrowIfNull(document);

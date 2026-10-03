@@ -3,20 +3,29 @@ using VehicleNet.Vin.Interfaces;
 
 namespace VehicleNet.Vin.Services;
 
+/// <inheritdoc/>
 public sealed class VinParserService : IVinParser
 {
     private readonly IVinValidator _validator;
     private static readonly Dictionary<int, char> ModelYearCodeByYear = BuildModelYearCodeMap();
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="VinParserService"/> class with a default VIN validator.
+    /// </summary>
     public VinParserService() : this(new VinValidatorService())
     {
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="VinParserService"/> class with the specified VIN validator.
+    /// </summary>
+    /// <param name="validator">The VIN validator to use for validating VINs.</param>
     public VinParserService(IVinValidator validator)
     {
         _validator = validator;
     }
 
+    /// <inheritdoc/>
     public VinParts Parse(string vin)
     {
         var validation = _validator.Validate(vin);
