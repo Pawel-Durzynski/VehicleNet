@@ -12,6 +12,16 @@
 dotnet add package VehicleNet.VIN
 ```
 
+`Microsoft.Extensions.DependencyInjection.Abstractions` is installed transitively with `VehicleNet.Catalog`.
+
+Standalone console applications that create their own `ServiceCollection` and call `BuildServiceProvider()` also need the full dependency injection implementation:
+
+```bash
+dotnet add package Microsoft.Extensions.DependencyInjection
+```
+
+ASP.NET Core applications generally already provide the dependency injection implementation.
+
 ## Features
 
 - `IVinValidator`
