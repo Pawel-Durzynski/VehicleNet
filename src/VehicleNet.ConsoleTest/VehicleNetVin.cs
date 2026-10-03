@@ -3,12 +3,14 @@ using VehicleNet.Vin.Interfaces;
 
 namespace VehicleNet.ConsoleTest;
 
+/// <summary>Runs interactive VIN feature demonstrations.</summary>
 public class VehicleNetVin
 {
     private readonly IVinValidator vinValidator;
     private readonly IVinParser vinParser;
     private readonly IVinGenerator vinGenerator;
 
+    /// <summary>Initializes the VIN demonstration.</summary>
     public VehicleNetVin(
         IVinValidator vinValidator,
         IVinParser vinParser,
@@ -19,6 +21,7 @@ public class VehicleNetVin
         this.vinGenerator = vinGenerator;
     }
 
+    /// <summary>Runs VIN generation, validation, and parsing scenarios.</summary>
     public void Playground()
     {
         Console.WriteLine("VIN demo scenarios");

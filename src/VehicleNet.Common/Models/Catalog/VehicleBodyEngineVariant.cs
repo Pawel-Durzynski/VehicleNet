@@ -3,28 +3,41 @@ using VehicleNet.Common.Models.Catalog.Hierarchy;
 
 namespace VehicleNet.Common.Models.Catalog;
 
+/// <summary>Associates a body-engine combination with a specific engine variant.</summary>
 public sealed record VehicleBodyEngineVariant
 {
+    /// <summary>Gets the body-engine-variant association identifier.</summary>
     public required int VehicleBodyEngineVariantId { get; init; }
 
+    /// <summary>Gets the body-engine association identifier.</summary>
     public required int VehicleBodyEngineId { get; init; }
 
+    /// <summary>Gets the body-engine association.</summary>
     public required VehicleBodyEngine VehicleBodyEngine { get; init; }
 
+    /// <summary>Gets the engine variant identifier.</summary>
     public required int EngineVariantId { get; init; }
 
+    /// <summary>Gets the engine variant.</summary>
     public required EngineVariant EngineVariant { get; init; }
 
+    /// <summary>Gets the optional generation identifier.</summary>
     public int? GenerationId { get; init; }
 
+    /// <summary>Gets the optional generation.</summary>
     public VehicleGeneration? Generation { get; init; }
 
+    /// <summary>Gets the optional version identifier.</summary>
     public int? VersionId { get; init; }
 
+    /// <summary>Gets the optional version.</summary>
     public VehicleVersion? Version { get; init; }
 
+    /// <summary>Gets the engine variant specifications.</summary>
     public required EngineVariantSpecs EngineVariantSpecs { get; init; }
 
+    /// <summary>Initializes a copy of an existing body-engine-variant association.</summary>
+    /// <param name="original">The association to copy.</param>
     protected VehicleBodyEngineVariant(VehicleBodyEngineVariant original)
     {
         VehicleBodyEngineVariantId = original.VehicleBodyEngineVariantId;
@@ -87,6 +100,7 @@ public sealed record VehicleBodyEngineVariant
         }
     }
 
+    /// <summary>Gets the resolved catalog hierarchy.</summary>
     public VehicleHierarchy Hierarchy
     {
         get
@@ -103,6 +117,7 @@ public sealed record VehicleBodyEngineVariant
         }
     }
 
+    /// <summary>Gets the display name assembled from the catalog hierarchy.</summary>
     public string DisplayName
     {
         get
