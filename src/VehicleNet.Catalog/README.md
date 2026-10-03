@@ -77,19 +77,16 @@ var selectedVersion = generation.ContainsVersions
 var engine = generation.ContainsVersions
     ? engineService.Search(new EngineSearch
     {
-        VersionId = selectedVersion!.Id,
-        Name = "2.0 TSI"
+        VersionId = selectedVersion!.Id
     }).First()
     : engineService.Search(new EngineSearch
     {
-        GenerationId = generation.Id,
-        Name = "2.0 TSI"
+        GenerationId = generation.Id
     }).First();
 
 var engineVariant = engineVariantService.Search(new EngineVariantSearch
 {
-    EngineId = engine.Id,
-    Name = "2.0 TSI Manual"
+    EngineId = engine.Id
 }).First();
 
 var engineVersionSpec = vehicleBodyEngineVariantService.Search(
