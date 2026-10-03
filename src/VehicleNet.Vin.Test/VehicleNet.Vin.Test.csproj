@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\VehicleNet.Common\VehicleNet.Common.csproj" />
     <ProjectReference Include="..\VehicleNet.Vin\VehicleNet.Vin.csproj" />
   </ItemGroup>
 

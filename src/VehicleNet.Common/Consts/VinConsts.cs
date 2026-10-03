@@ -1,9 +1,18 @@
 namespace VehicleNet.Common.Consts;
 
+/// <summary>
+/// Provides constants used to calculate and validate VIN check digits.
+/// </summary>
 public static class VinConsts
 {
+    /// <summary>
+    /// Gets the positional weights used by the VIN check-digit algorithm.
+    /// </summary>
     public static readonly int[] Weights = [8, 7, 6, 5, 4, 3, 2, 10, 0, 9, 8, 7, 6, 5, 4, 3, 2];
 
+    /// <summary>
+    /// Gets the numeric transliteration values for valid VIN characters.
+    /// </summary>
     public static readonly Dictionary<char, int> Transliteration = new()
     {
         ['A'] = 1,

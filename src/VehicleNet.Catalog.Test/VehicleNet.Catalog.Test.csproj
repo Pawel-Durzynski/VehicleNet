@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VehicleNet.Catalog\VehicleNet.Catalog.csproj" />
+    <ProjectReference Include="..\VehicleNet.Common\VehicleNet.Common.csproj" />
   </ItemGroup>
 
 </Project>

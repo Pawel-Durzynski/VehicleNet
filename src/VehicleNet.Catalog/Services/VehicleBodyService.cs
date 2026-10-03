@@ -4,15 +4,23 @@ using VehicleNet.Common.Models.Search;
 
 namespace VehicleNet.Catalog.Services;
 
+/// <summary>
+/// Represents a service for searching vehicle bodies based on specified criteria.
+/// </summary>
 public sealed class VehicleBodyService : IVehicleBodyService
 {
     private readonly IReadOnlyList<VehicleBody> _bodies;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="VehicleBodyService"/> class with the specified collection of vehicle bodies.
+    /// </summary>
+    /// <param name="bodies">The collection of vehicle bodies.</param>
     public VehicleBodyService(IEnumerable<VehicleBody> bodies)
     {
         _bodies = bodies.ToList();
     }
 
+    /// <inheritdoc/>
     public VehicleBodySearchResult Search(VehicleBodySearchCriteria criteria, CancellationToken cancellationToken = default)
     {
         cancellationToken.ThrowIfCancellationRequested();

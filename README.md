@@ -24,6 +24,16 @@ dotnet add package VehicleNet.Vin
 dotnet add package VehicleNet.Catalog
 ```
 
+`Microsoft.Extensions.DependencyInjection.Abstractions` is installed transitively with `VehicleNet.Catalog`.
+
+Standalone console applications that create their own `ServiceCollection` and call `BuildServiceProvider()` also need the full dependency injection implementation:
+
+```bash
+dotnet add package Microsoft.Extensions.DependencyInjection
+```
+
+ASP.NET Core applications generally already provide the dependency injection implementation.
+
 ## Architecture
 
 This project uses a monorepo approach with shared MSBuild properties (`Directory.Build.props`) to ensure consistent versioning and metadata across all published packages.
@@ -83,19 +93,16 @@ var selectedVersion = generation.ContainsVersions
 var engine = generation.ContainsVersions
     ? engineService.Search(new EngineSearch
     {
-        VersionId = selectedVersion!.Id,
-        Name = "2.0 TSI"
+        VersionId = selectedVersion!.Id
     }).First()
     : engineService.Search(new EngineSearch
     {
-        GenerationId = generation.Id,
-        Name = "2.0 TSI"
+        GenerationId = generation.Id
     }).First();
 
 var engineVariant = engineVariantService.Search(new EngineVariantSearch
 {
-    EngineId = engine.Id,
-    Name = "2.0 TSI Manual"
+    EngineId = engine.Id
 }).First();
 
 var engineVersionSpec = vehicleBodyEngineVariantService.Search(

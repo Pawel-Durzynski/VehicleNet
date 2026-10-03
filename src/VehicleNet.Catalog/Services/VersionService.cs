@@ -12,6 +12,13 @@ internal sealed class VersionService : IVersionService
     private readonly IReadOnlyDictionary<int, ModelDto> _modelsById;
     private readonly IReadOnlyDictionary<int, ManufacturerDto> _manufacturersById;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="VersionService"/> class with the specified data sources.
+    /// </summary>
+    /// <param name="versions">The collection of version data transfer objects.</param>
+    /// <param name="generations">The collection of generation data transfer objects.</param>
+    /// <param name="models">The collection of model data transfer objects.</param>
+    /// <param name="manufacturers">The collection of manufacturer data transfer objects.</param>
     public VersionService(
         IEnumerable<VersionDto> versions,
         IEnumerable<GenerationDto> generations,
@@ -24,6 +31,7 @@ internal sealed class VersionService : IVersionService
         _manufacturersById = manufacturers.ToDictionary(manufacturer => manufacturer.Id);
     }
 
+    /// <inheritdoc/>
     public IEnumerable<VehicleVersion> Search(VersionSearch search)
     {
         ArgumentNullException.ThrowIfNull(search);

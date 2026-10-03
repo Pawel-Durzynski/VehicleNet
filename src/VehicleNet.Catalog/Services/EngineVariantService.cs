@@ -11,6 +11,11 @@ internal sealed class EngineVariantService : IEngineVariantService
     private readonly IReadOnlyList<EngineVariantDto> _variants;
     private readonly IEngineService _engineService;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="EngineVariantService"/> class with the specified engine variants and engine service.
+    /// </summary>
+    /// <param name="engineVariants">The collection of engine variant data transfer objects.</param>
+    /// <param name="engineService">The engine service used to retrieve engine details.</param>
     public EngineVariantService(
         IEnumerable<EngineVariantDto> engineVariants,
         IEngineService engineService)
@@ -19,6 +24,7 @@ internal sealed class EngineVariantService : IEngineVariantService
         _engineService = engineService;
     }
 
+    /// <inheritdoc/>
     public IEnumerable<EngineVariant> Search(EngineVariantSearch search)
     {
         ArgumentNullException.ThrowIfNull(search);

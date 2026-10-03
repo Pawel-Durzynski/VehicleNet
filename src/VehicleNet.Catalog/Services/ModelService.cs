@@ -10,12 +10,18 @@ internal sealed class ModelService : IModelService
     private readonly IReadOnlyList<ModelDto> _models;
     private readonly IReadOnlyDictionary<int, ManufacturerDto> _manufacturersById;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="ModelService"/> class with the specified data sources.
+    /// </summary>
+    /// <param name="models">The collection of model data transfer objects.</param>
+    /// <param name="manufacturers">The collection of manufacturer data transfer objects.</param>
     public ModelService(IEnumerable<ModelDto> models, IEnumerable<ManufacturerDto> manufacturers)
     {
         _models = models.ToList();
         _manufacturersById = manufacturers.ToDictionary(manufacturer => manufacturer.Id);
     }
 
+    /// <inheritdoc/>
     public IEnumerable<VehicleModel> Search(ModelSearch search)
     {
         ArgumentNullException.ThrowIfNull(search);

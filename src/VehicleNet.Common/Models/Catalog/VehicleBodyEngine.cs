@@ -3,28 +3,41 @@ using VehicleNet.Common.Models.Catalog.Hierarchy;
 
 namespace VehicleNet.Common.Models.Catalog;
 
+/// <summary>Associates a vehicle body with an engine and its specifications.</summary>
 public sealed record VehicleBodyEngine
 {
+    /// <summary>Gets the body-engine association identifier.</summary>
     public required int VehicleBodyEngineId { get; init; }
 
+    /// <summary>Gets the vehicle body identifier.</summary>
     public required int VehicleBodyId { get; init; }
 
+    /// <summary>Gets the vehicle body.</summary>
     public VehicleBody? VehicleBody { get; init; }
 
+    /// <summary>Gets the engine identifier.</summary>
     public int EngineId { get; init; }
 
+    /// <summary>Gets the engine.</summary>
     public required VehicleEngine Engine { get; init; }
 
+    /// <summary>Gets the optional generation identifier.</summary>
     public int? GenerationId { get; init; }
 
+    /// <summary>Gets the optional generation.</summary>
     public VehicleGeneration? Generation { get; init; }
 
+    /// <summary>Gets the optional version identifier.</summary>
     public int? VersionId { get; init; }
 
+    /// <summary>Gets the optional version.</summary>
     public VehicleVersion? Version { get; init; }
 
+    /// <summary>Gets the engine specifications.</summary>
     public required EngineSpecs EngineSpecs { get; init; }
 
+    /// <summary>Initializes a copy of an existing body-engine association.</summary>
+    /// <param name="original">The association to copy.</param>
     protected VehicleBodyEngine(VehicleBodyEngine original)
     {
         VehicleBodyEngineId = original.VehicleBodyEngineId;
@@ -72,6 +85,7 @@ public sealed record VehicleBodyEngine
         }
     }
 
+    /// <summary>Gets the resolved catalog hierarchy.</summary>
     public VehicleHierarchy Hierarchy
     {
         get
@@ -88,6 +102,7 @@ public sealed record VehicleBodyEngine
         }
     }
 
+    /// <summary>Gets the display name assembled from the catalog hierarchy.</summary>
     public string DisplayName
     {
         get
